@@ -27,14 +27,6 @@ public class MauiDrawable
 		}
 	}
 
-	public MauiDrawable (int p0)
-	{
-		super (p0);
-		if (getClass () == MauiDrawable.class) {
-			mono.android.TypeManager.Activate ("Microsoft.Maui.Graphics.MauiDrawable, Microsoft.Maui", "Android.Graphics.Color, Mono.Android", this, new java.lang.Object[] { p0 });
-		}
-	}
-
 	public MauiDrawable (android.content.Context p0)
 	{
 		super ();

@@ -1,0 +1,13 @@
+D:\Neo-Bank-Web3\Bank.Domain\bin\Debug\net9.0\Bank.Domain.deps.json
+D:\Neo-Bank-Web3\Bank.Domain\bin\Debug\net9.0\Bank.Domain.dll
+D:\Neo-Bank-Web3\Bank.Domain\bin\Debug\net9.0\Bank.Domain.pdb
+D:\Neo-Bank-Web3\Bank.Domain\obj\Debug\net9.0\Bank.Domain.csproj.AssemblyReference.cache
+D:\Neo-Bank-Web3\Bank.Domain\obj\Debug\net9.0\Bank.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Neo-Bank-Web3\Bank.Domain\obj\Debug\net9.0\Bank.Domain.AssemblyInfoInputs.cache
+D:\Neo-Bank-Web3\Bank.Domain\obj\Debug\net9.0\Bank.Domain.AssemblyInfo.cs
+D:\Neo-Bank-Web3\Bank.Domain\obj\Debug\net9.0\Bank.Domain.csproj.CoreCompileInputs.cache
+D:\Neo-Bank-Web3\Bank.Domain\obj\Debug\net9.0\Bank.Domain.sourcelink.json
+D:\Neo-Bank-Web3\Bank.Domain\obj\Debug\net9.0\Bank.Domain.dll
+D:\Neo-Bank-Web3\Bank.Domain\obj\Debug\net9.0\refint\Bank.Domain.dll
+D:\Neo-Bank-Web3\Bank.Domain\obj\Debug\net9.0\Bank.Domain.pdb
+D:\Neo-Bank-Web3\Bank.Domain\obj\Debug\net9.0\ref\Bank.Domain.dll

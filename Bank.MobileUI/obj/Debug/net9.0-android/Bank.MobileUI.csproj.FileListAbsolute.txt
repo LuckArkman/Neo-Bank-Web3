@@ -6,6 +6,8 @@ D:\Neo-Bank-Web3\Bank.MobileUI\bin\Debug\net9.0-android\com.companyname.bank.mob
 D:\Neo-Bank-Web3\Bank.MobileUI\bin\Debug\net9.0-android\com.companyname.bank.mobileui-Signed.aab
 D:\Neo-Bank-Web3\Bank.MobileUI\bin\Debug\net9.0-android\com.companyname.bank.mobileui-Signed.apk
 D:\Neo-Bank-Web3\Bank.MobileUI\bin\Debug\net9.0-android\com.companyname.bank.mobileui-Signed.apk.idsig
+D:\Neo-Bank-Web3\Bank.MobileUI\bin\Debug\net9.0-android\Bank.Domain.dll
+D:\Neo-Bank-Web3\Bank.MobileUI\bin\Debug\net9.0-android\Bank.Domain.pdb
 D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\.NETCoreApp,Version=v9.0.AssemblyAttributes.cs
 D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\build.props
 D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\adb.props
@@ -128,6 +130,7 @@ D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\Bank.MobileUI.AssemblyIn
 D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\Bank.MobileUI.csproj.CoreCompileInputs.cache
 D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\Bank.MobileUI.sourcelink.json
 D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\XamlC.stamp
+D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\Bank.Mob.CA27CCB6.Up2Date
 D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\Bank.MobileUI.dll
 D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\Bank.MobileUI.pdb
 D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\Bank.MobileUI.genruntimeconfig.cache
@@ -141,6 +144,8 @@ D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\uploadflags.txt
 D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\resolvedassemblies.hash
 D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\android\assets\arm64-v8a\ADRaffy.ENSNormalize.dll
 D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\android\assets\arm64-v8a\ar\Microsoft.Maui.Controls.resources.dll
+D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\android\assets\arm64-v8a\Bank.Domain.dll
+D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\android\assets\arm64-v8a\Bank.Domain.pdb
 D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\android\assets\arm64-v8a\Bank.MobileUI.dll
 D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\android\assets\arm64-v8a\Bank.MobileUI.pdb
 D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\android\assets\arm64-v8a\BouncyCastle.Cryptography.dll
@@ -581,6 +586,8 @@ D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\android\assets\arm64-v8a
 D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\android\assets\arm64-v8a\_Microsoft.Android.Resource.Designer.dll
 D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\android\assets\x86_64\ADRaffy.ENSNormalize.dll
 D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\android\assets\x86_64\ar\Microsoft.Maui.Controls.resources.dll
+D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\android\assets\x86_64\Bank.Domain.dll
+D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\android\assets\x86_64\Bank.Domain.pdb
 D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\android\assets\x86_64\Bank.MobileUI.dll
 D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\android\assets\x86_64\Bank.MobileUI.pdb
 D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\android\assets\x86_64\BouncyCastle.Cryptography.dll
@@ -1408,3 +1415,10 @@ D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\stamp\_ConvertResourcesC
 D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\stamp\_GenerateJavaStubs.stamp
 D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\stamp\_GeneratePackageManagerJava.stamp
 D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\stamp\_ResolveLibraryProjectImports.stamp
+D:\Neo-Bank-Web3\Bank.MobileUI\bin\Debug\net9.0-android\Bank.Infrastructure.dll
+D:\Neo-Bank-Web3\Bank.MobileUI\bin\Debug\net9.0-android\Bank.Infrastructure.pdb
+D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\android\assets\x86_64\Bank.Infrastructure.dll
+D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\android\assets\x86_64\Bank.Infrastructure.pdb
+D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\android\assets\arm64-v8a\Bank.Infrastructure.dll
+D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\android\assets\arm64-v8a\Bank.Infrastructure.pdb
+D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\android\assets\x86_64\Xamarin.AndroidX.Core.pdb

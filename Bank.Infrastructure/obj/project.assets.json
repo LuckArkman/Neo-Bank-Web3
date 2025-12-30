@@ -56,6 +56,35 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
+      "Microsoft.Maui.Essentials/9.0.120": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Graphics": "9.0.120"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Maui.Essentials.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Maui.Essentials.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Maui.Graphics/9.0.120": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/Microsoft.Maui.Graphics.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Maui.Graphics.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "NBitcoin.Secp256k1/3.1.1": {
         "type": "package",
         "compile": {
@@ -503,6 +532,21 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
+      },
+      "Bank.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.0.0",
+          "Nethereum.Web3": "5.0.0",
+          "sqlite-net-pcl": "1.9.172"
+        },
+        "compile": {
+          "bin/placeholder/Bank.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bank.Domain.dll": {}
+        }
       }
     }
   },
@@ -624,6 +668,94 @@
         "microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
         "microsoft.extensions.logging.abstractions.nuspec",
         "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Maui.Essentials/9.0.120": {
+      "sha512": "chK7ODdFVc3mOHUZMoRgGuVIoWuoC1lIape7OHExLc3jxmd7699J6xFnljyjz1XLYgdTW9l9b0KGVmPnaWWChw==",
+      "type": "package",
+      "path": "microsoft.maui.essentials/9.0.120",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "README.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net9.0-android35.0/Microsoft.Maui.Essentials.aar",
+        "lib/net9.0-android35.0/Microsoft.Maui.Essentials.dll",
+        "lib/net9.0-android35.0/Microsoft.Maui.Essentials.pdb",
+        "lib/net9.0-android35.0/Microsoft.Maui.Essentials.xml",
+        "lib/net9.0-ios18.0/Microsoft.Maui.Essentials.dll",
+        "lib/net9.0-ios18.0/Microsoft.Maui.Essentials.pdb",
+        "lib/net9.0-ios18.0/Microsoft.Maui.Essentials.xml",
+        "lib/net9.0-maccatalyst18.0/Microsoft.Maui.Essentials.dll",
+        "lib/net9.0-maccatalyst18.0/Microsoft.Maui.Essentials.pdb",
+        "lib/net9.0-maccatalyst18.0/Microsoft.Maui.Essentials.xml",
+        "lib/net9.0-tizen7.0/Microsoft.Maui.Essentials.dll",
+        "lib/net9.0-tizen7.0/Microsoft.Maui.Essentials.pdb",
+        "lib/net9.0-tizen7.0/Microsoft.Maui.Essentials.xml",
+        "lib/net9.0-windows10.0.19041/Microsoft.Maui.Essentials.dll",
+        "lib/net9.0-windows10.0.19041/Microsoft.Maui.Essentials.pdb",
+        "lib/net9.0-windows10.0.19041/Microsoft.Maui.Essentials.xml",
+        "lib/net9.0-windows10.0.20348/Microsoft.Maui.Essentials.dll",
+        "lib/net9.0-windows10.0.20348/Microsoft.Maui.Essentials.pdb",
+        "lib/net9.0-windows10.0.20348/Microsoft.Maui.Essentials.xml",
+        "lib/net9.0/Microsoft.Maui.Essentials.dll",
+        "lib/net9.0/Microsoft.Maui.Essentials.pdb",
+        "lib/net9.0/Microsoft.Maui.Essentials.xml",
+        "lib/netstandard2.0/Microsoft.Maui.Essentials.dll",
+        "lib/netstandard2.0/Microsoft.Maui.Essentials.pdb",
+        "lib/netstandard2.0/Microsoft.Maui.Essentials.xml",
+        "lib/netstandard2.1/Microsoft.Maui.Essentials.dll",
+        "lib/netstandard2.1/Microsoft.Maui.Essentials.pdb",
+        "lib/netstandard2.1/Microsoft.Maui.Essentials.xml",
+        "microsoft.maui.essentials.9.0.120.nupkg.sha512",
+        "microsoft.maui.essentials.nuspec"
+      ]
+    },
+    "Microsoft.Maui.Graphics/9.0.120": {
+      "sha512": "M/b+H+RBdBbZlTr9O6sz2fi2EqwmNZvCf0kdnCfJezVCO81Pilythh84GMtAvcvtVo7W4F8VeafSygm09ZjRYg==",
+      "type": "package",
+      "path": "microsoft.maui.graphics/9.0.120",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "README.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net9.0-android35.0/Microsoft.Maui.Graphics.dll",
+        "lib/net9.0-android35.0/Microsoft.Maui.Graphics.pdb",
+        "lib/net9.0-android35.0/Microsoft.Maui.Graphics.xml",
+        "lib/net9.0-ios18.0/Microsoft.Maui.Graphics.dll",
+        "lib/net9.0-ios18.0/Microsoft.Maui.Graphics.pdb",
+        "lib/net9.0-ios18.0/Microsoft.Maui.Graphics.xml",
+        "lib/net9.0-maccatalyst18.0/Microsoft.Maui.Graphics.dll",
+        "lib/net9.0-maccatalyst18.0/Microsoft.Maui.Graphics.pdb",
+        "lib/net9.0-maccatalyst18.0/Microsoft.Maui.Graphics.xml",
+        "lib/net9.0-macos15.0/Microsoft.Maui.Graphics.dll",
+        "lib/net9.0-macos15.0/Microsoft.Maui.Graphics.pdb",
+        "lib/net9.0-macos15.0/Microsoft.Maui.Graphics.xml",
+        "lib/net9.0-tizen7.0/Microsoft.Maui.Graphics.dll",
+        "lib/net9.0-tizen7.0/Microsoft.Maui.Graphics.pdb",
+        "lib/net9.0-tizen7.0/Microsoft.Maui.Graphics.xml",
+        "lib/net9.0-windows10.0.19041/Microsoft.Maui.Graphics.dll",
+        "lib/net9.0-windows10.0.19041/Microsoft.Maui.Graphics.pdb",
+        "lib/net9.0-windows10.0.19041/Microsoft.Maui.Graphics.xml",
+        "lib/net9.0-windows10.0.20348/Microsoft.Maui.Graphics.dll",
+        "lib/net9.0-windows10.0.20348/Microsoft.Maui.Graphics.pdb",
+        "lib/net9.0-windows10.0.20348/Microsoft.Maui.Graphics.xml",
+        "lib/net9.0/Microsoft.Maui.Graphics.dll",
+        "lib/net9.0/Microsoft.Maui.Graphics.pdb",
+        "lib/net9.0/Microsoft.Maui.Graphics.xml",
+        "lib/netstandard2.0/Microsoft.Maui.Graphics.dll",
+        "lib/netstandard2.0/Microsoft.Maui.Graphics.pdb",
+        "lib/netstandard2.0/Microsoft.Maui.Graphics.xml",
+        "lib/netstandard2.1/Microsoft.Maui.Graphics.dll",
+        "lib/netstandard2.1/Microsoft.Maui.Graphics.pdb",
+        "lib/netstandard2.1/Microsoft.Maui.Graphics.xml",
+        "microsoft.maui.graphics.9.0.120.nupkg.sha512",
+        "microsoft.maui.graphics.nuspec"
       ]
     },
     "NBitcoin.Secp256k1/3.1.1": {
@@ -1119,11 +1251,18 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Bank.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Bank.Domain/Bank.Domain.csproj",
+      "msbuildProject": "../Bank.Domain/Bank.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "Bank.Domain >= 1.0.0",
       "CommunityToolkit.Mvvm >= 8.0.0",
+      "Microsoft.Maui.Essentials >= 9.0.120",
       "Nethereum.Web3 >= 5.0.0",
       "sqlite-net-pcl >= 1.9.172"
     ]
@@ -1160,7 +1299,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Neo-Bank-Web3\\Bank.Domain\\Bank.Domain.csproj": {
+              "projectPath": "D:\\Neo-Bank-Web3\\Bank.Domain\\Bank.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -1182,6 +1325,10 @@
           "CommunityToolkit.Mvvm": {
             "target": "Package",
             "version": "[8.0.0, )"
+          },
+          "Microsoft.Maui.Essentials": {
+            "target": "Package",
+            "version": "[9.0.120, )"
           },
           "Nethereum.Web3": {
             "target": "Package",

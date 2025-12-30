@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "CLXCrzO5gqQ=",
+  "dgSpecHash": "15e7gF1uI48=",
   "success": true,
   "projectFilePath": "D:\\Neo-Bank-Web3\\Bank.Infrastructure\\Bank.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,8 @@
     "C:\\Users\\MPLopes\\.nuget\\packages\\bouncycastle.cryptography\\2.5.1\\bouncycastle.cryptography.2.5.1.nupkg.sha512",
     "C:\\Users\\MPLopes\\.nuget\\packages\\communitytoolkit.mvvm\\8.0.0\\communitytoolkit.mvvm.8.0.0.nupkg.sha512",
     "C:\\Users\\MPLopes\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\MPLopes\\.nuget\\packages\\microsoft.maui.essentials\\9.0.120\\microsoft.maui.essentials.9.0.120.nupkg.sha512",
+    "C:\\Users\\MPLopes\\.nuget\\packages\\microsoft.maui.graphics\\9.0.120\\microsoft.maui.graphics.9.0.120.nupkg.sha512",
     "C:\\Users\\MPLopes\\.nuget\\packages\\nbitcoin.secp256k1\\3.1.1\\nbitcoin.secp256k1.3.1.1.nupkg.sha512",
     "C:\\Users\\MPLopes\\.nuget\\packages\\nethereum.abi\\5.0.0\\nethereum.abi.5.0.0.nupkg.sha512",
     "C:\\Users\\MPLopes\\.nuget\\packages\\nethereum.accounts\\5.0.0\\nethereum.accounts.5.0.0.nupkg.sha512",

@@ -23,14 +23,6 @@ public class GradientStrokeDrawable
 		}
 	}
 
-	public GradientStrokeDrawable (int p0)
-	{
-		super (p0);
-		if (getClass () == GradientStrokeDrawable.class) {
-			mono.android.TypeManager.Activate ("Microsoft.Maui.Controls.Platform.GradientStrokeDrawable, Microsoft.Maui.Controls", "Android.Graphics.Color, Mono.Android", this, new java.lang.Object[] { p0 });
-		}
-	}
-
 	public void onDraw (android.graphics.drawable.shapes.Shape p0, android.graphics.Canvas p1, android.graphics.Paint p2)
 	{
 		n_onDraw (p0, p1, p2);

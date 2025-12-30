@@ -1,0 +1,16 @@
+D:\Neo-Bank-Web3\Bank.Infrastructure\bin\Debug\net9.0\Bank.Infrastructure.deps.json
+D:\Neo-Bank-Web3\Bank.Infrastructure\bin\Debug\net9.0\Bank.Infrastructure.dll
+D:\Neo-Bank-Web3\Bank.Infrastructure\bin\Debug\net9.0\Bank.Infrastructure.pdb
+D:\Neo-Bank-Web3\Bank.Infrastructure\bin\Debug\net9.0\Bank.Domain.dll
+D:\Neo-Bank-Web3\Bank.Infrastructure\bin\Debug\net9.0\Bank.Domain.pdb
+D:\Neo-Bank-Web3\Bank.Infrastructure\obj\Debug\net9.0\Bank.Infrastructure.csproj.AssemblyReference.cache
+D:\Neo-Bank-Web3\Bank.Infrastructure\obj\Debug\net9.0\Bank.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Neo-Bank-Web3\Bank.Infrastructure\obj\Debug\net9.0\Bank.Infrastructure.AssemblyInfoInputs.cache
+D:\Neo-Bank-Web3\Bank.Infrastructure\obj\Debug\net9.0\Bank.Infrastructure.AssemblyInfo.cs
+D:\Neo-Bank-Web3\Bank.Infrastructure\obj\Debug\net9.0\Bank.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Neo-Bank-Web3\Bank.Infrastructure\obj\Debug\net9.0\Bank.Infrastructure.sourcelink.json
+D:\Neo-Bank-Web3\Bank.Infrastructure\obj\Debug\net9.0\Bank.Inf.EBD0854A.Up2Date
+D:\Neo-Bank-Web3\Bank.Infrastructure\obj\Debug\net9.0\Bank.Infrastructure.dll
+D:\Neo-Bank-Web3\Bank.Infrastructure\obj\Debug\net9.0\refint\Bank.Infrastructure.dll
+D:\Neo-Bank-Web3\Bank.Infrastructure\obj\Debug\net9.0\Bank.Infrastructure.pdb
+D:\Neo-Bank-Web3\Bank.Infrastructure\obj\Debug\net9.0\ref\Bank.Infrastructure.dll

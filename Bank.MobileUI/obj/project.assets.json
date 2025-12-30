@@ -2720,6 +2720,21 @@
             "related": ".aar;.pdb;.xml"
           }
         }
+      },
+      "Bank.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.0.0",
+          "Nethereum.Web3": "5.0.0",
+          "sqlite-net-pcl": "1.9.172"
+        },
+        "compile": {
+          "bin/placeholder/Bank.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bank.Domain.dll": {}
+        }
       }
     },
     "net9.0-android35.0/android-arm64": {
@@ -5440,6 +5455,21 @@
           "lib/net8.0-android34.0/Xamarin.KotlinX.Serialization.Core.Jvm.dll": {
             "related": ".aar;.pdb;.xml"
           }
+        }
+      },
+      "Bank.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.0.0",
+          "Nethereum.Web3": "5.0.0",
+          "sqlite-net-pcl": "1.9.172"
+        },
+        "compile": {
+          "bin/placeholder/Bank.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bank.Domain.dll": {}
         }
       }
     },
@@ -8162,6 +8192,21 @@
             "related": ".aar;.pdb;.xml"
           }
         }
+      },
+      "Bank.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.0.0",
+          "Nethereum.Web3": "5.0.0",
+          "sqlite-net-pcl": "1.9.172"
+        },
+        "compile": {
+          "bin/placeholder/Bank.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bank.Domain.dll": {}
+        }
       }
     },
     "net9.0-android35.0/win10-x64": {
@@ -10883,6 +10928,21 @@
             "related": ".aar;.pdb;.xml"
           }
         }
+      },
+      "Bank.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.0.0",
+          "Nethereum.Web3": "5.0.0",
+          "sqlite-net-pcl": "1.9.172"
+        },
+        "compile": {
+          "bin/placeholder/Bank.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bank.Domain.dll": {}
+        }
       }
     },
     "net9.0-windows10.0.19041": {
@@ -12022,6 +12082,21 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
+      },
+      "Bank.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.0.0",
+          "Nethereum.Web3": "5.0.0",
+          "sqlite-net-pcl": "1.9.172"
+        },
+        "compile": {
+          "bin/placeholder/Bank.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bank.Domain.dll": {}
+        }
       }
     },
     "net9.0-windows10.0.19041/android-arm64": {
@@ -13012,6 +13087,21 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
+      },
+      "Bank.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.0.0",
+          "Nethereum.Web3": "5.0.0",
+          "sqlite-net-pcl": "1.9.172"
+        },
+        "compile": {
+          "bin/placeholder/Bank.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bank.Domain.dll": {}
+        }
       }
     },
     "net9.0-windows10.0.19041/android-x64": {
@@ -14001,6 +14091,21 @@
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "Bank.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.0.0",
+          "Nethereum.Web3": "5.0.0",
+          "sqlite-net-pcl": "1.9.172"
+        },
+        "compile": {
+          "bin/placeholder/Bank.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bank.Domain.dll": {}
         }
       }
     },
@@ -15001,6 +15106,21 @@
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "Bank.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.0.0",
+          "Nethereum.Web3": "5.0.0",
+          "sqlite-net-pcl": "1.9.172"
+        },
+        "compile": {
+          "bin/placeholder/Bank.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bank.Domain.dll": {}
         }
       }
     }
@@ -19539,10 +19659,16 @@
         "xamarin.kotlinx.serialization.core.jvm.1.7.3.4.nupkg.sha512",
         "xamarin.kotlinx.serialization.core.jvm.nuspec"
       ]
+    },
+    "Bank.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Bank.Domain/Bank.Domain.csproj",
+      "msbuildProject": "../Bank.Domain/Bank.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0-android35.0": [
+      "Bank.Domain >= 1.0.0",
       "CommunityToolkit.Mvvm >= 8.0.0",
       "Microsoft.Extensions.Logging.Debug >= 9.0.9",
       "Microsoft.Maui.Controls >= 9.0.120",
@@ -19551,6 +19677,7 @@
       "sqlite-net-pcl >= 1.9.172"
     ],
     "net9.0-windows10.0.19041": [
+      "Bank.Domain >= 1.0.0",
       "CommunityToolkit.Mvvm >= 8.0.0",
       "Microsoft.Extensions.Logging.Debug >= 9.0.9",
       "Microsoft.Maui.Controls >= 9.0.120",
@@ -19592,11 +19719,19 @@
       "frameworks": {
         "net9.0-android35.0": {
           "targetAlias": "net9.0-android",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Neo-Bank-Web3\\Bank.Domain\\Bank.Domain.csproj": {
+              "projectPath": "D:\\Neo-Bank-Web3\\Bank.Domain\\Bank.Domain.csproj"
+            }
+          }
         },
         "net9.0-windows10.0.19041": {
           "targetAlias": "net9.0-windows10.0.19041.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Neo-Bank-Web3\\Bank.Domain\\Bank.Domain.csproj": {
+              "projectPath": "D:\\Neo-Bank-Web3\\Bank.Domain\\Bank.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:Bank.MobileUI.ViewModels"
+             x:Class="Bank.MobileUI.Views.DashboardPage"
+             BackgroundColor="#121212">
+
+    <Grid RowDefinitions="Auto, Auto, *">
+        
+        <!-- Header / Saldo -->
+        <Border Grid.Row="0" Margin="20,40,20,20" StrokeShape="RoundRectangle 20" BackgroundColor="#1E1E1E" StrokeThickness="0">
+            <StackLayout Padding="20">
+                <Label Text="Saldo Total" TextColor="#AAAAAA" FontSize="14"/>
+                <Label Text="{Binding TotalBalance, StringFormat='{0:F4} ETH/MATIC'}" 
+                       TextColor="White" FontSize="32" FontAttributes="Bold" Margin="0,5,0,20"/>
+
+                <!-- Botões de Ação -->
+                <Grid ColumnDefinitions="*,*,*">
+                    <Button Text="Pagar" Grid.Column="0" BackgroundColor="#2A2A2A" TextColor="White" CornerRadius="12" Margin="5"/>
+                    <Button Text="Receber" Grid.Column="1" BackgroundColor="#2A2A2A" TextColor="White" CornerRadius="12" Margin="5"/>
+                    <Button Text="Stake" Command="{Binding StakeCommand}" Grid.Column="2" BackgroundColor="#8A2BE2" TextColor="White" CornerRadius="12" Margin="5"/>
+                </Grid>
+            </StackLayout>
+        </Border>
+
+        <!-- Título Lista -->
+        <Label Grid.Row="1" Text="Meus Criptoativos" TextColor="White" 
+               FontSize="18" FontAttributes="Bold" Margin="25,0"/>
+
+        <!-- Lista de Assets -->
+        <CollectionView Grid.Row="2" ItemsSource="{Binding Assets}" Margin="20,10">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Border StrokeShape="RoundRectangle 15" BackgroundColor="#1E1E1E" Margin="0,5" Padding="15" StrokeThickness="0">
+                        <Grid ColumnDefinitions="Auto, *, Auto">
+                            <!-- Ícone Mock -->
+                            <Ellipse Grid.Column="0" WidthRequest="40" HeightRequest="40" Fill="#8A2BE2" Margin="0,0,15,0"/>
+                            
+                            <StackLayout Grid.Column="1" VerticalOptions="Center">
+                                <Label Text="{Binding Name}" TextColor="White" FontAttributes="Bold"/>
+                                <Label Text="{Binding Symbol}" TextColor="#AAAAAA" FontSize="12"/>
+                            </StackLayout>
+
+                            <StackLayout Grid.Column="2" VerticalOptions="Center" HorizontalOptions="End">
+                                <Label Text="{Binding Balance, StringFormat='{0:F4}'}" TextColor="White" HorizontalOptions="End"/>
+                                <Label Text="{Binding UsdValue, StringFormat='US$ {0:F2}'}" TextColor="#00FF7F" FontSize="12" HorizontalOptions="End"/>
+                            </StackLayout>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <!-- Loading Indicator -->
+        <ActivityIndicator Grid.RowSpan="3" IsRunning="{Binding IsLoading}" 
+                           Color="#8A2BE2" VerticalOptions="Center" HorizontalOptions="Center"/>
+    </Grid>
+</ContentPage>

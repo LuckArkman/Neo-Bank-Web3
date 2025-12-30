@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank.Domain", "Bank.Domain\Bank.Domain.csproj", "{9EB3D0B1-F3D5-4703-930F-FCC3CA7EB409}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank.Application", "Bank.Application\Bank.Application.csproj", "{F6D4FC5B-BFF5-4EF2-874C-F6BF831C8A1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank.Infrastructure", "Bank.Infrastructure\Bank.Infrastructure.csproj", "{FE393DB3-E0E8-4F13-B496-C356544C1168}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank.MobileUI", "Bank.MobileUI\Bank.MobileUI.csproj", "{270C7D5E-02C4-4041-86BA-51753A31CE50}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9EB3D0B1-F3D5-4703-930F-FCC3CA7EB409}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EB3D0B1-F3D5-4703-930F-FCC3CA7EB409}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EB3D0B1-F3D5-4703-930F-FCC3CA7EB409}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EB3D0B1-F3D5-4703-930F-FCC3CA7EB409}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6D4FC5B-BFF5-4EF2-874C-F6BF831C8A1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6D4FC5B-BFF5-4EF2-874C-F6BF831C8A1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6D4FC5B-BFF5-4EF2-874C-F6BF831C8A1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6D4FC5B-BFF5-4EF2-874C-F6BF831C8A1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE393DB3-E0E8-4F13-B496-C356544C1168}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE393DB3-E0E8-4F13-B496-C356544C1168}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE393DB3-E0E8-4F13-B496-C356544C1168}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE393DB3-E0E8-4F13-B496-C356544C1168}.Release|Any CPU.Build.0 = Release|Any CPU
+		{270C7D5E-02C4-4041-86BA-51753A31CE50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{270C7D5E-02C4-4041-86BA-51753A31CE50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{270C7D5E-02C4-4041-86BA-51753A31CE50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{270C7D5E-02C4-4041-86BA-51753A31CE50}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

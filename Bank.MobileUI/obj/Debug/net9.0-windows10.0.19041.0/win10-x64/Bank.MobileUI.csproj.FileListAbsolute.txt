@@ -561,3 +561,15 @@ D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\pr
 D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt
 D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
+D:\Neo-Bank-Web3\Bank.MobileUI\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\pagar.scale-100.png
+D:\Neo-Bank-Web3\Bank.MobileUI\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\transferir.scale-100.png
+D:\Neo-Bank-Web3\Bank.MobileUI\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\conexao.scale-100.png
+D:\Neo-Bank-Web3\Bank.MobileUI\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\retirada.scale-100.png
+D:\Neo-Bank-Web3\Bank.MobileUI\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\casa.scale-100.png
+D:\Neo-Bank-Web3\Bank.MobileUI\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\receber.scale-100.png
+D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\pagar.scale-100.png
+D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\transferir.scale-100.png
+D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\conexao.scale-100.png
+D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\retirada.scale-100.png
+D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\casa.scale-100.png
+D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\receber.scale-100.png

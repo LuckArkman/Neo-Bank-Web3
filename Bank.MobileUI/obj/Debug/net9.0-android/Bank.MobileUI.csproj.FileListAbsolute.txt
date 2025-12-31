@@ -1519,3 +1519,9 @@ D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\stamp\_ConvertResourcesC
 D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\stamp\_GenerateJavaStubs.stamp
 D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\stamp\_GeneratePackageManagerJava.stamp
 D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\stamp\_ResolveLibraryProjectImports.stamp
+D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\resizetizer\r\drawable\casa.png
+D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\resizetizer\r\drawable\pagar.png
+D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\resizetizer\r\drawable\transferir.png
+D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\resizetizer\r\drawable\conexao.png
+D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\resizetizer\r\drawable\retirada.png
+D:\Neo-Bank-Web3\Bank.MobileUI\obj\Debug\net9.0-android\resizetizer\r\drawable\receber.png

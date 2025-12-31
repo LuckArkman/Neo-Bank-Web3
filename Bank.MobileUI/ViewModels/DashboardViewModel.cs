@@ -29,11 +29,9 @@ public partial class DashboardViewModel : ObservableObject
         // Registra o ouvinte da mensagem
         WeakReferenceMessenger.Default.Register<BalanceChangedMessage>(this, (r, m) =>
         {
-            
             TotalBalance = m.Value;
-            
-            Task.Run(LoadDataAsync); 
         });
+        Task.Run(LoadDataAsync); 
     }
 
     [RelayCommand]
@@ -45,7 +43,7 @@ public partial class DashboardViewModel : ObservableObject
         try
         {
             // Dados fiéis à imagem de referência da UXDA
-            TotalBalance = 10356.87m;
+            TotalBalance = 90356.87m;
             WalletAddress = await _walletService.GetOrCreateWalletAsync();
 
             Assets.Clear();

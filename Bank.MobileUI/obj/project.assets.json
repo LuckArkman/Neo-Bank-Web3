@@ -95,6 +95,25 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "Microsoft.Extensions.Configuration.Binder/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.0/Microsoft.Extensions.Configuration.Binder.targets": {}
+        }
+      },
       "Microsoft.Extensions.DependencyInjection/9.0.9": {
         "type": "package",
         "dependencies": {
@@ -128,6 +147,89 @@
         },
         "build": {
           "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Diagnostics/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "9.0.3",
+          "Microsoft.Extensions.Diagnostics.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Diagnostics.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Diagnostics.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Diagnostics.Abstractions/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Options": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Diagnostics.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Diagnostics.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Http/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.3",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Diagnostics": "9.0.3",
+          "Microsoft.Extensions.Logging": "9.0.3",
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Options": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Http.Polly/9.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Http": "9.0.0",
+          "Polly": "7.2.4",
+          "Polly.Extensions.Http": "3.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Http.Polly.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Http.Polly.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Logging/9.0.9": {
@@ -209,6 +311,29 @@
         },
         "build": {
           "buildTransitive/net8.0/Microsoft.Extensions.Options.targets": {}
+        }
+      },
+      "Microsoft.Extensions.Options.ConfigurationExtensions/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Configuration.Binder": "9.0.3",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Options": "9.0.3",
+          "Microsoft.Extensions.Primitives": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
         }
       },
       "Microsoft.Extensions.Primitives/9.0.9": {
@@ -751,6 +876,85 @@
           }
         }
       },
+      "Plugin.Fingerprint/3.0.0-beta.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Biometric": "1.1.0.9"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Plugin.Fingerprint.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Plugin.Fingerprint.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Polly/7.2.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Polly.Extensions.Http/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Polly": "7.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Polly.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Polly.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Refit/9.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/Refit.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Refit.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.0/refit.props": {},
+          "buildTransitive/netstandard2.0/refit.targets": {}
+        }
+      },
+      "Refit.HttpClientFactory/9.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Http": "9.0.3",
+          "Refit": "9.0.2"
+        },
+        "compile": {
+          "lib/net9.0/Refit.HttpClientFactory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Refit.HttpClientFactory.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "sqlite-net-pcl/1.9.172": {
         "type": "package",
         "dependencies": {
@@ -1127,6 +1331,31 @@
           "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Arch.Core.Runtime.targets": {}
         }
       },
+      "Xamarin.AndroidX.Biometric/1.1.0.9": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Activity": "1.4.0.2",
+          "Xamarin.AndroidX.Annotation": "1.3.0.3",
+          "Xamarin.AndroidX.AppCompat": "1.4.1.1",
+          "Xamarin.AndroidX.Core": "1.7.0.2",
+          "Xamarin.AndroidX.Fragment": "1.4.1.1",
+          "Xamarin.AndroidX.Lifecycle.LiveData.Core": "2.4.1.1",
+          "Xamarin.AndroidX.Lifecycle.ViewModel": "2.4.1.1"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.AndroidX.Biometric.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.AndroidX.Biometric.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Biometric.targets": {}
+        }
+      },
       "Xamarin.AndroidX.Browser/1.8.0.9": {
         "type": "package",
         "dependencies": {
@@ -1150,6 +1379,141 @@
         },
         "build": {
           "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Browser.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Camera.Camera2/1.4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Annotation": "1.9.1.2",
+          "Xamarin.AndroidX.Camera.Core": "[1.4.1.1, 1.4.2)",
+          "Xamarin.AndroidX.Concurrent.Futures": "1.2.0.5",
+          "Xamarin.AndroidX.Core": "1.15.0.2",
+          "Xamarin.AndroidX.Tracing.Tracing": "1.2.0.9",
+          "Xamarin.Google.AutoValue.Annotations": "1.11.0.5",
+          "Xamarin.Google.Guava.ListenableFuture": "1.0.0.26"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Camera2.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Camera2.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Camera.Camera2.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Camera.Core/1.4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Annotation": "1.9.1.2",
+          "Xamarin.AndroidX.Annotation.Experimental": "1.4.1.8",
+          "Xamarin.AndroidX.Concurrent.Futures": "1.2.0.5",
+          "Xamarin.AndroidX.Concurrent.Futures.Ktx": "1.2.0.5",
+          "Xamarin.AndroidX.Core": "1.15.0.2",
+          "Xamarin.AndroidX.ExifInterface": "1.3.7.9",
+          "Xamarin.AndroidX.Lifecycle.Common": "2.8.7.2",
+          "Xamarin.AndroidX.Lifecycle.LiveData": "2.8.7.2",
+          "Xamarin.AndroidX.Tracing.Tracing": "1.2.0.9",
+          "Xamarin.Google.AutoValue.Annotations": "1.11.0.5",
+          "Xamarin.Google.Guava.ListenableFuture": "1.0.0.26",
+          "Xamarin.Kotlin.StdLib": "2.0.21.2",
+          "Xamarin.KotlinX.Coroutines.Android": "1.9.0.2"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Camera.Core.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Camera.Lifecycle/1.4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Camera.Core": "[1.4.1.1, 1.4.2)",
+          "Xamarin.AndroidX.Concurrent.Futures": "1.2.0.5",
+          "Xamarin.AndroidX.Concurrent.Futures.Ktx": "1.2.0.5",
+          "Xamarin.AndroidX.Core": "1.15.0.2",
+          "Xamarin.AndroidX.Lifecycle.Common": "2.8.7.2",
+          "Xamarin.AndroidX.Tracing.Tracing.Ktx": "1.2.0.9",
+          "Xamarin.Google.AutoValue.Annotations": "1.11.0.5",
+          "Xamarin.Google.Guava.ListenableFuture": "1.0.0.26",
+          "Xamarin.KotlinX.Coroutines.Android": "1.9.0.2"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Lifecycle.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Lifecycle.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Camera.Lifecycle.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Camera.Video/1.4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Annotation": "1.9.1.2",
+          "Xamarin.AndroidX.Camera.Core": "[1.4.1.1, 1.4.2)",
+          "Xamarin.AndroidX.Concurrent.Futures": "1.2.0.5",
+          "Xamarin.AndroidX.Core": "1.15.0.2",
+          "Xamarin.Google.AutoValue.Annotations": "1.11.0.5"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Video.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Video.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Camera.Video.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Camera.View/1.4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Annotation": "1.9.1.2",
+          "Xamarin.AndroidX.Annotation.Experimental": "1.4.1.8",
+          "Xamarin.AndroidX.AppCompat": "1.7.0.5",
+          "Xamarin.AndroidX.Camera.Core": "[1.4.1.1, 1.4.2)",
+          "Xamarin.AndroidX.Camera.Lifecycle": "[1.4.1.1, 1.4.2)",
+          "Xamarin.AndroidX.Camera.Video": "[1.4.1.1, 1.4.2)",
+          "Xamarin.AndroidX.Concurrent.Futures": "1.2.0.5",
+          "Xamarin.AndroidX.Core": "1.15.0.2",
+          "Xamarin.AndroidX.Lifecycle.Common": "2.8.7.2",
+          "Xamarin.Google.AutoValue.Annotations": "1.11.0.5",
+          "Xamarin.Google.Guava.ListenableFuture": "1.0.0.26"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.View.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.View.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Camera.View.targets": {}
         }
       },
       "Xamarin.AndroidX.CardView/1.0.0.34": {
@@ -1249,6 +1613,27 @@
         },
         "build": {
           "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Concurrent.Futures.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Concurrent.Futures.Ktx/1.2.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Concurrent.Futures": "[1.2.0.5, 1.2.1)",
+          "Xamarin.Kotlin.StdLib": "2.0.21.2",
+          "Xamarin.KotlinX.Coroutines.Core": "1.9.0.2"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Concurrent.Futures.Ktx.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Concurrent.Futures.Ktx.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Concurrent.Futures.Ktx.targets": {}
         }
       },
       "Xamarin.AndroidX.ConstraintLayout/2.2.1.1": {
@@ -2278,6 +2663,26 @@
           "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Tracing.Tracing.targets": {}
         }
       },
+      "Xamarin.AndroidX.Tracing.Tracing.Ktx/1.2.0.9": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Tracing.Tracing": "[1.2.0.9, 1.2.1)",
+          "Xamarin.Kotlin.StdLib": "2.0.21.2"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Tracing.Tracing.Ktx.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Tracing.Tracing.Ktx.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Tracing.Tracing.Ktx.targets": {}
+        }
+      },
       "Xamarin.AndroidX.Transition/1.5.1.5": {
         "type": "package",
         "dependencies": {
@@ -2489,6 +2894,19 @@
         },
         "build": {
           "buildTransitive/net8.0-android34.0/Xamarin.Google.Android.Material.targets": {}
+        }
+      },
+      "Xamarin.Google.AutoValue.Annotations/1.11.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.Google.AutoValue.Annotations.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.Google.AutoValue.Annotations.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
         }
       },
       "Xamarin.Google.Code.FindBugs.JSR305/3.0.2.19": {
@@ -2721,6 +3139,72 @@
           }
         }
       },
+      "ZXing.Net/0.16.10": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/zxing.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/zxing.dll": {
+            "related": ".XML"
+          }
+        }
+      },
+      "ZXing.Net.Maui/0.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "9.0.40",
+          "Xamarin.AndroidX.Camera.Camera2": "1.4.1.1",
+          "Xamarin.AndroidX.Camera.Lifecycle": "1.4.1.1",
+          "Xamarin.AndroidX.Camera.View": "1.4.1.1",
+          "ZXing.Net": "0.16.10"
+        },
+        "compile": {
+          "lib/net9.0-android35.0/ZXing.Net.MAUI.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-android35.0/ZXing.Net.MAUI.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "ZXing.Net.Maui.Controls/0.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "9.0.40",
+          "ZXing.Net": "0.16.10",
+          "ZXing.Net.Maui": "0.5.0"
+        },
+        "compile": {
+          "lib/net9.0-android35.0/ZXing.Net.MAUI.Controls.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-android35.0/ZXing.Net.MAUI.Controls.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Bank.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.0.0",
+          "Nethereum.Web3": "5.0.0",
+          "sqlite-net-pcl": "1.9.172"
+        },
+        "compile": {
+          "bin/placeholder/Bank.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bank.Application.dll": {}
+        }
+      },
       "Bank.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -2734,6 +3218,24 @@
         },
         "runtime": {
           "bin/placeholder/Bank.Domain.dll": {}
+        }
+      },
+      "Bank.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Bank.Domain": "1.0.0",
+          "CommunityToolkit.Mvvm": "8.0.0",
+          "Microsoft.Maui.Essentials": "9.0.120",
+          "Nethereum.Web3": "5.0.0",
+          "Refit.HttpClientFactory": "9.0.2",
+          "sqlite-net-pcl": "1.9.172"
+        },
+        "compile": {
+          "bin/placeholder/Bank.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bank.Infrastructure.dll": {}
         }
       }
     },
@@ -2831,6 +3333,25 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "Microsoft.Extensions.Configuration.Binder/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.0/Microsoft.Extensions.Configuration.Binder.targets": {}
+        }
+      },
       "Microsoft.Extensions.DependencyInjection/9.0.9": {
         "type": "package",
         "dependencies": {
@@ -2864,6 +3385,89 @@
         },
         "build": {
           "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Diagnostics/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "9.0.3",
+          "Microsoft.Extensions.Diagnostics.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Diagnostics.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Diagnostics.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Diagnostics.Abstractions/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Options": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Diagnostics.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Diagnostics.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Http/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.3",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Diagnostics": "9.0.3",
+          "Microsoft.Extensions.Logging": "9.0.3",
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Options": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Http.Polly/9.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Http": "9.0.0",
+          "Polly": "7.2.4",
+          "Polly.Extensions.Http": "3.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Http.Polly.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Http.Polly.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Logging/9.0.9": {
@@ -2945,6 +3549,29 @@
         },
         "build": {
           "buildTransitive/net8.0/Microsoft.Extensions.Options.targets": {}
+        }
+      },
+      "Microsoft.Extensions.Options.ConfigurationExtensions/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Configuration.Binder": "9.0.3",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Options": "9.0.3",
+          "Microsoft.Extensions.Primitives": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
         }
       },
       "Microsoft.Extensions.Primitives/9.0.9": {
@@ -3487,6 +4114,85 @@
           }
         }
       },
+      "Plugin.Fingerprint/3.0.0-beta.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Biometric": "1.1.0.9"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Plugin.Fingerprint.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Plugin.Fingerprint.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Polly/7.2.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Polly.Extensions.Http/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Polly": "7.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Polly.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Polly.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Refit/9.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/Refit.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Refit.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.0/refit.props": {},
+          "buildTransitive/netstandard2.0/refit.targets": {}
+        }
+      },
+      "Refit.HttpClientFactory/9.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Http": "9.0.3",
+          "Refit": "9.0.2"
+        },
+        "compile": {
+          "lib/net9.0/Refit.HttpClientFactory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Refit.HttpClientFactory.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "sqlite-net-pcl/1.9.172": {
         "type": "package",
         "dependencies": {
@@ -3863,6 +4569,31 @@
           "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Arch.Core.Runtime.targets": {}
         }
       },
+      "Xamarin.AndroidX.Biometric/1.1.0.9": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Activity": "1.4.0.2",
+          "Xamarin.AndroidX.Annotation": "1.3.0.3",
+          "Xamarin.AndroidX.AppCompat": "1.4.1.1",
+          "Xamarin.AndroidX.Core": "1.7.0.2",
+          "Xamarin.AndroidX.Fragment": "1.4.1.1",
+          "Xamarin.AndroidX.Lifecycle.LiveData.Core": "2.4.1.1",
+          "Xamarin.AndroidX.Lifecycle.ViewModel": "2.4.1.1"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.AndroidX.Biometric.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.AndroidX.Biometric.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Biometric.targets": {}
+        }
+      },
       "Xamarin.AndroidX.Browser/1.8.0.9": {
         "type": "package",
         "dependencies": {
@@ -3886,6 +4617,141 @@
         },
         "build": {
           "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Browser.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Camera.Camera2/1.4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Annotation": "1.9.1.2",
+          "Xamarin.AndroidX.Camera.Core": "[1.4.1.1, 1.4.2)",
+          "Xamarin.AndroidX.Concurrent.Futures": "1.2.0.5",
+          "Xamarin.AndroidX.Core": "1.15.0.2",
+          "Xamarin.AndroidX.Tracing.Tracing": "1.2.0.9",
+          "Xamarin.Google.AutoValue.Annotations": "1.11.0.5",
+          "Xamarin.Google.Guava.ListenableFuture": "1.0.0.26"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Camera2.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Camera2.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Camera.Camera2.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Camera.Core/1.4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Annotation": "1.9.1.2",
+          "Xamarin.AndroidX.Annotation.Experimental": "1.4.1.8",
+          "Xamarin.AndroidX.Concurrent.Futures": "1.2.0.5",
+          "Xamarin.AndroidX.Concurrent.Futures.Ktx": "1.2.0.5",
+          "Xamarin.AndroidX.Core": "1.15.0.2",
+          "Xamarin.AndroidX.ExifInterface": "1.3.7.9",
+          "Xamarin.AndroidX.Lifecycle.Common": "2.8.7.2",
+          "Xamarin.AndroidX.Lifecycle.LiveData": "2.8.7.2",
+          "Xamarin.AndroidX.Tracing.Tracing": "1.2.0.9",
+          "Xamarin.Google.AutoValue.Annotations": "1.11.0.5",
+          "Xamarin.Google.Guava.ListenableFuture": "1.0.0.26",
+          "Xamarin.Kotlin.StdLib": "2.0.21.2",
+          "Xamarin.KotlinX.Coroutines.Android": "1.9.0.2"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Camera.Core.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Camera.Lifecycle/1.4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Camera.Core": "[1.4.1.1, 1.4.2)",
+          "Xamarin.AndroidX.Concurrent.Futures": "1.2.0.5",
+          "Xamarin.AndroidX.Concurrent.Futures.Ktx": "1.2.0.5",
+          "Xamarin.AndroidX.Core": "1.15.0.2",
+          "Xamarin.AndroidX.Lifecycle.Common": "2.8.7.2",
+          "Xamarin.AndroidX.Tracing.Tracing.Ktx": "1.2.0.9",
+          "Xamarin.Google.AutoValue.Annotations": "1.11.0.5",
+          "Xamarin.Google.Guava.ListenableFuture": "1.0.0.26",
+          "Xamarin.KotlinX.Coroutines.Android": "1.9.0.2"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Lifecycle.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Lifecycle.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Camera.Lifecycle.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Camera.Video/1.4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Annotation": "1.9.1.2",
+          "Xamarin.AndroidX.Camera.Core": "[1.4.1.1, 1.4.2)",
+          "Xamarin.AndroidX.Concurrent.Futures": "1.2.0.5",
+          "Xamarin.AndroidX.Core": "1.15.0.2",
+          "Xamarin.Google.AutoValue.Annotations": "1.11.0.5"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Video.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Video.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Camera.Video.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Camera.View/1.4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Annotation": "1.9.1.2",
+          "Xamarin.AndroidX.Annotation.Experimental": "1.4.1.8",
+          "Xamarin.AndroidX.AppCompat": "1.7.0.5",
+          "Xamarin.AndroidX.Camera.Core": "[1.4.1.1, 1.4.2)",
+          "Xamarin.AndroidX.Camera.Lifecycle": "[1.4.1.1, 1.4.2)",
+          "Xamarin.AndroidX.Camera.Video": "[1.4.1.1, 1.4.2)",
+          "Xamarin.AndroidX.Concurrent.Futures": "1.2.0.5",
+          "Xamarin.AndroidX.Core": "1.15.0.2",
+          "Xamarin.AndroidX.Lifecycle.Common": "2.8.7.2",
+          "Xamarin.Google.AutoValue.Annotations": "1.11.0.5",
+          "Xamarin.Google.Guava.ListenableFuture": "1.0.0.26"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.View.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.View.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Camera.View.targets": {}
         }
       },
       "Xamarin.AndroidX.CardView/1.0.0.34": {
@@ -3985,6 +4851,27 @@
         },
         "build": {
           "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Concurrent.Futures.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Concurrent.Futures.Ktx/1.2.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Concurrent.Futures": "[1.2.0.5, 1.2.1)",
+          "Xamarin.Kotlin.StdLib": "2.0.21.2",
+          "Xamarin.KotlinX.Coroutines.Core": "1.9.0.2"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Concurrent.Futures.Ktx.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Concurrent.Futures.Ktx.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Concurrent.Futures.Ktx.targets": {}
         }
       },
       "Xamarin.AndroidX.ConstraintLayout/2.2.1.1": {
@@ -5014,6 +5901,26 @@
           "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Tracing.Tracing.targets": {}
         }
       },
+      "Xamarin.AndroidX.Tracing.Tracing.Ktx/1.2.0.9": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Tracing.Tracing": "[1.2.0.9, 1.2.1)",
+          "Xamarin.Kotlin.StdLib": "2.0.21.2"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Tracing.Tracing.Ktx.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Tracing.Tracing.Ktx.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Tracing.Tracing.Ktx.targets": {}
+        }
+      },
       "Xamarin.AndroidX.Transition/1.5.1.5": {
         "type": "package",
         "dependencies": {
@@ -5225,6 +6132,19 @@
         },
         "build": {
           "buildTransitive/net8.0-android34.0/Xamarin.Google.Android.Material.targets": {}
+        }
+      },
+      "Xamarin.Google.AutoValue.Annotations/1.11.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.Google.AutoValue.Annotations.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.Google.AutoValue.Annotations.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
         }
       },
       "Xamarin.Google.Code.FindBugs.JSR305/3.0.2.19": {
@@ -5457,6 +6377,72 @@
           }
         }
       },
+      "ZXing.Net/0.16.10": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/zxing.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/zxing.dll": {
+            "related": ".XML"
+          }
+        }
+      },
+      "ZXing.Net.Maui/0.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "9.0.40",
+          "Xamarin.AndroidX.Camera.Camera2": "1.4.1.1",
+          "Xamarin.AndroidX.Camera.Lifecycle": "1.4.1.1",
+          "Xamarin.AndroidX.Camera.View": "1.4.1.1",
+          "ZXing.Net": "0.16.10"
+        },
+        "compile": {
+          "lib/net9.0-android35.0/ZXing.Net.MAUI.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-android35.0/ZXing.Net.MAUI.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "ZXing.Net.Maui.Controls/0.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "9.0.40",
+          "ZXing.Net": "0.16.10",
+          "ZXing.Net.Maui": "0.5.0"
+        },
+        "compile": {
+          "lib/net9.0-android35.0/ZXing.Net.MAUI.Controls.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-android35.0/ZXing.Net.MAUI.Controls.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Bank.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.0.0",
+          "Nethereum.Web3": "5.0.0",
+          "sqlite-net-pcl": "1.9.172"
+        },
+        "compile": {
+          "bin/placeholder/Bank.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bank.Application.dll": {}
+        }
+      },
       "Bank.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -5470,6 +6456,24 @@
         },
         "runtime": {
           "bin/placeholder/Bank.Domain.dll": {}
+        }
+      },
+      "Bank.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Bank.Domain": "1.0.0",
+          "CommunityToolkit.Mvvm": "8.0.0",
+          "Microsoft.Maui.Essentials": "9.0.120",
+          "Nethereum.Web3": "5.0.0",
+          "Refit.HttpClientFactory": "9.0.2",
+          "sqlite-net-pcl": "1.9.172"
+        },
+        "compile": {
+          "bin/placeholder/Bank.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bank.Infrastructure.dll": {}
         }
       }
     },
@@ -5567,6 +6571,25 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "Microsoft.Extensions.Configuration.Binder/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.0/Microsoft.Extensions.Configuration.Binder.targets": {}
+        }
+      },
       "Microsoft.Extensions.DependencyInjection/9.0.9": {
         "type": "package",
         "dependencies": {
@@ -5600,6 +6623,89 @@
         },
         "build": {
           "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Diagnostics/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "9.0.3",
+          "Microsoft.Extensions.Diagnostics.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Diagnostics.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Diagnostics.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Diagnostics.Abstractions/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Options": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Diagnostics.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Diagnostics.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Http/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.3",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Diagnostics": "9.0.3",
+          "Microsoft.Extensions.Logging": "9.0.3",
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Options": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Http.Polly/9.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Http": "9.0.0",
+          "Polly": "7.2.4",
+          "Polly.Extensions.Http": "3.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Http.Polly.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Http.Polly.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Logging/9.0.9": {
@@ -5681,6 +6787,29 @@
         },
         "build": {
           "buildTransitive/net8.0/Microsoft.Extensions.Options.targets": {}
+        }
+      },
+      "Microsoft.Extensions.Options.ConfigurationExtensions/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Configuration.Binder": "9.0.3",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Options": "9.0.3",
+          "Microsoft.Extensions.Primitives": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
         }
       },
       "Microsoft.Extensions.Primitives/9.0.9": {
@@ -6223,6 +7352,85 @@
           }
         }
       },
+      "Plugin.Fingerprint/3.0.0-beta.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Biometric": "1.1.0.9"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Plugin.Fingerprint.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Plugin.Fingerprint.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Polly/7.2.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Polly.Extensions.Http/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Polly": "7.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Polly.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Polly.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Refit/9.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/Refit.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Refit.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.0/refit.props": {},
+          "buildTransitive/netstandard2.0/refit.targets": {}
+        }
+      },
+      "Refit.HttpClientFactory/9.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Http": "9.0.3",
+          "Refit": "9.0.2"
+        },
+        "compile": {
+          "lib/net9.0/Refit.HttpClientFactory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Refit.HttpClientFactory.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "sqlite-net-pcl/1.9.172": {
         "type": "package",
         "dependencies": {
@@ -6599,6 +7807,31 @@
           "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Arch.Core.Runtime.targets": {}
         }
       },
+      "Xamarin.AndroidX.Biometric/1.1.0.9": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Activity": "1.4.0.2",
+          "Xamarin.AndroidX.Annotation": "1.3.0.3",
+          "Xamarin.AndroidX.AppCompat": "1.4.1.1",
+          "Xamarin.AndroidX.Core": "1.7.0.2",
+          "Xamarin.AndroidX.Fragment": "1.4.1.1",
+          "Xamarin.AndroidX.Lifecycle.LiveData.Core": "2.4.1.1",
+          "Xamarin.AndroidX.Lifecycle.ViewModel": "2.4.1.1"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.AndroidX.Biometric.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.AndroidX.Biometric.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Biometric.targets": {}
+        }
+      },
       "Xamarin.AndroidX.Browser/1.8.0.9": {
         "type": "package",
         "dependencies": {
@@ -6622,6 +7855,141 @@
         },
         "build": {
           "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Browser.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Camera.Camera2/1.4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Annotation": "1.9.1.2",
+          "Xamarin.AndroidX.Camera.Core": "[1.4.1.1, 1.4.2)",
+          "Xamarin.AndroidX.Concurrent.Futures": "1.2.0.5",
+          "Xamarin.AndroidX.Core": "1.15.0.2",
+          "Xamarin.AndroidX.Tracing.Tracing": "1.2.0.9",
+          "Xamarin.Google.AutoValue.Annotations": "1.11.0.5",
+          "Xamarin.Google.Guava.ListenableFuture": "1.0.0.26"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Camera2.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Camera2.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Camera.Camera2.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Camera.Core/1.4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Annotation": "1.9.1.2",
+          "Xamarin.AndroidX.Annotation.Experimental": "1.4.1.8",
+          "Xamarin.AndroidX.Concurrent.Futures": "1.2.0.5",
+          "Xamarin.AndroidX.Concurrent.Futures.Ktx": "1.2.0.5",
+          "Xamarin.AndroidX.Core": "1.15.0.2",
+          "Xamarin.AndroidX.ExifInterface": "1.3.7.9",
+          "Xamarin.AndroidX.Lifecycle.Common": "2.8.7.2",
+          "Xamarin.AndroidX.Lifecycle.LiveData": "2.8.7.2",
+          "Xamarin.AndroidX.Tracing.Tracing": "1.2.0.9",
+          "Xamarin.Google.AutoValue.Annotations": "1.11.0.5",
+          "Xamarin.Google.Guava.ListenableFuture": "1.0.0.26",
+          "Xamarin.Kotlin.StdLib": "2.0.21.2",
+          "Xamarin.KotlinX.Coroutines.Android": "1.9.0.2"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Camera.Core.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Camera.Lifecycle/1.4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Camera.Core": "[1.4.1.1, 1.4.2)",
+          "Xamarin.AndroidX.Concurrent.Futures": "1.2.0.5",
+          "Xamarin.AndroidX.Concurrent.Futures.Ktx": "1.2.0.5",
+          "Xamarin.AndroidX.Core": "1.15.0.2",
+          "Xamarin.AndroidX.Lifecycle.Common": "2.8.7.2",
+          "Xamarin.AndroidX.Tracing.Tracing.Ktx": "1.2.0.9",
+          "Xamarin.Google.AutoValue.Annotations": "1.11.0.5",
+          "Xamarin.Google.Guava.ListenableFuture": "1.0.0.26",
+          "Xamarin.KotlinX.Coroutines.Android": "1.9.0.2"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Lifecycle.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Lifecycle.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Camera.Lifecycle.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Camera.Video/1.4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Annotation": "1.9.1.2",
+          "Xamarin.AndroidX.Camera.Core": "[1.4.1.1, 1.4.2)",
+          "Xamarin.AndroidX.Concurrent.Futures": "1.2.0.5",
+          "Xamarin.AndroidX.Core": "1.15.0.2",
+          "Xamarin.Google.AutoValue.Annotations": "1.11.0.5"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Video.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Video.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Camera.Video.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Camera.View/1.4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Annotation": "1.9.1.2",
+          "Xamarin.AndroidX.Annotation.Experimental": "1.4.1.8",
+          "Xamarin.AndroidX.AppCompat": "1.7.0.5",
+          "Xamarin.AndroidX.Camera.Core": "[1.4.1.1, 1.4.2)",
+          "Xamarin.AndroidX.Camera.Lifecycle": "[1.4.1.1, 1.4.2)",
+          "Xamarin.AndroidX.Camera.Video": "[1.4.1.1, 1.4.2)",
+          "Xamarin.AndroidX.Concurrent.Futures": "1.2.0.5",
+          "Xamarin.AndroidX.Core": "1.15.0.2",
+          "Xamarin.AndroidX.Lifecycle.Common": "2.8.7.2",
+          "Xamarin.Google.AutoValue.Annotations": "1.11.0.5",
+          "Xamarin.Google.Guava.ListenableFuture": "1.0.0.26"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.View.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.View.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Camera.View.targets": {}
         }
       },
       "Xamarin.AndroidX.CardView/1.0.0.34": {
@@ -6721,6 +8089,27 @@
         },
         "build": {
           "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Concurrent.Futures.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Concurrent.Futures.Ktx/1.2.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Concurrent.Futures": "[1.2.0.5, 1.2.1)",
+          "Xamarin.Kotlin.StdLib": "2.0.21.2",
+          "Xamarin.KotlinX.Coroutines.Core": "1.9.0.2"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Concurrent.Futures.Ktx.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Concurrent.Futures.Ktx.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Concurrent.Futures.Ktx.targets": {}
         }
       },
       "Xamarin.AndroidX.ConstraintLayout/2.2.1.1": {
@@ -7750,6 +9139,26 @@
           "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Tracing.Tracing.targets": {}
         }
       },
+      "Xamarin.AndroidX.Tracing.Tracing.Ktx/1.2.0.9": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Tracing.Tracing": "[1.2.0.9, 1.2.1)",
+          "Xamarin.Kotlin.StdLib": "2.0.21.2"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Tracing.Tracing.Ktx.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Tracing.Tracing.Ktx.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Tracing.Tracing.Ktx.targets": {}
+        }
+      },
       "Xamarin.AndroidX.Transition/1.5.1.5": {
         "type": "package",
         "dependencies": {
@@ -7961,6 +9370,19 @@
         },
         "build": {
           "buildTransitive/net8.0-android34.0/Xamarin.Google.Android.Material.targets": {}
+        }
+      },
+      "Xamarin.Google.AutoValue.Annotations/1.11.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.Google.AutoValue.Annotations.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.Google.AutoValue.Annotations.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
         }
       },
       "Xamarin.Google.Code.FindBugs.JSR305/3.0.2.19": {
@@ -8193,6 +9615,72 @@
           }
         }
       },
+      "ZXing.Net/0.16.10": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/zxing.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/zxing.dll": {
+            "related": ".XML"
+          }
+        }
+      },
+      "ZXing.Net.Maui/0.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "9.0.40",
+          "Xamarin.AndroidX.Camera.Camera2": "1.4.1.1",
+          "Xamarin.AndroidX.Camera.Lifecycle": "1.4.1.1",
+          "Xamarin.AndroidX.Camera.View": "1.4.1.1",
+          "ZXing.Net": "0.16.10"
+        },
+        "compile": {
+          "lib/net9.0-android35.0/ZXing.Net.MAUI.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-android35.0/ZXing.Net.MAUI.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "ZXing.Net.Maui.Controls/0.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "9.0.40",
+          "ZXing.Net": "0.16.10",
+          "ZXing.Net.Maui": "0.5.0"
+        },
+        "compile": {
+          "lib/net9.0-android35.0/ZXing.Net.MAUI.Controls.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-android35.0/ZXing.Net.MAUI.Controls.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Bank.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.0.0",
+          "Nethereum.Web3": "5.0.0",
+          "sqlite-net-pcl": "1.9.172"
+        },
+        "compile": {
+          "bin/placeholder/Bank.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bank.Application.dll": {}
+        }
+      },
       "Bank.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -8206,6 +9694,24 @@
         },
         "runtime": {
           "bin/placeholder/Bank.Domain.dll": {}
+        }
+      },
+      "Bank.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Bank.Domain": "1.0.0",
+          "CommunityToolkit.Mvvm": "8.0.0",
+          "Microsoft.Maui.Essentials": "9.0.120",
+          "Nethereum.Web3": "5.0.0",
+          "Refit.HttpClientFactory": "9.0.2",
+          "sqlite-net-pcl": "1.9.172"
+        },
+        "compile": {
+          "bin/placeholder/Bank.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bank.Infrastructure.dll": {}
         }
       }
     },
@@ -8303,6 +9809,25 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "Microsoft.Extensions.Configuration.Binder/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.0/Microsoft.Extensions.Configuration.Binder.targets": {}
+        }
+      },
       "Microsoft.Extensions.DependencyInjection/9.0.9": {
         "type": "package",
         "dependencies": {
@@ -8336,6 +9861,89 @@
         },
         "build": {
           "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Diagnostics/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "9.0.3",
+          "Microsoft.Extensions.Diagnostics.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Diagnostics.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Diagnostics.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Diagnostics.Abstractions/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Options": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Diagnostics.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Diagnostics.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Http/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.3",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Diagnostics": "9.0.3",
+          "Microsoft.Extensions.Logging": "9.0.3",
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Options": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Http.Polly/9.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Http": "9.0.0",
+          "Polly": "7.2.4",
+          "Polly.Extensions.Http": "3.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Http.Polly.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Http.Polly.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Logging/9.0.9": {
@@ -8417,6 +10025,29 @@
         },
         "build": {
           "buildTransitive/net8.0/Microsoft.Extensions.Options.targets": {}
+        }
+      },
+      "Microsoft.Extensions.Options.ConfigurationExtensions/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Configuration.Binder": "9.0.3",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Options": "9.0.3",
+          "Microsoft.Extensions.Primitives": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
         }
       },
       "Microsoft.Extensions.Primitives/9.0.9": {
@@ -8959,6 +10590,85 @@
           }
         }
       },
+      "Plugin.Fingerprint/3.0.0-beta.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Biometric": "1.1.0.9"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Plugin.Fingerprint.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Plugin.Fingerprint.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Polly/7.2.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Polly.Extensions.Http/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Polly": "7.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Polly.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Polly.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Refit/9.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/Refit.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Refit.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.0/refit.props": {},
+          "buildTransitive/netstandard2.0/refit.targets": {}
+        }
+      },
+      "Refit.HttpClientFactory/9.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Http": "9.0.3",
+          "Refit": "9.0.2"
+        },
+        "compile": {
+          "lib/net9.0/Refit.HttpClientFactory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Refit.HttpClientFactory.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "sqlite-net-pcl/1.9.172": {
         "type": "package",
         "dependencies": {
@@ -9335,6 +11045,31 @@
           "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Arch.Core.Runtime.targets": {}
         }
       },
+      "Xamarin.AndroidX.Biometric/1.1.0.9": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Activity": "1.4.0.2",
+          "Xamarin.AndroidX.Annotation": "1.3.0.3",
+          "Xamarin.AndroidX.AppCompat": "1.4.1.1",
+          "Xamarin.AndroidX.Core": "1.7.0.2",
+          "Xamarin.AndroidX.Fragment": "1.4.1.1",
+          "Xamarin.AndroidX.Lifecycle.LiveData.Core": "2.4.1.1",
+          "Xamarin.AndroidX.Lifecycle.ViewModel": "2.4.1.1"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.AndroidX.Biometric.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.AndroidX.Biometric.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Biometric.targets": {}
+        }
+      },
       "Xamarin.AndroidX.Browser/1.8.0.9": {
         "type": "package",
         "dependencies": {
@@ -9358,6 +11093,141 @@
         },
         "build": {
           "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Browser.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Camera.Camera2/1.4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Annotation": "1.9.1.2",
+          "Xamarin.AndroidX.Camera.Core": "[1.4.1.1, 1.4.2)",
+          "Xamarin.AndroidX.Concurrent.Futures": "1.2.0.5",
+          "Xamarin.AndroidX.Core": "1.15.0.2",
+          "Xamarin.AndroidX.Tracing.Tracing": "1.2.0.9",
+          "Xamarin.Google.AutoValue.Annotations": "1.11.0.5",
+          "Xamarin.Google.Guava.ListenableFuture": "1.0.0.26"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Camera2.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Camera2.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Camera.Camera2.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Camera.Core/1.4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Annotation": "1.9.1.2",
+          "Xamarin.AndroidX.Annotation.Experimental": "1.4.1.8",
+          "Xamarin.AndroidX.Concurrent.Futures": "1.2.0.5",
+          "Xamarin.AndroidX.Concurrent.Futures.Ktx": "1.2.0.5",
+          "Xamarin.AndroidX.Core": "1.15.0.2",
+          "Xamarin.AndroidX.ExifInterface": "1.3.7.9",
+          "Xamarin.AndroidX.Lifecycle.Common": "2.8.7.2",
+          "Xamarin.AndroidX.Lifecycle.LiveData": "2.8.7.2",
+          "Xamarin.AndroidX.Tracing.Tracing": "1.2.0.9",
+          "Xamarin.Google.AutoValue.Annotations": "1.11.0.5",
+          "Xamarin.Google.Guava.ListenableFuture": "1.0.0.26",
+          "Xamarin.Kotlin.StdLib": "2.0.21.2",
+          "Xamarin.KotlinX.Coroutines.Android": "1.9.0.2"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Camera.Core.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Camera.Lifecycle/1.4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Camera.Core": "[1.4.1.1, 1.4.2)",
+          "Xamarin.AndroidX.Concurrent.Futures": "1.2.0.5",
+          "Xamarin.AndroidX.Concurrent.Futures.Ktx": "1.2.0.5",
+          "Xamarin.AndroidX.Core": "1.15.0.2",
+          "Xamarin.AndroidX.Lifecycle.Common": "2.8.7.2",
+          "Xamarin.AndroidX.Tracing.Tracing.Ktx": "1.2.0.9",
+          "Xamarin.Google.AutoValue.Annotations": "1.11.0.5",
+          "Xamarin.Google.Guava.ListenableFuture": "1.0.0.26",
+          "Xamarin.KotlinX.Coroutines.Android": "1.9.0.2"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Lifecycle.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Lifecycle.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Camera.Lifecycle.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Camera.Video/1.4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Annotation": "1.9.1.2",
+          "Xamarin.AndroidX.Camera.Core": "[1.4.1.1, 1.4.2)",
+          "Xamarin.AndroidX.Concurrent.Futures": "1.2.0.5",
+          "Xamarin.AndroidX.Core": "1.15.0.2",
+          "Xamarin.Google.AutoValue.Annotations": "1.11.0.5"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Video.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Video.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Camera.Video.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Camera.View/1.4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Annotation": "1.9.1.2",
+          "Xamarin.AndroidX.Annotation.Experimental": "1.4.1.8",
+          "Xamarin.AndroidX.AppCompat": "1.7.0.5",
+          "Xamarin.AndroidX.Camera.Core": "[1.4.1.1, 1.4.2)",
+          "Xamarin.AndroidX.Camera.Lifecycle": "[1.4.1.1, 1.4.2)",
+          "Xamarin.AndroidX.Camera.Video": "[1.4.1.1, 1.4.2)",
+          "Xamarin.AndroidX.Concurrent.Futures": "1.2.0.5",
+          "Xamarin.AndroidX.Core": "1.15.0.2",
+          "Xamarin.AndroidX.Lifecycle.Common": "2.8.7.2",
+          "Xamarin.Google.AutoValue.Annotations": "1.11.0.5",
+          "Xamarin.Google.Guava.ListenableFuture": "1.0.0.26"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.View.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.View.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Camera.View.targets": {}
         }
       },
       "Xamarin.AndroidX.CardView/1.0.0.34": {
@@ -9457,6 +11327,27 @@
         },
         "build": {
           "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Concurrent.Futures.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Concurrent.Futures.Ktx/1.2.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Concurrent.Futures": "[1.2.0.5, 1.2.1)",
+          "Xamarin.Kotlin.StdLib": "2.0.21.2",
+          "Xamarin.KotlinX.Coroutines.Core": "1.9.0.2"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Concurrent.Futures.Ktx.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Concurrent.Futures.Ktx.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Concurrent.Futures.Ktx.targets": {}
         }
       },
       "Xamarin.AndroidX.ConstraintLayout/2.2.1.1": {
@@ -10486,6 +12377,26 @@
           "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Tracing.Tracing.targets": {}
         }
       },
+      "Xamarin.AndroidX.Tracing.Tracing.Ktx/1.2.0.9": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Tracing.Tracing": "[1.2.0.9, 1.2.1)",
+          "Xamarin.Kotlin.StdLib": "2.0.21.2"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Tracing.Tracing.Ktx.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.AndroidX.Tracing.Tracing.Ktx.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Tracing.Tracing.Ktx.targets": {}
+        }
+      },
       "Xamarin.AndroidX.Transition/1.5.1.5": {
         "type": "package",
         "dependencies": {
@@ -10697,6 +12608,19 @@
         },
         "build": {
           "buildTransitive/net8.0-android34.0/Xamarin.Google.Android.Material.targets": {}
+        }
+      },
+      "Xamarin.Google.AutoValue.Annotations/1.11.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.Google.AutoValue.Annotations.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.Google.AutoValue.Annotations.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
         }
       },
       "Xamarin.Google.Code.FindBugs.JSR305/3.0.2.19": {
@@ -10929,6 +12853,72 @@
           }
         }
       },
+      "ZXing.Net/0.16.10": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/zxing.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/zxing.dll": {
+            "related": ".XML"
+          }
+        }
+      },
+      "ZXing.Net.Maui/0.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "9.0.40",
+          "Xamarin.AndroidX.Camera.Camera2": "1.4.1.1",
+          "Xamarin.AndroidX.Camera.Lifecycle": "1.4.1.1",
+          "Xamarin.AndroidX.Camera.View": "1.4.1.1",
+          "ZXing.Net": "0.16.10"
+        },
+        "compile": {
+          "lib/net9.0-android35.0/ZXing.Net.MAUI.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-android35.0/ZXing.Net.MAUI.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "ZXing.Net.Maui.Controls/0.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "9.0.40",
+          "ZXing.Net": "0.16.10",
+          "ZXing.Net.Maui": "0.5.0"
+        },
+        "compile": {
+          "lib/net9.0-android35.0/ZXing.Net.MAUI.Controls.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-android35.0/ZXing.Net.MAUI.Controls.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Bank.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.0.0",
+          "Nethereum.Web3": "5.0.0",
+          "sqlite-net-pcl": "1.9.172"
+        },
+        "compile": {
+          "bin/placeholder/Bank.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bank.Application.dll": {}
+        }
+      },
       "Bank.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -10942,6 +12932,24 @@
         },
         "runtime": {
           "bin/placeholder/Bank.Domain.dll": {}
+        }
+      },
+      "Bank.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Bank.Domain": "1.0.0",
+          "CommunityToolkit.Mvvm": "8.0.0",
+          "Microsoft.Maui.Essentials": "9.0.120",
+          "Nethereum.Web3": "5.0.0",
+          "Refit.HttpClientFactory": "9.0.2",
+          "sqlite-net-pcl": "1.9.172"
+        },
+        "compile": {
+          "bin/placeholder/Bank.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bank.Infrastructure.dll": {}
         }
       }
     },
@@ -11023,6 +13031,25 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "Microsoft.Extensions.Configuration.Binder/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.0/Microsoft.Extensions.Configuration.Binder.targets": {}
+        }
+      },
       "Microsoft.Extensions.DependencyInjection/9.0.9": {
         "type": "package",
         "dependencies": {
@@ -11056,6 +13083,89 @@
         },
         "build": {
           "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Diagnostics/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "9.0.3",
+          "Microsoft.Extensions.Diagnostics.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Diagnostics.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Diagnostics.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Diagnostics.Abstractions/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Options": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Diagnostics.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Diagnostics.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Http/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.3",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Diagnostics": "9.0.3",
+          "Microsoft.Extensions.Logging": "9.0.3",
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Options": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Http.Polly/9.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Http": "9.0.0",
+          "Polly": "7.2.4",
+          "Polly.Extensions.Http": "3.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Http.Polly.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Http.Polly.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Logging/9.0.9": {
@@ -11137,6 +13247,29 @@
         },
         "build": {
           "buildTransitive/net8.0/Microsoft.Extensions.Options.targets": {}
+        }
+      },
+      "Microsoft.Extensions.Options.ConfigurationExtensions/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Configuration.Binder": "9.0.3",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Options": "9.0.3",
+          "Microsoft.Extensions.Primitives": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
         }
       },
       "Microsoft.Extensions.Primitives/9.0.9": {
@@ -11919,6 +14052,82 @@
           }
         }
       },
+      "Plugin.Fingerprint/3.0.0-beta.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows10.0.19041/Plugin.Fingerprint.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.19041/Plugin.Fingerprint.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Polly/7.2.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Polly.Extensions.Http/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Polly": "7.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Polly.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Polly.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Refit/9.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/Refit.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Refit.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.0/refit.props": {},
+          "buildTransitive/netstandard2.0/refit.targets": {}
+        }
+      },
+      "Refit.HttpClientFactory/9.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Http": "9.0.3",
+          "Refit": "9.0.2"
+        },
+        "compile": {
+          "lib/net9.0/Refit.HttpClientFactory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Refit.HttpClientFactory.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "sqlite-net-pcl/1.9.172": {
         "type": "package",
         "dependencies": {
@@ -12083,6 +14292,61 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
+      "ZXing.Net/0.16.10": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/zxing.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/zxing.dll": {
+            "related": ".XML"
+          }
+        }
+      },
+      "ZXing.Net.Maui/0.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "9.0.40",
+          "ZXing.Net": "0.16.10"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.19041/ZXing.Net.MAUI.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/ZXing.Net.MAUI.dll": {}
+        }
+      },
+      "ZXing.Net.Maui.Controls/0.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "9.0.40",
+          "ZXing.Net": "0.16.10",
+          "ZXing.Net.Maui": "0.5.0"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.19041/ZXing.Net.MAUI.Controls.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/ZXing.Net.MAUI.Controls.dll": {}
+        }
+      },
+      "Bank.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.0.0",
+          "Nethereum.Web3": "5.0.0",
+          "sqlite-net-pcl": "1.9.172"
+        },
+        "compile": {
+          "bin/placeholder/Bank.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bank.Application.dll": {}
+        }
+      },
       "Bank.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -12096,6 +14360,24 @@
         },
         "runtime": {
           "bin/placeholder/Bank.Domain.dll": {}
+        }
+      },
+      "Bank.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Bank.Domain": "1.0.0",
+          "CommunityToolkit.Mvvm": "8.0.0",
+          "Microsoft.Maui.Essentials": "9.0.120",
+          "Nethereum.Web3": "5.0.0",
+          "Refit.HttpClientFactory": "9.0.2",
+          "sqlite-net-pcl": "1.9.172"
+        },
+        "compile": {
+          "bin/placeholder/Bank.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bank.Infrastructure.dll": {}
         }
       }
     },
@@ -12177,6 +14459,25 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "Microsoft.Extensions.Configuration.Binder/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.0/Microsoft.Extensions.Configuration.Binder.targets": {}
+        }
+      },
       "Microsoft.Extensions.DependencyInjection/9.0.9": {
         "type": "package",
         "dependencies": {
@@ -12210,6 +14511,89 @@
         },
         "build": {
           "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Diagnostics/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "9.0.3",
+          "Microsoft.Extensions.Diagnostics.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Diagnostics.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Diagnostics.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Diagnostics.Abstractions/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Options": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Diagnostics.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Diagnostics.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Http/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.3",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Diagnostics": "9.0.3",
+          "Microsoft.Extensions.Logging": "9.0.3",
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Options": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Http.Polly/9.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Http": "9.0.0",
+          "Polly": "7.2.4",
+          "Polly.Extensions.Http": "3.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Http.Polly.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Http.Polly.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Logging/9.0.9": {
@@ -12291,6 +14675,29 @@
         },
         "build": {
           "buildTransitive/net8.0/Microsoft.Extensions.Options.targets": {}
+        }
+      },
+      "Microsoft.Extensions.Options.ConfigurationExtensions/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Configuration.Binder": "9.0.3",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Options": "9.0.3",
+          "Microsoft.Extensions.Primitives": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
         }
       },
       "Microsoft.Extensions.Primitives/9.0.9": {
@@ -13007,6 +15414,82 @@
         },
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Plugin.Fingerprint/3.0.0-beta.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows10.0.19041/Plugin.Fingerprint.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.19041/Plugin.Fingerprint.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Polly/7.2.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Polly.Extensions.Http/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Polly": "7.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Polly.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Polly.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Refit/9.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/Refit.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Refit.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.0/refit.props": {},
+          "buildTransitive/netstandard2.0/refit.targets": {}
+        }
+      },
+      "Refit.HttpClientFactory/9.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Http": "9.0.3",
+          "Refit": "9.0.2"
+        },
+        "compile": {
+          "lib/net9.0/Refit.HttpClientFactory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Refit.HttpClientFactory.dll": {
             "related": ".xml"
           }
         }
@@ -13088,6 +15571,61 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
+      "ZXing.Net/0.16.10": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/zxing.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/zxing.dll": {
+            "related": ".XML"
+          }
+        }
+      },
+      "ZXing.Net.Maui/0.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "9.0.40",
+          "ZXing.Net": "0.16.10"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.19041/ZXing.Net.MAUI.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/ZXing.Net.MAUI.dll": {}
+        }
+      },
+      "ZXing.Net.Maui.Controls/0.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "9.0.40",
+          "ZXing.Net": "0.16.10",
+          "ZXing.Net.Maui": "0.5.0"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.19041/ZXing.Net.MAUI.Controls.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/ZXing.Net.MAUI.Controls.dll": {}
+        }
+      },
+      "Bank.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.0.0",
+          "Nethereum.Web3": "5.0.0",
+          "sqlite-net-pcl": "1.9.172"
+        },
+        "compile": {
+          "bin/placeholder/Bank.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bank.Application.dll": {}
+        }
+      },
       "Bank.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -13101,6 +15639,24 @@
         },
         "runtime": {
           "bin/placeholder/Bank.Domain.dll": {}
+        }
+      },
+      "Bank.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Bank.Domain": "1.0.0",
+          "CommunityToolkit.Mvvm": "8.0.0",
+          "Microsoft.Maui.Essentials": "9.0.120",
+          "Nethereum.Web3": "5.0.0",
+          "Refit.HttpClientFactory": "9.0.2",
+          "sqlite-net-pcl": "1.9.172"
+        },
+        "compile": {
+          "bin/placeholder/Bank.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bank.Infrastructure.dll": {}
         }
       }
     },
@@ -13182,6 +15738,25 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "Microsoft.Extensions.Configuration.Binder/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.0/Microsoft.Extensions.Configuration.Binder.targets": {}
+        }
+      },
       "Microsoft.Extensions.DependencyInjection/9.0.9": {
         "type": "package",
         "dependencies": {
@@ -13215,6 +15790,89 @@
         },
         "build": {
           "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Diagnostics/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "9.0.3",
+          "Microsoft.Extensions.Diagnostics.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Diagnostics.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Diagnostics.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Diagnostics.Abstractions/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Options": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Diagnostics.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Diagnostics.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Http/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.3",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Diagnostics": "9.0.3",
+          "Microsoft.Extensions.Logging": "9.0.3",
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Options": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Http.Polly/9.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Http": "9.0.0",
+          "Polly": "7.2.4",
+          "Polly.Extensions.Http": "3.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Http.Polly.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Http.Polly.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Logging/9.0.9": {
@@ -13296,6 +15954,29 @@
         },
         "build": {
           "buildTransitive/net8.0/Microsoft.Extensions.Options.targets": {}
+        }
+      },
+      "Microsoft.Extensions.Options.ConfigurationExtensions/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Configuration.Binder": "9.0.3",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Options": "9.0.3",
+          "Microsoft.Extensions.Primitives": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
         }
       },
       "Microsoft.Extensions.Primitives/9.0.9": {
@@ -14016,6 +16697,82 @@
           }
         }
       },
+      "Plugin.Fingerprint/3.0.0-beta.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows10.0.19041/Plugin.Fingerprint.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.19041/Plugin.Fingerprint.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Polly/7.2.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Polly.Extensions.Http/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Polly": "7.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Polly.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Polly.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Refit/9.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/Refit.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Refit.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.0/refit.props": {},
+          "buildTransitive/netstandard2.0/refit.targets": {}
+        }
+      },
+      "Refit.HttpClientFactory/9.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Http": "9.0.3",
+          "Refit": "9.0.2"
+        },
+        "compile": {
+          "lib/net9.0/Refit.HttpClientFactory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Refit.HttpClientFactory.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "sqlite-net-pcl/1.9.172": {
         "type": "package",
         "dependencies": {
@@ -14093,6 +16850,61 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
+      "ZXing.Net/0.16.10": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/zxing.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/zxing.dll": {
+            "related": ".XML"
+          }
+        }
+      },
+      "ZXing.Net.Maui/0.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "9.0.40",
+          "ZXing.Net": "0.16.10"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.19041/ZXing.Net.MAUI.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/ZXing.Net.MAUI.dll": {}
+        }
+      },
+      "ZXing.Net.Maui.Controls/0.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "9.0.40",
+          "ZXing.Net": "0.16.10",
+          "ZXing.Net.Maui": "0.5.0"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.19041/ZXing.Net.MAUI.Controls.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/ZXing.Net.MAUI.Controls.dll": {}
+        }
+      },
+      "Bank.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.0.0",
+          "Nethereum.Web3": "5.0.0",
+          "sqlite-net-pcl": "1.9.172"
+        },
+        "compile": {
+          "bin/placeholder/Bank.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bank.Application.dll": {}
+        }
+      },
       "Bank.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -14106,6 +16918,24 @@
         },
         "runtime": {
           "bin/placeholder/Bank.Domain.dll": {}
+        }
+      },
+      "Bank.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Bank.Domain": "1.0.0",
+          "CommunityToolkit.Mvvm": "8.0.0",
+          "Microsoft.Maui.Essentials": "9.0.120",
+          "Nethereum.Web3": "5.0.0",
+          "Refit.HttpClientFactory": "9.0.2",
+          "sqlite-net-pcl": "1.9.172"
+        },
+        "compile": {
+          "bin/placeholder/Bank.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bank.Infrastructure.dll": {}
         }
       }
     },
@@ -14187,6 +17017,25 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "Microsoft.Extensions.Configuration.Binder/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.0/Microsoft.Extensions.Configuration.Binder.targets": {}
+        }
+      },
       "Microsoft.Extensions.DependencyInjection/9.0.9": {
         "type": "package",
         "dependencies": {
@@ -14220,6 +17069,89 @@
         },
         "build": {
           "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Diagnostics/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "9.0.3",
+          "Microsoft.Extensions.Diagnostics.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Diagnostics.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Diagnostics.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Diagnostics.Abstractions/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Options": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Diagnostics.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Diagnostics.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Http/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.3",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Diagnostics": "9.0.3",
+          "Microsoft.Extensions.Logging": "9.0.3",
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Options": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Http.Polly/9.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Http": "9.0.0",
+          "Polly": "7.2.4",
+          "Polly.Extensions.Http": "3.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Http.Polly.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Http.Polly.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Logging/9.0.9": {
@@ -14301,6 +17233,29 @@
         },
         "build": {
           "buildTransitive/net8.0/Microsoft.Extensions.Options.targets": {}
+        }
+      },
+      "Microsoft.Extensions.Options.ConfigurationExtensions/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Configuration.Binder": "9.0.3",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Options": "9.0.3",
+          "Microsoft.Extensions.Primitives": "9.0.3"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
         }
       },
       "Microsoft.Extensions.Primitives/9.0.9": {
@@ -15031,6 +17986,82 @@
           }
         }
       },
+      "Plugin.Fingerprint/3.0.0-beta.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows10.0.19041/Plugin.Fingerprint.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.19041/Plugin.Fingerprint.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Polly/7.2.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Polly.Extensions.Http/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Polly": "7.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Polly.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Polly.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Refit/9.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/Refit.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Refit.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.0/refit.props": {},
+          "buildTransitive/netstandard2.0/refit.targets": {}
+        }
+      },
+      "Refit.HttpClientFactory/9.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Http": "9.0.3",
+          "Refit": "9.0.2"
+        },
+        "compile": {
+          "lib/net9.0/Refit.HttpClientFactory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Refit.HttpClientFactory.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "sqlite-net-pcl/1.9.172": {
         "type": "package",
         "dependencies": {
@@ -15108,6 +18139,61 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
+      "ZXing.Net/0.16.10": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/zxing.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/zxing.dll": {
+            "related": ".XML"
+          }
+        }
+      },
+      "ZXing.Net.Maui/0.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "9.0.40",
+          "ZXing.Net": "0.16.10"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.19041/ZXing.Net.MAUI.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/ZXing.Net.MAUI.dll": {}
+        }
+      },
+      "ZXing.Net.Maui.Controls/0.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "9.0.40",
+          "ZXing.Net": "0.16.10",
+          "ZXing.Net.Maui": "0.5.0"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.19041/ZXing.Net.MAUI.Controls.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/ZXing.Net.MAUI.Controls.dll": {}
+        }
+      },
+      "Bank.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.0.0",
+          "Nethereum.Web3": "5.0.0",
+          "sqlite-net-pcl": "1.9.172"
+        },
+        "compile": {
+          "bin/placeholder/Bank.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bank.Application.dll": {}
+        }
+      },
       "Bank.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -15121,6 +18207,24 @@
         },
         "runtime": {
           "bin/placeholder/Bank.Domain.dll": {}
+        }
+      },
+      "Bank.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Bank.Domain": "1.0.0",
+          "CommunityToolkit.Mvvm": "8.0.0",
+          "Microsoft.Maui.Essentials": "9.0.120",
+          "Nethereum.Web3": "5.0.0",
+          "Refit.HttpClientFactory": "9.0.2",
+          "sqlite-net-pcl": "1.9.172"
+        },
+        "compile": {
+          "bin/placeholder/Bank.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bank.Infrastructure.dll": {}
         }
       }
     }
@@ -15268,6 +18372,45 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Microsoft.Extensions.Configuration.Binder/9.0.3": {
+      "sha512": "ad82pYBUSQbd3WIboxsS1HzFdRuHKRa2CpYwie/o6dZAxUjt62yFwjoVdM7Iw2VO5fHV1rJwa7jJZBNZin0E7Q==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.binder/9.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "analyzers/dotnet/cs/Microsoft.Extensions.Configuration.Binder.SourceGeneration.dll",
+        "analyzers/dotnet/cs/cs/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
+        "analyzers/dotnet/cs/de/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
+        "analyzers/dotnet/cs/es/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
+        "analyzers/dotnet/cs/fr/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
+        "analyzers/dotnet/cs/it/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
+        "analyzers/dotnet/cs/ja/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
+        "analyzers/dotnet/cs/ko/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
+        "analyzers/dotnet/cs/pl/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
+        "analyzers/dotnet/cs/pt-BR/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
+        "analyzers/dotnet/cs/ru/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
+        "analyzers/dotnet/cs/tr/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
+        "analyzers/dotnet/cs/zh-Hans/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
+        "analyzers/dotnet/cs/zh-Hant/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
+        "buildTransitive/netstandard2.0/Microsoft.Extensions.Configuration.Binder.targets",
+        "lib/net462/Microsoft.Extensions.Configuration.Binder.dll",
+        "lib/net462/Microsoft.Extensions.Configuration.Binder.xml",
+        "lib/net8.0/Microsoft.Extensions.Configuration.Binder.dll",
+        "lib/net8.0/Microsoft.Extensions.Configuration.Binder.xml",
+        "lib/net9.0/Microsoft.Extensions.Configuration.Binder.dll",
+        "lib/net9.0/Microsoft.Extensions.Configuration.Binder.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.xml",
+        "microsoft.extensions.configuration.binder.9.0.3.nupkg.sha512",
+        "microsoft.extensions.configuration.binder.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "Microsoft.Extensions.DependencyInjection/9.0.9": {
       "sha512": "zQV2WOSP+3z1EuK91ULxfGgo2Y75bTRnmJHp08+w/YXAyekZutX/qCd88/HOMNh35MDW9mJJJxPpMPS+1Rww8A==",
       "type": "package",
@@ -15326,6 +18469,103 @@
         "microsoft.extensions.dependencyinjection.abstractions.9.0.9.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.abstractions.nuspec",
         "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Diagnostics/9.0.3": {
+      "sha512": "gqhbIq6adm0+/9IlDYmchekoxNkmUTm7rfTG3k4zzoQkjRuD8TQGwL1WnIcTDt4aQ+j+Vu0OQrjI8GlpJQQhIA==",
+      "type": "package",
+      "path": "microsoft.extensions.diagnostics/9.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.Diagnostics.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Diagnostics.targets",
+        "lib/net462/Microsoft.Extensions.Diagnostics.dll",
+        "lib/net462/Microsoft.Extensions.Diagnostics.xml",
+        "lib/net8.0/Microsoft.Extensions.Diagnostics.dll",
+        "lib/net8.0/Microsoft.Extensions.Diagnostics.xml",
+        "lib/net9.0/Microsoft.Extensions.Diagnostics.dll",
+        "lib/net9.0/Microsoft.Extensions.Diagnostics.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Diagnostics.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Diagnostics.xml",
+        "microsoft.extensions.diagnostics.9.0.3.nupkg.sha512",
+        "microsoft.extensions.diagnostics.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Diagnostics.Abstractions/9.0.3": {
+      "sha512": "/fn0Xe8t+3YbMfwyTk4hFirWyAG1pBA5ogVYsrKAuuD2gbqOWhFuSA28auCmS3z8Y2eq3miDIKq4pFVRWA+J6g==",
+      "type": "package",
+      "path": "microsoft.extensions.diagnostics.abstractions/9.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.Diagnostics.Abstractions.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Diagnostics.Abstractions.targets",
+        "lib/net462/Microsoft.Extensions.Diagnostics.Abstractions.dll",
+        "lib/net462/Microsoft.Extensions.Diagnostics.Abstractions.xml",
+        "lib/net8.0/Microsoft.Extensions.Diagnostics.Abstractions.dll",
+        "lib/net8.0/Microsoft.Extensions.Diagnostics.Abstractions.xml",
+        "lib/net9.0/Microsoft.Extensions.Diagnostics.Abstractions.dll",
+        "lib/net9.0/Microsoft.Extensions.Diagnostics.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Diagnostics.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Diagnostics.Abstractions.xml",
+        "microsoft.extensions.diagnostics.abstractions.9.0.3.nupkg.sha512",
+        "microsoft.extensions.diagnostics.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Http/9.0.3": {
+      "sha512": "rwChgI3lPqvUzsCN3egSW/6v4kP9/RQ2QrkZUwyAiHiwEoIB6QbYkATNvUsgjV6nfrekocyciCzy53ZFRuSaHA==",
+      "type": "package",
+      "path": "microsoft.extensions.http/9.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.Http.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Http.targets",
+        "lib/net462/Microsoft.Extensions.Http.dll",
+        "lib/net462/Microsoft.Extensions.Http.xml",
+        "lib/net8.0/Microsoft.Extensions.Http.dll",
+        "lib/net8.0/Microsoft.Extensions.Http.xml",
+        "lib/net9.0/Microsoft.Extensions.Http.dll",
+        "lib/net9.0/Microsoft.Extensions.Http.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Http.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Http.xml",
+        "microsoft.extensions.http.9.0.3.nupkg.sha512",
+        "microsoft.extensions.http.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Http.Polly/9.0.0": {
+      "sha512": "c9cq28bSsycDoHzeIrNODdnZap/Un1B6A7M2QVRlPaIaWAtKcswkDDelhco9NwOdhhkFeVDqk5MrmAbYdfgBTw==",
+      "type": "package",
+      "path": "microsoft.extensions.http.polly/9.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard2.0/Microsoft.Extensions.Http.Polly.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Http.Polly.xml",
+        "microsoft.extensions.http.polly.9.0.0.nupkg.sha512",
+        "microsoft.extensions.http.polly.nuspec"
       ]
     },
     "Microsoft.Extensions.Logging/9.0.9": {
@@ -15499,6 +18739,34 @@
         "lib/netstandard2.1/Microsoft.Extensions.Options.xml",
         "microsoft.extensions.options.9.0.9.nupkg.sha512",
         "microsoft.extensions.options.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Options.ConfigurationExtensions/9.0.3": {
+      "sha512": "PcyYHQglKnWVZHSPaL6v2qnfsIuFw8tSq7cyXHg3OeuDVn/CqmdWUjRiZomCF/Gi+qCi+ksz0lFphg2cNvB8zQ==",
+      "type": "package",
+      "path": "microsoft.extensions.options.configurationextensions/9.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.Options.ConfigurationExtensions.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Options.ConfigurationExtensions.targets",
+        "lib/net462/Microsoft.Extensions.Options.ConfigurationExtensions.dll",
+        "lib/net462/Microsoft.Extensions.Options.ConfigurationExtensions.xml",
+        "lib/net8.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll",
+        "lib/net8.0/Microsoft.Extensions.Options.ConfigurationExtensions.xml",
+        "lib/net9.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll",
+        "lib/net9.0/Microsoft.Extensions.Options.ConfigurationExtensions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Options.ConfigurationExtensions.xml",
+        "microsoft.extensions.options.configurationextensions.9.0.3.nupkg.sha512",
+        "microsoft.extensions.options.configurationextensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
@@ -17614,6 +20882,155 @@
         "newtonsoft.json.nuspec"
       ]
     },
+    "Plugin.Fingerprint/3.0.0-beta.1": {
+      "sha512": "cqNBAiTB//+cwqaccfrEqg6MHfFFaC/22mWY9fm/eNrKWMrng8+jXdHC1HrxIBKzgQa3e2aZIVxO0SbbmXyCbA==",
+      "type": "package",
+      "path": "plugin.fingerprint/3.0.0-beta.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid10.0/Plugin.Fingerprint.dll",
+        "lib/monoandroid10.0/Plugin.Fingerprint.pdb",
+        "lib/monoandroid10.0/Plugin.Fingerprint.xml",
+        "lib/monoandroid12.0/Plugin.Fingerprint.dll",
+        "lib/monoandroid12.0/Plugin.Fingerprint.pdb",
+        "lib/monoandroid12.0/Plugin.Fingerprint.xml",
+        "lib/net48/Plugin.Fingerprint.dll",
+        "lib/net48/Plugin.Fingerprint.pdb",
+        "lib/net48/Plugin.Fingerprint.xml",
+        "lib/net6.0-android31.0/Plugin.Fingerprint.dll",
+        "lib/net6.0-android31.0/Plugin.Fingerprint.pdb",
+        "lib/net6.0-android31.0/Plugin.Fingerprint.xml",
+        "lib/net6.0-ios15.2/Plugin.Fingerprint.dll",
+        "lib/net6.0-ios15.2/Plugin.Fingerprint.pdb",
+        "lib/net6.0-ios15.2/Plugin.Fingerprint.xml",
+        "lib/net6.0-maccatalyst15.2/Plugin.Fingerprint.dll",
+        "lib/net6.0-maccatalyst15.2/Plugin.Fingerprint.pdb",
+        "lib/net6.0-maccatalyst15.2/Plugin.Fingerprint.xml",
+        "lib/net6.0-windows10.0.19041/Plugin.Fingerprint.dll",
+        "lib/net6.0-windows10.0.19041/Plugin.Fingerprint.pdb",
+        "lib/net6.0-windows10.0.19041/Plugin.Fingerprint.xml",
+        "lib/netstandard2.0/Plugin.Fingerprint.dll",
+        "lib/netstandard2.0/Plugin.Fingerprint.pdb",
+        "lib/netstandard2.0/Plugin.Fingerprint.xml",
+        "lib/tizen40/Plugin.Fingerprint.dll",
+        "lib/tizen40/Plugin.Fingerprint.pdb",
+        "lib/tizen40/Plugin.Fingerprint.xml",
+        "lib/uap10.0.19041/Plugin.Fingerprint.dll",
+        "lib/uap10.0.19041/Plugin.Fingerprint.pdb",
+        "lib/uap10.0.19041/Plugin.Fingerprint.pri",
+        "lib/uap10.0.19041/Plugin.Fingerprint.xml",
+        "lib/xamarinios10/Plugin.Fingerprint.dll",
+        "lib/xamarinios10/Plugin.Fingerprint.pdb",
+        "lib/xamarinios10/Plugin.Fingerprint.xml",
+        "lib/xamarinmac20/Plugin.Fingerprint.dll",
+        "lib/xamarinmac20/Plugin.Fingerprint.pdb",
+        "lib/xamarinmac20/Plugin.Fingerprint.xml",
+        "lib/xamarintvos10/Plugin.Fingerprint.dll",
+        "lib/xamarintvos10/Plugin.Fingerprint.pdb",
+        "lib/xamarintvos10/Plugin.Fingerprint.xml",
+        "lib/xamarinwatchos10/Plugin.Fingerprint.dll",
+        "lib/xamarinwatchos10/Plugin.Fingerprint.pdb",
+        "lib/xamarinwatchos10/Plugin.Fingerprint.xml",
+        "plugin.fingerprint.3.0.0-beta.1.nupkg.sha512",
+        "plugin.fingerprint.nuspec",
+        "readme.md",
+        "xamarin_fingerprint.png"
+      ]
+    },
+    "Polly/7.2.4": {
+      "sha512": "bw00Ck5sh6ekduDE3mnCo1ohzuad946uslCDEENu3091+6UKnBuKLo4e+yaNcCzXxOZCXWY2gV4a35+K1d4LDA==",
+      "type": "package",
+      "path": "polly/7.2.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net461/Polly.dll",
+        "lib/net461/Polly.pdb",
+        "lib/net461/Polly.xml",
+        "lib/net472/Polly.dll",
+        "lib/net472/Polly.pdb",
+        "lib/net472/Polly.xml",
+        "lib/netstandard1.1/Polly.dll",
+        "lib/netstandard1.1/Polly.pdb",
+        "lib/netstandard1.1/Polly.xml",
+        "lib/netstandard2.0/Polly.dll",
+        "lib/netstandard2.0/Polly.pdb",
+        "lib/netstandard2.0/Polly.xml",
+        "package-icon.png",
+        "polly.7.2.4.nupkg.sha512",
+        "polly.nuspec"
+      ]
+    },
+    "Polly.Extensions.Http/3.0.0": {
+      "sha512": "drrG+hB3pYFY7w1c3BD+lSGYvH2oIclH8GRSehgfyP5kjnFnHKQuuBhuHLv+PWyFuaTDyk/vfRpnxOzd11+J8g==",
+      "type": "package",
+      "path": "polly.extensions.http/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.1/Polly.Extensions.Http.dll",
+        "lib/netstandard1.1/Polly.Extensions.Http.xml",
+        "lib/netstandard2.0/Polly.Extensions.Http.dll",
+        "lib/netstandard2.0/Polly.Extensions.Http.xml",
+        "polly.extensions.http.3.0.0.nupkg.sha512",
+        "polly.extensions.http.nuspec"
+      ]
+    },
+    "Refit/9.0.2": {
+      "sha512": "zLAfOh1iYE1bXFdnPjX5V6Nq8d4vBwxXaCovNNcAt9Fz3mfxAqHS3fckbBX4wetVgN1A6tIOzrDtPTN2c4FNrQ==",
+      "type": "package",
+      "path": "refit/9.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE/LICENSE",
+        "README.md",
+        "analyzers/dotnet/roslyn3.8/cs/InterfaceStubGeneratorV1.dll",
+        "analyzers/dotnet/roslyn4.1/cs/InterfaceStubGeneratorV2.dll",
+        "build/netstandard2.0/refit.targets",
+        "buildTransitive/netstandard2.0/refit.props",
+        "buildTransitive/netstandard2.0/refit.targets",
+        "lib/net10.0/Refit.dll",
+        "lib/net10.0/Refit.xml",
+        "lib/net462/Refit.dll",
+        "lib/net462/Refit.xml",
+        "lib/net8.0/Refit.dll",
+        "lib/net8.0/Refit.xml",
+        "lib/net9.0/Refit.dll",
+        "lib/net9.0/Refit.xml",
+        "lib/netstandard2.0/Refit.dll",
+        "lib/netstandard2.0/Refit.xml",
+        "refit.9.0.2.nupkg.sha512",
+        "refit.nuspec",
+        "refit_logo.png"
+      ]
+    },
+    "Refit.HttpClientFactory/9.0.2": {
+      "sha512": "lv9vBbPaOZ6PARmWLkB3v+wBqoBDiI5ROS5KTbJEAAXMVaPG5V+AdjNmU+8NFkztZzJRqujREqmY69w7afRhJA==",
+      "type": "package",
+      "path": "refit.httpclientfactory/9.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE/LICENSE",
+        "README.md",
+        "lib/net10.0/Refit.HttpClientFactory.dll",
+        "lib/net10.0/Refit.HttpClientFactory.xml",
+        "lib/net462/Refit.HttpClientFactory.dll",
+        "lib/net462/Refit.HttpClientFactory.xml",
+        "lib/net8.0/Refit.HttpClientFactory.dll",
+        "lib/net8.0/Refit.HttpClientFactory.xml",
+        "lib/net9.0/Refit.HttpClientFactory.dll",
+        "lib/net9.0/Refit.HttpClientFactory.xml",
+        "lib/netstandard2.0/Refit.HttpClientFactory.dll",
+        "lib/netstandard2.0/Refit.HttpClientFactory.xml",
+        "refit.httpclientfactory.9.0.2.nupkg.sha512",
+        "refit.httpclientfactory.nuspec",
+        "refit_logo.png"
+      ]
+    },
     "sqlite-net-pcl/1.9.172": {
       "sha512": "go533+huyvg5bOMmCpX+DyvLrcVRiEBIpqEiDHgXRijWIBBNkWnyMr/w+5ZzrUArKY+4ApucsbBnFtP3QITrJg==",
       "type": "package",
@@ -18071,6 +21488,30 @@
         "xamarin.androidx.arch.core.runtime.nuspec"
       ]
     },
+    "Xamarin.AndroidX.Biometric/1.1.0.9": {
+      "sha512": "moLHbqseIHESgIt88MWVJtt7n8m+eyw2tEF8TNRmR9nmnsPLymvmRUA1juCYNO5iJsdagyPMpz4Tb8M6mqhtHQ==",
+      "type": "package",
+      "path": "xamarin.androidx.biometric/1.1.0.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "aar/androidx.biometric.biometric.aar",
+        "build/monoandroid12.0/Xamarin.AndroidX.Biometric.targets",
+        "build/net6.0-android31.0/Xamarin.AndroidX.Biometric.targets",
+        "buildTransitive/monoandroid12.0/Xamarin.AndroidX.Biometric.targets",
+        "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Biometric.targets",
+        "lib/monoandroid12.0/Xamarin.AndroidX.Biometric.dll",
+        "lib/monoandroid12.0/Xamarin.AndroidX.Biometric.pdb",
+        "lib/monoandroid12.0/Xamarin.AndroidX.Biometric.xml",
+        "lib/net6.0-android31.0/Xamarin.AndroidX.Biometric.dll",
+        "lib/net6.0-android31.0/Xamarin.AndroidX.Biometric.pdb",
+        "lib/net6.0-android31.0/Xamarin.AndroidX.Biometric.xml",
+        "proguard/proguard.txt",
+        "xamarin.androidx.biometric.1.1.0.9.nupkg.sha512",
+        "xamarin.androidx.biometric.nuspec"
+      ]
+    },
     "Xamarin.AndroidX.Browser/1.8.0.9": {
       "sha512": "L3itnlM2XUT1umH6gVYLayMuFEfefzIh7cvN+J79g+slu4ENzvgg3if9s1+g2B3JVEr/A5uwVsXwzSvv0MmGTA==",
       "type": "package",
@@ -18090,6 +21531,123 @@
         "readme.md",
         "xamarin.androidx.browser.1.8.0.9.nupkg.sha512",
         "xamarin.androidx.browser.nuspec"
+      ]
+    },
+    "Xamarin.AndroidX.Camera.Camera2/1.4.1.1": {
+      "sha512": "XlgOXhksQ4DA6lGfeomwcEW3bhqwWpT9tPAhHrkSiHJRw8rqUFo53b1znaxnXTYMKICIg0pNQjv7daexqk0mJw==",
+      "type": "package",
+      "path": "xamarin.androidx.camera.camera2/1.4.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "_manifest/spdx_2.2/manifest.spdx.json",
+        "_manifest/spdx_2.2/manifest.spdx.json.sha256",
+        "aar/androidx.camera.camera-camera2.aar",
+        "build/net8.0-android34.0/Xamarin.AndroidX.Camera.Camera2.targets",
+        "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Camera.Camera2.targets",
+        "icon.png",
+        "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Camera2.dll",
+        "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Camera2.pdb",
+        "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Camera2.xml",
+        "proguard/proguard.txt",
+        "readme.md",
+        "xamarin.androidx.camera.camera2.1.4.1.1.nupkg.sha512",
+        "xamarin.androidx.camera.camera2.nuspec"
+      ]
+    },
+    "Xamarin.AndroidX.Camera.Core/1.4.1.1": {
+      "sha512": "jItBqY/ymj8df+IBRkSwOxSN8FfVWMTA4JshAsASHReesBSnVHzVU0A8e6fJmUlZUsBLc3WgMxE5rHiFajIdGg==",
+      "type": "package",
+      "path": "xamarin.androidx.camera.core/1.4.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "_manifest/spdx_2.2/manifest.spdx.json",
+        "_manifest/spdx_2.2/manifest.spdx.json.sha256",
+        "aar/androidx.camera.camera-core.aar",
+        "build/net8.0-android34.0/Xamarin.AndroidX.Camera.Core.targets",
+        "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Camera.Core.targets",
+        "icon.png",
+        "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Core.dll",
+        "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Core.pdb",
+        "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Core.xml",
+        "proguard/proguard.txt",
+        "readme.md",
+        "xamarin.androidx.camera.core.1.4.1.1.nupkg.sha512",
+        "xamarin.androidx.camera.core.nuspec"
+      ]
+    },
+    "Xamarin.AndroidX.Camera.Lifecycle/1.4.1.1": {
+      "sha512": "qxPx5IHJMjcrYQ6xW4KAOAd5oWYwsYFKy7E+o2sCp4FssU3iY4QB8rJElRxm6ghgC4hjBNj8P34t4aGRNskhoA==",
+      "type": "package",
+      "path": "xamarin.androidx.camera.lifecycle/1.4.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "_manifest/spdx_2.2/manifest.spdx.json",
+        "_manifest/spdx_2.2/manifest.spdx.json.sha256",
+        "aar/androidx.camera.camera-lifecycle.aar",
+        "build/net8.0-android34.0/Xamarin.AndroidX.Camera.Lifecycle.targets",
+        "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Camera.Lifecycle.targets",
+        "icon.png",
+        "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Lifecycle.dll",
+        "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Lifecycle.pdb",
+        "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Lifecycle.xml",
+        "readme.md",
+        "xamarin.androidx.camera.lifecycle.1.4.1.1.nupkg.sha512",
+        "xamarin.androidx.camera.lifecycle.nuspec"
+      ]
+    },
+    "Xamarin.AndroidX.Camera.Video/1.4.1.1": {
+      "sha512": "dnQ+ZTilMEUmOSjgu/hM6qop2xjtO3WKmMM/ygQJKOyqnIRpzMV+9RSoAKlPqRHjBXjB9jZCTLUaCsnqW5NxNA==",
+      "type": "package",
+      "path": "xamarin.androidx.camera.video/1.4.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "_manifest/spdx_2.2/manifest.spdx.json",
+        "_manifest/spdx_2.2/manifest.spdx.json.sha256",
+        "aar/androidx.camera.camera-video.aar",
+        "build/net8.0-android34.0/Xamarin.AndroidX.Camera.Video.targets",
+        "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Camera.Video.targets",
+        "icon.png",
+        "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Video.dll",
+        "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Video.pdb",
+        "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.Video.xml",
+        "readme.md",
+        "xamarin.androidx.camera.video.1.4.1.1.nupkg.sha512",
+        "xamarin.androidx.camera.video.nuspec"
+      ]
+    },
+    "Xamarin.AndroidX.Camera.View/1.4.1.1": {
+      "sha512": "XxN1uOCcjZfuoHhcBZjfezs6IF5IvGVBSeNZzEIp/RqlbKMeR8z9+D00yIlp/jF3MxmX9uTLWrJ5G/Oh/kjXnw==",
+      "type": "package",
+      "path": "xamarin.androidx.camera.view/1.4.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "_manifest/spdx_2.2/manifest.spdx.json",
+        "_manifest/spdx_2.2/manifest.spdx.json.sha256",
+        "aar/androidx.camera.camera-view.aar",
+        "build/net8.0-android34.0/Xamarin.AndroidX.Camera.View.targets",
+        "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Camera.View.targets",
+        "icon.png",
+        "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.View.dll",
+        "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.View.pdb",
+        "lib/net8.0-android34.0/Xamarin.AndroidX.Camera.View.xml",
+        "readme.md",
+        "xamarin.androidx.camera.view.1.4.1.1.nupkg.sha512",
+        "xamarin.androidx.camera.view.nuspec"
       ]
     },
     "Xamarin.AndroidX.CardView/1.0.0.34": {
@@ -18195,6 +21753,29 @@
         "readme.md",
         "xamarin.androidx.concurrent.futures.1.2.0.6.nupkg.sha512",
         "xamarin.androidx.concurrent.futures.nuspec"
+      ]
+    },
+    "Xamarin.AndroidX.Concurrent.Futures.Ktx/1.2.0.5": {
+      "sha512": "4ySDOkB0vpLeasTTx+ZA1js0TVdkCPg1uuG6k3+wBJCzuIV692Ju7Wa7r/PDL2jo4ox3U9TvR5Glga1AUBAtfQ==",
+      "type": "package",
+      "path": "xamarin.androidx.concurrent.futures.ktx/1.2.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "_manifest/spdx_2.2/manifest.spdx.json",
+        "_manifest/spdx_2.2/manifest.spdx.json.sha256",
+        "build/net8.0-android34.0/Xamarin.AndroidX.Concurrent.Futures.Ktx.targets",
+        "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Concurrent.Futures.Ktx.targets",
+        "icon.png",
+        "jar/androidx.concurrent.concurrent-futures-ktx.jar",
+        "lib/net8.0-android34.0/Xamarin.AndroidX.Concurrent.Futures.Ktx.dll",
+        "lib/net8.0-android34.0/Xamarin.AndroidX.Concurrent.Futures.Ktx.pdb",
+        "lib/net8.0-android34.0/Xamarin.AndroidX.Concurrent.Futures.Ktx.xml",
+        "readme.md",
+        "xamarin.androidx.concurrent.futures.ktx.1.2.0.5.nupkg.sha512",
+        "xamarin.androidx.concurrent.futures.ktx.nuspec"
       ]
     },
     "Xamarin.AndroidX.ConstraintLayout/2.2.1.1": {
@@ -19180,6 +22761,29 @@
         "xamarin.androidx.tracing.tracing.nuspec"
       ]
     },
+    "Xamarin.AndroidX.Tracing.Tracing.Ktx/1.2.0.9": {
+      "sha512": "k86lTK18KTgzTunEOCWTobWDqN2ySW+FLkg7clh9b7ZHCI+2/DnXuxZXlw/gZ9vhWhAMn8/GvYjwfJGYDOKgqw==",
+      "type": "package",
+      "path": "xamarin.androidx.tracing.tracing.ktx/1.2.0.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "_manifest/spdx_2.2/manifest.spdx.json",
+        "_manifest/spdx_2.2/manifest.spdx.json.sha256",
+        "aar/androidx.tracing.tracing-ktx.aar",
+        "build/net8.0-android34.0/Xamarin.AndroidX.Tracing.Tracing.Ktx.targets",
+        "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Tracing.Tracing.Ktx.targets",
+        "icon.png",
+        "lib/net8.0-android34.0/Xamarin.AndroidX.Tracing.Tracing.Ktx.dll",
+        "lib/net8.0-android34.0/Xamarin.AndroidX.Tracing.Tracing.Ktx.pdb",
+        "lib/net8.0-android34.0/Xamarin.AndroidX.Tracing.Tracing.Ktx.xml",
+        "readme.md",
+        "xamarin.androidx.tracing.tracing.ktx.1.2.0.9.nupkg.sha512",
+        "xamarin.androidx.tracing.tracing.ktx.nuspec"
+      ]
+    },
     "Xamarin.AndroidX.Transition/1.5.1.5": {
       "sha512": "LIOtol92q34LxKiXZcXCtorF/Erg7xOLAS8z94U7uwJ4kw0MxP5OHg9zjjkIuV6wunQhhzFTMfQGOgN1XJhYow==",
       "type": "package",
@@ -19373,6 +22977,27 @@
         "readme.md",
         "xamarin.google.android.material.1.12.0.3.nupkg.sha512",
         "xamarin.google.android.material.nuspec"
+      ]
+    },
+    "Xamarin.Google.AutoValue.Annotations/1.11.0.5": {
+      "sha512": "mcJb0pz5tWQh5MMGOcCP2lLWXPs1pkPDuFLYchR/zz8IXOjqnWRJHufLEHcKIEmvvr23woCbxOpdQjXy6Y1zeQ==",
+      "type": "package",
+      "path": "xamarin.google.autovalue.annotations/1.11.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "_manifest/spdx_2.2/manifest.spdx.json",
+        "_manifest/spdx_2.2/manifest.spdx.json.sha256",
+        "icon.png",
+        "lib/net8.0-android34.0/Xamarin.Google.AutoValue.Annotations.aar",
+        "lib/net8.0-android34.0/Xamarin.Google.AutoValue.Annotations.dll",
+        "lib/net8.0-android34.0/Xamarin.Google.AutoValue.Annotations.pdb",
+        "lib/net8.0-android34.0/Xamarin.Google.AutoValue.Annotations.xml",
+        "readme.md",
+        "xamarin.google.autovalue.annotations.1.11.0.5.nupkg.sha512",
+        "xamarin.google.autovalue.annotations.nuspec"
       ]
     },
     "Xamarin.Google.Code.FindBugs.JSR305/3.0.2.19": {
@@ -19660,28 +23285,171 @@
         "xamarin.kotlinx.serialization.core.jvm.nuspec"
       ]
     },
+    "ZXing.Net/0.16.10": {
+      "sha512": "9avtcn21T7Ndcl8PQ1LHR7/wEoCruX1QKKHvO6zBPTsDW9IdvR5vKOmd618AY+DtDWZz8NaFDTkpbZdgaF4l4w==",
+      "type": "package",
+      "path": "zxing.net/0.16.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/native/zxing.XML",
+        "lib/native/zxing.pri",
+        "lib/native/zxing.winmd",
+        "lib/net20-cf/zxing.ce2.0.dll",
+        "lib/net20-cf/zxing.ce2.0.xml",
+        "lib/net20/zxing.XML",
+        "lib/net20/zxing.dll",
+        "lib/net35-cf/zxing.ce3.5.dll",
+        "lib/net35-cf/zxing.ce3.5.xml",
+        "lib/net35/zxing.XML",
+        "lib/net35/zxing.dll",
+        "lib/net40/zxing.XML",
+        "lib/net40/zxing.dll",
+        "lib/net40/zxing.presentation.XML",
+        "lib/net40/zxing.presentation.dll",
+        "lib/net45/zxing.XML",
+        "lib/net45/zxing.dll",
+        "lib/net45/zxing.presentation.XML",
+        "lib/net45/zxing.presentation.dll",
+        "lib/net461/zxing.XML",
+        "lib/net461/zxing.dll",
+        "lib/net461/zxing.presentation.XML",
+        "lib/net461/zxing.presentation.dll",
+        "lib/net47/zxing.XML",
+        "lib/net47/zxing.dll",
+        "lib/net47/zxing.presentation.XML",
+        "lib/net47/zxing.presentation.dll",
+        "lib/net48/zxing.XML",
+        "lib/net48/zxing.dll",
+        "lib/net48/zxing.presentation.XML",
+        "lib/net48/zxing.presentation.dll",
+        "lib/net5.0/zxing.XML",
+        "lib/net5.0/zxing.dll",
+        "lib/net6.0/zxing.XML",
+        "lib/net6.0/zxing.dll",
+        "lib/net7.0/zxing.XML",
+        "lib/net7.0/zxing.dll",
+        "lib/net8.0/zxing.XML",
+        "lib/net8.0/zxing.dll",
+        "lib/net9.0/zxing.XML",
+        "lib/net9.0/zxing.dll",
+        "lib/netcoreapp3.0/zxing.dll",
+        "lib/netcoreapp3.0/zxing.xml",
+        "lib/netcoreapp3.1/zxing.dll",
+        "lib/netcoreapp3.1/zxing.xml",
+        "lib/netstandard1.0/zxing.dll",
+        "lib/netstandard1.0/zxing.xml",
+        "lib/netstandard1.1/zxing.dll",
+        "lib/netstandard1.1/zxing.xml",
+        "lib/netstandard1.3/zxing.dll",
+        "lib/netstandard1.3/zxing.xml",
+        "lib/netstandard2.0/zxing.dll",
+        "lib/netstandard2.0/zxing.xml",
+        "lib/netstandard2.1/zxing.dll",
+        "lib/netstandard2.1/zxing.xml",
+        "lib/portable-win+net40+sl4+sl5+wp7+wp71+wp8/zxing.portable.XML",
+        "lib/portable-win+net40+sl4+sl5+wp7+wp71+wp8/zxing.portable.dll",
+        "lib/sl3-wp/zxing.wp7.0.XML",
+        "lib/sl3-wp/zxing.wp7.0.dll",
+        "lib/sl4-wp71/zxing.wp7.1.XML",
+        "lib/sl4-wp71/zxing.wp7.1.dll",
+        "lib/sl4/zxing.sl4.XML",
+        "lib/sl4/zxing.sl4.dll",
+        "lib/sl5/zxing.sl5.XML",
+        "lib/sl5/zxing.sl5.dll",
+        "lib/uap10/zxing.dll",
+        "lib/uap10/zxing.pri",
+        "lib/uap10/zxing.xml",
+        "lib/windows8-managed/zxing.winrt.XML",
+        "lib/windows8-managed/zxing.winrt.dll",
+        "lib/windows8/zxing.XML",
+        "lib/windows8/zxing.pri",
+        "lib/windows8/zxing.winmd",
+        "lib/wp8/zxing.wp8.0.XML",
+        "lib/wp8/zxing.wp8.0.dll",
+        "logo.jpg",
+        "zxing.net.0.16.10.nupkg.sha512",
+        "zxing.net.nuspec"
+      ]
+    },
+    "ZXing.Net.Maui/0.5.0": {
+      "sha512": "KGZ+bRWSBkAN263CWNe9pIDlW9dtvNw0jicA7BfJBjpT/2xLwsd/p+u/G9KZ8k/11TQBtSDAZHcrHchK/2QxkA==",
+      "type": "package",
+      "path": "zxing.net.maui/0.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net9.0-android35.0/ZXing.Net.MAUI.dll",
+        "lib/net9.0-android35.0/ZXing.Net.MAUI.xml",
+        "lib/net9.0-ios18.0/ZXing.Net.MAUI.dll",
+        "lib/net9.0-maccatalyst18.0/ZXing.Net.MAUI.dll",
+        "lib/net9.0-windows10.0.19041/ZXing.Net.MAUI.dll",
+        "zxing.net.maui.0.5.0.nupkg.sha512",
+        "zxing.net.maui.nuspec"
+      ]
+    },
+    "ZXing.Net.Maui.Controls/0.5.0": {
+      "sha512": "KNlQl2Jj6lXg8yxBA7twPS4PhFKwDmupVQ5k80XKDhlCZ+W8kpoT2XvxW03pZitdKUFDSggiUqzDZs0kv27Atg==",
+      "type": "package",
+      "path": "zxing.net.maui.controls/0.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net9.0-android35.0/ZXing.Net.MAUI.Controls.dll",
+        "lib/net9.0-android35.0/ZXing.Net.MAUI.Controls.xml",
+        "lib/net9.0-ios18.0/ZXing.Net.MAUI.Controls.dll",
+        "lib/net9.0-maccatalyst18.0/ZXing.Net.MAUI.Controls.dll",
+        "lib/net9.0-windows10.0.19041/ZXing.Net.MAUI.Controls.dll",
+        "zxing.net.maui.controls.0.5.0.nupkg.sha512",
+        "zxing.net.maui.controls.nuspec"
+      ]
+    },
+    "Bank.Application/1.0.0": {
+      "type": "project",
+      "path": "../Bank.Application/Bank.Application.csproj",
+      "msbuildProject": "../Bank.Application/Bank.Application.csproj"
+    },
     "Bank.Domain/1.0.0": {
       "type": "project",
       "path": "../Bank.Domain/Bank.Domain.csproj",
       "msbuildProject": "../Bank.Domain/Bank.Domain.csproj"
+    },
+    "Bank.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Bank.Infrastructure/Bank.Infrastructure.csproj",
+      "msbuildProject": "../Bank.Infrastructure/Bank.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0-android35.0": [
+      "Bank.Application >= 1.0.0",
       "Bank.Domain >= 1.0.0",
+      "Bank.Infrastructure >= 1.0.0",
       "CommunityToolkit.Mvvm >= 8.0.0",
+      "Microsoft.Extensions.Http.Polly >= 9.0.0",
       "Microsoft.Extensions.Logging.Debug >= 9.0.9",
       "Microsoft.Maui.Controls >= 9.0.120",
       "Microsoft.NET.ILLink.Tasks >= 9.0.11",
       "Nethereum.Web3 >= 5.0.0",
+      "Plugin.Fingerprint >= 3.0.0-beta.1",
+      "Polly.Extensions.Http >= 3.0.0",
+      "ZXing.Net.Maui.Controls >= 0.5.0",
       "sqlite-net-pcl >= 1.9.172"
     ],
     "net9.0-windows10.0.19041": [
+      "Bank.Application >= 1.0.0",
       "Bank.Domain >= 1.0.0",
+      "Bank.Infrastructure >= 1.0.0",
       "CommunityToolkit.Mvvm >= 8.0.0",
+      "Microsoft.Extensions.Http.Polly >= 9.0.0",
       "Microsoft.Extensions.Logging.Debug >= 9.0.9",
       "Microsoft.Maui.Controls >= 9.0.120",
       "Nethereum.Web3 >= 5.0.0",
+      "Plugin.Fingerprint >= 3.0.0-beta.1",
+      "Polly.Extensions.Http >= 3.0.0",
+      "ZXing.Net.Maui.Controls >= 0.5.0",
       "sqlite-net-pcl >= 1.9.172"
     ]
   },
@@ -19720,16 +23488,28 @@
         "net9.0-android35.0": {
           "targetAlias": "net9.0-android",
           "projectReferences": {
+            "D:\\Neo-Bank-Web3\\Bank.Application\\Bank.Application.csproj": {
+              "projectPath": "D:\\Neo-Bank-Web3\\Bank.Application\\Bank.Application.csproj"
+            },
             "D:\\Neo-Bank-Web3\\Bank.Domain\\Bank.Domain.csproj": {
               "projectPath": "D:\\Neo-Bank-Web3\\Bank.Domain\\Bank.Domain.csproj"
+            },
+            "D:\\Neo-Bank-Web3\\Bank.Infrastructure\\Bank.Infrastructure.csproj": {
+              "projectPath": "D:\\Neo-Bank-Web3\\Bank.Infrastructure\\Bank.Infrastructure.csproj"
             }
           }
         },
         "net9.0-windows10.0.19041": {
           "targetAlias": "net9.0-windows10.0.19041.0",
           "projectReferences": {
+            "D:\\Neo-Bank-Web3\\Bank.Application\\Bank.Application.csproj": {
+              "projectPath": "D:\\Neo-Bank-Web3\\Bank.Application\\Bank.Application.csproj"
+            },
             "D:\\Neo-Bank-Web3\\Bank.Domain\\Bank.Domain.csproj": {
               "projectPath": "D:\\Neo-Bank-Web3\\Bank.Domain\\Bank.Domain.csproj"
+            },
+            "D:\\Neo-Bank-Web3\\Bank.Infrastructure\\Bank.Infrastructure.csproj": {
+              "projectPath": "D:\\Neo-Bank-Web3\\Bank.Infrastructure\\Bank.Infrastructure.csproj"
             }
           }
         }
@@ -19754,6 +23534,10 @@
             "target": "Package",
             "version": "[8.0.0, )"
           },
+          "Microsoft.Extensions.Http.Polly": {
+            "target": "Package",
+            "version": "[9.0.0, )"
+          },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "[9.0.9, )"
@@ -19771,6 +23555,18 @@
           "Nethereum.Web3": {
             "target": "Package",
             "version": "[5.0.0, )"
+          },
+          "Plugin.Fingerprint": {
+            "target": "Package",
+            "version": "[3.0.0-beta.1, )"
+          },
+          "Polly.Extensions.Http": {
+            "target": "Package",
+            "version": "[3.0.0, )"
+          },
+          "ZXing.Net.Maui.Controls": {
+            "target": "Package",
+            "version": "[0.5.0, )"
           },
           "sqlite-net-pcl": {
             "target": "Package",
@@ -19819,6 +23615,10 @@
             "target": "Package",
             "version": "[8.0.0, )"
           },
+          "Microsoft.Extensions.Http.Polly": {
+            "target": "Package",
+            "version": "[9.0.0, )"
+          },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "[9.0.9, )"
@@ -19830,6 +23630,18 @@
           "Nethereum.Web3": {
             "target": "Package",
             "version": "[5.0.0, )"
+          },
+          "Plugin.Fingerprint": {
+            "target": "Package",
+            "version": "[3.0.0-beta.1, )"
+          },
+          "Polly.Extensions.Http": {
+            "target": "Package",
+            "version": "[3.0.0, )"
+          },
+          "ZXing.Net.Maui.Controls": {
+            "target": "Package",
+            "version": "[0.5.0, )"
           },
           "sqlite-net-pcl": {
             "target": "Package",

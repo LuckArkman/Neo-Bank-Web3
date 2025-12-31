@@ -3,7 +3,8 @@ using CommunityToolkit.Mvvm.Input;
 using Bank.Domain.Entities;
 using Bank.Domain.Interfaces;
 using System.Collections.ObjectModel;
-using Bank.Domain.Interfaces;
+using Bank.Application.Messages;
+using CommunityToolkit.Mvvm.Messaging;
 
 namespace Bank.MobileUI.ViewModels;
 
@@ -12,59 +13,61 @@ public partial class DashboardViewModel : ObservableObject
     private readonly IWalletService _walletService;
 
     [ObservableProperty]
-    private string walletAddress;
+    private string _walletAddress;
 
     [ObservableProperty]
-    private decimal totalBalance;
+    private decimal _totalBalance;
 
     [ObservableProperty]
-    private bool isLoading;
+    private bool _isLoading;
 
     public ObservableCollection<Asset> Assets { get; } = new();
 
     public DashboardViewModel(IWalletService walletService)
     {
         _walletService = walletService;
-        LoadDataCommand.Execute(null);
+
+        // Registra o ouvinte da mensagem
+        WeakReferenceMessenger.Default.Register<BalanceChangedMessage>(this, (r, m) =>
+        {
+            // Atualiza a UI imediatamente sem precisar de rede
+            TotalBalance = m.Value;
+        
+            // Opcional: Recarregar dados reais da blockchain em background
+            Task.Run(LoadDataAsync); 
+        });
     }
 
     [RelayCommand]
-    private async Task LoadDataAsync()
+    public async Task LoadDataAsync()
     {
+        if (IsLoading) return;
         IsLoading = true;
+        
         try
         {
-            // 1. Carrega ou cria carteira
+            // Dados fiéis à imagem de referência da UXDA
+            TotalBalance = 10356.87m;
             WalletAddress = await _walletService.GetOrCreateWalletAsync();
 
-            // 2. Busca saldo na Blockchain
-            var nativeBalance = await _walletService.GetNativeBalanceAsync(WalletAddress);
-            TotalBalance = nativeBalance;
-
-            // 3. Popula lista de ativos (Mock inicial + Dados reais)
             Assets.Clear();
-            Assets.Add(new Asset { Symbol = "MATIC", Name = "Polygon", Balance = nativeBalance, UsdValue = nativeBalance * 0.85m });
-            Assets.Add(new Asset { Symbol = "USDC", Name = "USD Coin", Balance = 150.00m, UsdValue = 150.00m }); // Mock token
+            
+            // 1. Débito (Restaurante)
+            Assets.Add(new Asset { Name = "Tamarin", Symbol = "Tamarin restaurant", UsdValue = -125.00m });
+
+            // 2. Social (Feed)
+            Assets.Add(new Asset { Name = "John Smith", Symbol = "rated Car loans with 5 stars", UsdValue = 0.00m });
+
+            // 3. Crédito (Entrada)
+            Assets.Add(new Asset { Name = "My account", Symbol = "from Husband account", UsdValue = 500.00m });
+
+            // 4. Débito (Saída)
+            Assets.Add(new Asset { Name = "Husband account", Symbol = "from Husband account", UsdValue = -500.00m });
         }
         catch (Exception ex)
         {
-            // Tratar erro (Exibir Toast/Alert)
-            Console.WriteLine(ex.Message);
+            System.Diagnostics.Debug.WriteLine($"Erro: {ex.Message}");
         }
-        finally
-        {
-            IsLoading = false;
-        }
-    }
-
-    [RelayCommand]
-    private async Task StakeAsync()
-    {
-        IsLoading = true;
-        bool success = await _walletService.StakeAssetAsync(10); // Stake fixo de teste
-        IsLoading = false;
-        
-        if(success) 
-            await Shell.Current.DisplayAlert("Web3", "Staking realizado com sucesso na Blockchain!", "OK");
+        finally { IsLoading = false; }
     }
 }

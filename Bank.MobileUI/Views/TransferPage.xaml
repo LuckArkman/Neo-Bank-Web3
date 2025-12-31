@@ -1,0 +1,43 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:Bank.MobileUI.ViewModels"
+             x:Class="Bank.MobileUI.Views.TransferPage"
+             BackgroundColor="#121212" Title="Transferir">
+
+    <VerticalStackLayout Spacing="20" Padding="30" VerticalOptions="Center">
+        
+        <Label Text="Para quem você quer enviar?" TextColor="White" FontSize="18"/>
+
+        <!-- Input de Endereço -->
+        <Border Stroke="#8A2BE2" StrokeThickness="1" BackgroundColor="#1E1E1E" Padding="10">
+            <Grid ColumnDefinitions="*, Auto">
+                <Entry Text="{Binding TargetAddress}" Placeholder="0x..." TextColor="White" PlaceholderColor="#555"/>
+                <!-- Botão de Scan -->
+                <ImageButton Grid.Column="1" Command="{Binding ScanQrCodeCommand}" Source="icon_qr.png" HeightRequest="30" WidthRequest="30"/>
+            </Grid>
+        </Border>
+
+        <Label Text="Valor (ETH/MATIC)" TextColor="White" FontSize="18" Margin="0,20,0,0"/>
+
+        <!-- Input de Valor -->
+        <Border Stroke="#8A2BE2" StrokeThickness="1" BackgroundColor="#1E1E1E" Padding="10">
+            <Entry Text="{Binding Amount}" Keyboard="Numeric" TextColor="White" FontSize="24" HorizontalTextAlignment="Center"/>
+        </Border>
+
+        <!-- Botão Confirmar -->
+        <Button Text="Confirmar Transferência" 
+                Command="{Binding ConfirmTransactionCommand}"
+                BackgroundColor="#8A2BE2" 
+                TextColor="White"
+                CornerRadius="25"
+                HeightRequest="50"
+                Margin="0,30,0,0">
+            <Button.Triggers>
+                <DataTrigger TargetType="Button" Binding="{Binding IsBusy}" Value="True">
+                    <Setter Property="Text" Value="Enviando para Blockchain..."/>
+                    <Setter Property="IsEnabled" Value="False"/>
+                </DataTrigger>
+            </Button.Triggers>
+        </Button>
+    </VerticalStackLayout>
+</ContentPage>

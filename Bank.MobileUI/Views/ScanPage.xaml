@@ -1,0 +1,19 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:zxing="clr-namespace:ZXing.Net.Maui.Controls"
+             xmlns:controls="clr-namespace:ZXing.Net.Maui.Controls;assembly=ZXing.Net.MAUI.Controls"
+             x:Class="Bank.MobileUI.Views.ScanPage"
+             Title="Escanear QR Code">
+
+    <Grid>
+        <controls:CameraBarcodeReaderView 
+            x:Name="barcodeReader"
+            BarcodesDetected="CameraBarcodeReaderView_BarcodesDetected"
+            IsDetecting="True" />
+            
+        <Label Text="Aponte para o QR Code" 
+               TextColor="White" BackgroundColor="#80000000"
+               VerticalOptions="End" HorizontalOptions="Center" 
+               Padding="20" Margin="0,0,0,50"/>
+    </Grid>
+</ContentPage>

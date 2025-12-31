@@ -5,6 +5,7 @@ Microsoft.Maui.Controls.Xaml.dll
 Microsoft.Maui.dll
 Microsoft.Maui.Essentials.dll
 Microsoft.Maui.Graphics.dll
+Plugin.Fingerprint.dll
 SQLitePCLRaw.batteries_v2.dll
 SQLitePCLRaw.lib.e_sqlite3.android.dll
 Xamarin.Android.Glide.Annotations.dll
@@ -20,12 +21,19 @@ Xamarin.AndroidX.AppCompat.AppCompatResources.dll
 Xamarin.AndroidX.AppCompat.dll
 Xamarin.AndroidX.Arch.Core.Common.dll
 Xamarin.AndroidX.Arch.Core.Runtime.dll
+Xamarin.AndroidX.Biometric.dll
 Xamarin.AndroidX.Browser.dll
+Xamarin.AndroidX.Camera.Camera2.dll
+Xamarin.AndroidX.Camera.Core.dll
+Xamarin.AndroidX.Camera.Lifecycle.dll
+Xamarin.AndroidX.Camera.Video.dll
+Xamarin.AndroidX.Camera.View.dll
 Xamarin.AndroidX.CardView.dll
 Xamarin.AndroidX.Collection.dll
 Xamarin.AndroidX.Collection.Jvm.dll
 Xamarin.AndroidX.Collection.Ktx.dll
 Xamarin.AndroidX.Concurrent.Futures.dll
+Xamarin.AndroidX.Concurrent.Futures.Ktx.dll
 Xamarin.AndroidX.ConstraintLayout.Core.dll
 Xamarin.AndroidX.ConstraintLayout.dll
 Xamarin.AndroidX.CoordinatorLayout.dll
@@ -72,6 +80,7 @@ Xamarin.AndroidX.SlidingPaneLayout.dll
 Xamarin.AndroidX.Startup.StartupRuntime.dll
 Xamarin.AndroidX.SwipeRefreshLayout.dll
 Xamarin.AndroidX.Tracing.Tracing.dll
+Xamarin.AndroidX.Tracing.Tracing.Ktx.dll
 Xamarin.AndroidX.Transition.dll
 Xamarin.AndroidX.VectorDrawable.Animated.dll
 Xamarin.AndroidX.VectorDrawable.dll
@@ -81,6 +90,7 @@ Xamarin.AndroidX.ViewPager2.dll
 Xamarin.AndroidX.Window.dll
 Xamarin.AndroidX.Window.Extensions.Core.Core.dll
 Xamarin.Google.Android.Material.dll
+Xamarin.Google.AutoValue.Annotations.dll
 Xamarin.Google.Crypto.Tink.Android.dll
 Xamarin.Google.ErrorProne.Annotations.dll
 Xamarin.Google.ErrorProne.TypeAnnotations.dll
@@ -95,6 +105,8 @@ Xamarin.KotlinX.Coroutines.Core.dll
 Xamarin.KotlinX.Coroutines.Core.Jvm.dll
 Xamarin.KotlinX.Serialization.Core.dll
 Xamarin.KotlinX.Serialization.Core.Jvm.dll
+ZXing.Net.MAUI.Controls.dll
+ZXing.Net.MAUI.dll
 androidx.versionedparcelable.versionedparcelable.aar
 androidx.tracing.tracing.aar
 androidx.startup.startup-runtime.aar
@@ -137,6 +149,7 @@ androidx.cardview.cardview.aar
 com.google.android.material.material.aar
 androidx.window.extensions.core.core.aar
 androidx.window.window.aar
+androidx.tracing.tracing-ktx.aar
 androidx.swiperefreshlayout.swiperefreshlayout.aar
 androidx.slidingpanelayout.slidingpanelayout.aar
 androidx.security.security-crypto.aar
@@ -153,7 +166,13 @@ androidx.fragment.fragment-ktx.aar
 androidx.navigation.navigation-fragment.aar
 androidx.lifecycle.lifecycle-livedata.aar
 androidx.exifinterface.exifinterface.aar
+androidx.camera.camera-core.aar
+androidx.camera.camera-video.aar
+androidx.camera.camera-lifecycle.aar
+androidx.camera.camera-view.aar
+androidx.camera.camera-camera2.aar
 androidx.browser.browser.aar
+androidx.biometric.biometric.aar
 GoogleGson.aar
 Jsr305Binding.aar
 Microsoft.Maui.Controls.aar
@@ -165,6 +184,7 @@ Xamarin.Android.Glide.Annotations.aar
 Xamarin.Android.Glide.DiskLruCache.aar
 glide.aar
 gifdecoder.aar
+Xamarin.Google.AutoValue.Annotations.aar
 Xamarin.Google.Crypto.Tink.Android.aar
 Xamarin.Google.ErrorProne.Annotations.aar
 Xamarin.Google.ErrorProne.TypeAnnotations.aar

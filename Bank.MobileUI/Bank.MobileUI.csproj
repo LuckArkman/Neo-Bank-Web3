@@ -14,7 +14,6 @@
         <!-- For example: <RuntimeIdentifiers>maccatalyst-x64;maccatalyst-arm64</RuntimeIdentifiers> -->
 
         <OutputType>Exe</OutputType>
-        <PublishAot>true</PublishAot>
         <RootNamespace>Bank.MobileUI</RootNamespace>
         <UseMaui>true</UseMaui>
         <SingleProject>true</SingleProject>
@@ -62,13 +61,18 @@
 
     <ItemGroup>
         <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Http.Polly" Version="9.0.0" />
         <PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)"/>
         <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.9"/>
         <PackageReference Include="Nethereum.Web3" Version="5.0.0" />
+        <PackageReference Include="Plugin.Fingerprint" Version="3.0.0-beta.1" />
+        <PackageReference Include="Polly.Extensions.Http" Version="3.0.0" />
         <PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
+        <PackageReference Include="ZXing.Net.Maui.Controls" Version="0.5.0" />
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Bank.Application\Bank.Application.csproj" />
       <ProjectReference Include="..\Bank.Domain\Bank.Domain.csproj" />
       <ProjectReference Include="..\Bank.Infrastructure\Bank.Infrastructure.csproj" />
     </ItemGroup>

@@ -1,6 +1,7 @@
-﻿namespace Bank.MobileUI;
+﻿using Microsoft.Maui.Controls;
+namespace Bank.MobileUI;
 
-public partial class App : Application
+public partial class App : Microsoft.Maui.Controls.Application
 {
     public App()
     {

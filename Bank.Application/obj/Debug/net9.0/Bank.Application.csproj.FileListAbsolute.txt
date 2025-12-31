@@ -1,0 +1,13 @@
+D:\Neo-Bank-Web3\Bank.Application\bin\Debug\net9.0\Bank.Application.deps.json
+D:\Neo-Bank-Web3\Bank.Application\bin\Debug\net9.0\Bank.Application.dll
+D:\Neo-Bank-Web3\Bank.Application\bin\Debug\net9.0\Bank.Application.pdb
+D:\Neo-Bank-Web3\Bank.Application\obj\Debug\net9.0\Bank.Application.csproj.AssemblyReference.cache
+D:\Neo-Bank-Web3\Bank.Application\obj\Debug\net9.0\Bank.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Neo-Bank-Web3\Bank.Application\obj\Debug\net9.0\Bank.Application.AssemblyInfoInputs.cache
+D:\Neo-Bank-Web3\Bank.Application\obj\Debug\net9.0\Bank.Application.AssemblyInfo.cs
+D:\Neo-Bank-Web3\Bank.Application\obj\Debug\net9.0\Bank.Application.csproj.CoreCompileInputs.cache
+D:\Neo-Bank-Web3\Bank.Application\obj\Debug\net9.0\Bank.Application.sourcelink.json
+D:\Neo-Bank-Web3\Bank.Application\obj\Debug\net9.0\Bank.Application.dll
+D:\Neo-Bank-Web3\Bank.Application\obj\Debug\net9.0\refint\Bank.Application.dll
+D:\Neo-Bank-Web3\Bank.Application\obj\Debug\net9.0\Bank.Application.pdb
+D:\Neo-Bank-Web3\Bank.Application\obj\Debug\net9.0\ref\Bank.Application.dll

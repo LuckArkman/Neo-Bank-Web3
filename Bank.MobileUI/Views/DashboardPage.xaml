@@ -82,34 +82,48 @@
         </Frame>
 
         <Frame Grid.Row="1" 
-               VerticalOptions="End" 
-               Margin="20,0,20,20" 
-               HeightRequest="75" 
-               CornerRadius="37" 
-               BackgroundColor="White" 
-               HasShadow="True" 
-               BorderColor="#F0F0F0"
-               Padding="0">
-             <Grid ColumnDefinitions="*, *, *, *, *">
-                <VerticalStackLayout Grid.Column="0" VerticalOptions="Center">
-                    <Image Source="timeline_icon.png" HeightRequest="22"/>
-                    <Label Text="Timeline" TextColor="#3498DB" FontSize="9" HorizontalOptions="Center"/>
-                </VerticalStackLayout>
-                
-                <Image Source="market_icon.png" Grid.Column="1" HeightRequest="22" Opacity="0.5"/>
+       VerticalOptions="End" 
+       Margin="20,0,20,20" 
+       HeightRequest="85" 
+       CornerRadius="37" 
+       BackgroundColor="White" 
+       HasShadow="True" 
+       BorderColor="#F0F0F0"
+       Padding="0">
+    <Grid ColumnDefinitions="*, *, *, *, *">
+        
+        <VerticalStackLayout Grid.Column="0" VerticalOptions="Center">
+            <Image Source="transferir.png" HeightRequest="22"/>
+            <Label Text="Transferir" TextColor="#7F8C8D" FontSize="9" HorizontalOptions="Center" Margin="0,2,0,0"/>
+        </VerticalStackLayout>
+        
+        <VerticalStackLayout Grid.Column="1" VerticalOptions="Center">
+            <Image Source="pagar.png" HeightRequest="22" Opacity="0.5"/>
+            <Label Text="Pagar" TextColor="#7F8C8D" FontSize="9" HorizontalOptions="Center" Margin="0,2,0,0"/>
+        </VerticalStackLayout>
 
-                <Border Grid.Column="2" 
-                        BackgroundColor="#8E44AD" 
-                        WidthRequest="58" 
-                        HeightRequest="58" 
-                        StrokeShape="RoundRectangle 29"
-                        TranslationY="-10">
-                    <Image Source="pay_icon.png" Margin="15"/>
-                </Border>
+        <Border Grid.Column="2" 
+                BackgroundColor="#8E44AD" 
+                WidthRequest="65" 
+                HeightRequest="65" 
+                StrokeShape="RoundRectangle 32"
+                VerticalOptions="Center">
+            <VerticalStackLayout VerticalOptions="Center" Spacing="0">
+                <Image Source="casa.png" HeightRequest="22" HorizontalOptions="Center"/>
+                <Label Text="Perfil" TextColor="#7F8C8D" FontSize="9" HorizontalOptions="Center" Margin="0,2,0,0"/>
+            </VerticalStackLayout>
+        </Border>
 
-                <Image Source="insights_icon.png" Grid.Column="3" HeightRequest="22" Opacity="0.5"/>
-                <Image Source="goals_icon.png" Grid.Column="4" HeightRequest="22" Opacity="0.5"/>
-             </Grid>
-        </Frame>
+        <VerticalStackLayout Grid.Column="3" VerticalOptions="Center">
+            <Image Source="receber.png" HeightRequest="22" Opacity="0.5"/>
+            <Label Text="Receber" TextColor="#7F8C8D" FontSize="9" HorizontalOptions="Center" Margin="0,2,0,0"/>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Column="4" VerticalOptions="Center">
+            <Image Source="conexao.png" HeightRequest="22" Opacity="0.5"/>
+            <Label Text="Stake" TextColor="#7F8C8D" FontSize="9" HorizontalOptions="Center" Margin="0,2,0,0"/>
+        </VerticalStackLayout>
+    </Grid>
+</Frame>
     </Grid>
 </ContentPage>

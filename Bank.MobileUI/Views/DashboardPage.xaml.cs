@@ -16,4 +16,12 @@ public partial class DashboardPage : ContentPage
         InitializeComponent();
         BindingContext = vm;
     }
+
+    private async void ContentPage_Appearing(object sender, EventArgs e)
+    {
+        if (BindingContext is DashboardViewModel vm)
+        {
+            await vm.LoadDataAsync();
+        }
+    }
 }

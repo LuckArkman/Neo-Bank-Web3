@@ -20,7 +20,6 @@ public partial class DashboardViewModel : ObservableObject
 
     [ObservableProperty]
     private bool _isLoading;
-
     public ObservableCollection<Asset> Assets { get; } = new();
 
     public DashboardViewModel(IWalletService walletService)
@@ -30,12 +29,9 @@ public partial class DashboardViewModel : ObservableObject
         // Registra o ouvinte da mensagem
         WeakReferenceMessenger.Default.Register<BalanceChangedMessage>(this, (r, m) =>
         {
-            // Atualiza a UI imediatamente sem precisar de rede
             TotalBalance = m.Value;
-        
-            // Opcional: Recarregar dados reais da blockchain em background
-            Task.Run(LoadDataAsync); 
         });
+        Task.Run(LoadDataAsync); 
     }
 
     [RelayCommand]
@@ -47,7 +43,7 @@ public partial class DashboardViewModel : ObservableObject
         try
         {
             // Dados fiéis à imagem de referência da UXDA
-            TotalBalance = 10356.87m;
+            TotalBalance = 90356.87m;
             WalletAddress = await _walletService.GetOrCreateWalletAsync();
 
             Assets.Clear();

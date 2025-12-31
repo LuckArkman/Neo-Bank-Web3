@@ -1,18 +1,19 @@
-﻿using Nethereum.Web3;
+﻿using Microsoft.AspNetCore.SignalR;
+using Nethereum.Web3;
+using Org.BouncyCastle.Tls.Crypto;
 using System.Numerics;
 
 public class BlockchainIndexer : BackgroundService
 {
     private readonly ILogger<BlockchainIndexer> _logger;
-    // Em produção, injete um IServiceScopeFactory para acessar o DB
-    
-    // RPC Público da Polygon (Exemplo)
+
     private readonly Web3 _web3 = new Web3("https://polygon-rpc.com");
     private BigInteger _lastBlockChecked = 0;
 
     public BlockchainIndexer(ILogger<BlockchainIndexer> logger)
     {
         _logger = logger;
+        //await _logger.Clients.Group(toAddress.ToLower()).SendAsync("ReceiveTransactionAlert", new { Amount = amount, Hash = txHash });
     }
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)

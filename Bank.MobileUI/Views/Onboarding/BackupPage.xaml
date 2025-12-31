@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bank.MobileUI.Views.Onboarding.BackupPage">
+    <ContentPage.Content>
+            <Grid Padding="30" VerticalOptions="Center">
+                <Label Text="Anote sua Frase Secreta" FontSize="22" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                <Label Text="Se você perder estas palavras, perderá seu acesso para sempre." TextColor="#FF4500" HorizontalTextAlignment="Center"/>
+
+                <!-- Área protegida visualmente -->
+                <Border Stroke="#333" BackgroundColor="#111" Padding="20">
+                    <Label Text="{Binding SecretPhrase}" 
+                           FontSize="24" 
+                           HorizontalTextAlignment="Center" 
+                           TextColor="#00FF7F"/>
+                </Border>
+
+                <Label Text="Não tire print desta tela!" FontSize="12" TextColor="Gray" HorizontalOptions="Center"/>
+
+                <Button Text="Já anotei, continuar" Command="{Binding VerifyBackupCommand}" 
+                        BackgroundColor="#8A2BE2" TextColor="White" Margin="0,30,0,0"/>
+            </Grid>
+    </ContentPage.Content>
+</ContentPage>

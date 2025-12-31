@@ -61,6 +61,24 @@ build_metadata.AdditionalFiles.ManifestResourceName = Bank.MobileUI.Views.Dashbo
 build_metadata.AdditionalFiles.TargetPath = Views\DashboardPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\DashboardPage.xaml
 
+[D:/Neo-Bank-Web3/Bank.MobileUI/Views/Fiat/BuyCryptoPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Bank.MobileUI.Views.Fiat.BuyCryptoPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Fiat\BuyCryptoPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Fiat\BuyCryptoPage.xaml
+
+[D:/Neo-Bank-Web3/Bank.MobileUI/Views/HistoryPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Bank.MobileUI.Views.HistoryPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\HistoryPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\HistoryPage.xaml
+
+[D:/Neo-Bank-Web3/Bank.MobileUI/Views/Onboarding/BackupPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Bank.MobileUI.Views.Onboarding.BackupPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Onboarding\BackupPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Onboarding\BackupPage.xaml
+
 [D:/Neo-Bank-Web3/Bank.MobileUI/Views/ScanPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Bank.MobileUI.Views.ScanPage.xaml

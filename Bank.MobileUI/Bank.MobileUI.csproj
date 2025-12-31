@@ -61,6 +61,7 @@
 
     <ItemGroup>
         <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
+        <PackageReference Include="Microsoft.AspNetCore.SignalR.Common" Version="9.0.0" />
         <PackageReference Include="Microsoft.Extensions.Http.Polly" Version="9.0.0" />
         <PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)"/>
         <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.9"/>
@@ -76,5 +77,12 @@
       <ProjectReference Include="..\Bank.Domain\Bank.Domain.csproj" />
       <ProjectReference Include="..\Bank.Infrastructure\Bank.Infrastructure.csproj" />
     </ItemGroup>
+
+    <PropertyGroup>
+        <!-- TrimMode agressivo para remover código não usado -->
+        <TrimMode>full</TrimMode>
+    </PropertyGroup>
+
+
 
 </Project>

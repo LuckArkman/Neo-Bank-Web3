@@ -436,5 +436,16 @@
         <Setter Property="UnselectedTabColor" Value="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource Gray950}}" />
         <Setter Property="SelectedTabColor" Value="{AppThemeBinding Light={StaticResource Gray950}, Dark={StaticResource Gray200}}" />
     </Style>
+    
+    <!-- Animação de Shimmer (Brilho) -->
+    <Style x:Key="SkeletonBox" TargetType="BoxView">
+        <Setter Property="Color" Value="#333"/>
+        <Setter Property="CornerRadius" Value="8"/>
+        <Style.Triggers>
+            <DataTrigger TargetType="BoxView" Binding="{Binding IsLoading}" Value="True">
+                <Setter Property="Opacity" Value="0.6" />
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
 
 </ResourceDictionary>

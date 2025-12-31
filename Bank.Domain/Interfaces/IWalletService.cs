@@ -8,9 +8,9 @@ namespace Bank.Domain.Interfaces
 {
     public interface IWalletService
     {
-        Task<string> GetOrCreateWalletAsync(); // Retorna o endereço 0x...
+        Task<string> GetOrCreateWalletAsync();
         Task<decimal> GetNativeBalanceAsync(string address);
         Task<string> SendTransactionAsync(string toAddress, decimal amount);
-        Task<bool> StakeAssetAsync(decimal amount); // Função de Staking
+        Task<bool> StakeAssetAsync(decimal amount);
     }
 }

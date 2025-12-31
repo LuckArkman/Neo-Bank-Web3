@@ -31,6 +31,20 @@ public partial class DashboardViewModel : ObservableObject
         {
             TotalBalance = m.Value;
         });
+        /*
+        _realTimeService.OnMoneyReceived += (amount) =>
+        {
+            MainThread.BeginInvokeOnMainThread(async () =>
+            {
+                // Atualiza saldo
+                await LoadDataAsync(); 
+        
+                // Mostra Toast (usando CommunityToolkit.Maui)
+                var toast = Toast.Make($"💰 Recebido: {amount} ETH/MATIC", ToastDuration.Long);
+                await toast.Show();
+            });
+        };
+        */
         Task.Run(LoadDataAsync); 
     }
 

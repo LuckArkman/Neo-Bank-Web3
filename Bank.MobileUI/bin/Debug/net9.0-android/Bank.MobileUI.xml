@@ -5,13 +5,13 @@
     </assembly>
     <members>
         <member name="P:Bank.MobileUI.ViewModels.DashboardViewModel.WalletAddress">
-            <inheritdoc cref="F:Bank.MobileUI.ViewModels.DashboardViewModel.walletAddress"/>
+            <inheritdoc cref="F:Bank.MobileUI.ViewModels.DashboardViewModel._walletAddress"/>
         </member>
         <member name="P:Bank.MobileUI.ViewModels.DashboardViewModel.TotalBalance">
-            <inheritdoc cref="F:Bank.MobileUI.ViewModels.DashboardViewModel.totalBalance"/>
+            <inheritdoc cref="F:Bank.MobileUI.ViewModels.DashboardViewModel._totalBalance"/>
         </member>
         <member name="P:Bank.MobileUI.ViewModels.DashboardViewModel.IsLoading">
-            <inheritdoc cref="F:Bank.MobileUI.ViewModels.DashboardViewModel.isLoading"/>
+            <inheritdoc cref="F:Bank.MobileUI.ViewModels.DashboardViewModel._isLoading"/>
         </member>
         <member name="F:Bank.MobileUI.ViewModels.DashboardViewModel.loadDataCommand">
             <summary>The backing field for <see cref="P:Bank.MobileUI.ViewModels.DashboardViewModel.LoadDataCommand"/>.</summary>
@@ -19,17 +19,44 @@
         <member name="P:Bank.MobileUI.ViewModels.DashboardViewModel.LoadDataCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Bank.MobileUI.ViewModels.DashboardViewModel.LoadDataAsync"/>.</summary>
         </member>
-        <member name="F:Bank.MobileUI.ViewModels.DashboardViewModel.stakeCommand">
-            <summary>The backing field for <see cref="P:Bank.MobileUI.ViewModels.DashboardViewModel.StakeCommand"/>.</summary>
+        <member name="P:Bank.MobileUI.ViewModels.StakingViewModel.CurrentApy">
+            <inheritdoc cref="F:Bank.MobileUI.ViewModels.StakingViewModel.currentApy"/>
         </member>
-        <member name="P:Bank.MobileUI.ViewModels.DashboardViewModel.StakeCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Bank.MobileUI.ViewModels.DashboardViewModel.StakeAsync"/>.</summary>
+        <member name="P:Bank.MobileUI.ViewModels.StakingViewModel.StakedBalance">
+            <inheritdoc cref="F:Bank.MobileUI.ViewModels.StakingViewModel.stakedBalance"/>
+        </member>
+        <member name="F:Bank.MobileUI.ViewModels.StakingViewModel.stakeAssetsCommand">
+            <summary>The backing field for <see cref="P:Bank.MobileUI.ViewModels.StakingViewModel.StakeAssetsCommand"/>.</summary>
+        </member>
+        <member name="P:Bank.MobileUI.ViewModels.StakingViewModel.StakeAssetsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:Bank.MobileUI.ViewModels.StakingViewModel.StakeAssetsAsync(Bank.MobileUI.ViewModels.StakingPool)"/>.</summary>
         </member>
         <member name="T:Bank.MobileUI.Resource">
             <summary>
             Android Resource Designer class.
             Exposes the Android Resource designer assembly into the project Namespace.
             </summary>
+        </member>
+        <member name="P:NeoBank.MobileUI.ViewModels.TransferViewModel.TargetAddress">
+            <inheritdoc cref="F:NeoBank.MobileUI.ViewModels.TransferViewModel.targetAddress"/>
+        </member>
+        <member name="P:NeoBank.MobileUI.ViewModels.TransferViewModel.Amount">
+            <inheritdoc cref="F:NeoBank.MobileUI.ViewModels.TransferViewModel.amount"/>
+        </member>
+        <member name="P:NeoBank.MobileUI.ViewModels.TransferViewModel.IsBusy">
+            <inheritdoc cref="F:NeoBank.MobileUI.ViewModels.TransferViewModel.isBusy"/>
+        </member>
+        <member name="F:NeoBank.MobileUI.ViewModels.TransferViewModel.scanQrCodeCommand">
+            <summary>The backing field for <see cref="P:NeoBank.MobileUI.ViewModels.TransferViewModel.ScanQrCodeCommand"/>.</summary>
+        </member>
+        <member name="P:NeoBank.MobileUI.ViewModels.TransferViewModel.ScanQrCodeCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:NeoBank.MobileUI.ViewModels.TransferViewModel.ScanQrCodeAsync"/>.</summary>
+        </member>
+        <member name="F:NeoBank.MobileUI.ViewModels.TransferViewModel.confirmTransactionCommand">
+            <summary>The backing field for <see cref="P:NeoBank.MobileUI.ViewModels.TransferViewModel.ConfirmTransactionCommand"/>.</summary>
+        </member>
+        <member name="P:NeoBank.MobileUI.ViewModels.TransferViewModel.ConfirmTransactionCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:NeoBank.MobileUI.ViewModels.TransferViewModel.ConfirmTransactionAsync"/>.</summary>
         </member>
     </members>
 </doc>

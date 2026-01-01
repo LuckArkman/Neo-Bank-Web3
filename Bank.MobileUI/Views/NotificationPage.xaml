@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bank.MobileUI.Views.NotificationPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="#F5F7FA">
+
+    <Grid RowDefinitions="180, *">
+        
+        <!-- Header com Gradiente -->
+        <BoxView Grid.Row="0" VerticalOptions="Fill">
+            <BoxView.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#8E44AD" Offset="0.1" />
+                    <GradientStop Color="#3498DB" Offset="1.0" />
+                </LinearGradientBrush>
+            </BoxView.Background>
+        </BoxView>
+
+        <!-- Header Content -->
+        <VerticalStackLayout Grid.Row="0" Padding="25,50,25,20" Spacing="15">
+            <Grid ColumnDefinitions="Auto, *, Auto">
+                <ImageButton Grid.Column="0" 
+                           Source="arrow_back_white.png" 
+                           WidthRequest="24" 
+                           BackgroundColor="Transparent"/>
+                
+                <Label Grid.Column="1" 
+                       Text="Notificações" 
+                       TextColor="White" 
+                       FontSize="24" 
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+                
+                <Image Grid.Column="2" 
+                       Source="settings_white.png" 
+                       WidthRequest="24"/>
+            </Grid>
+
+            <!-- Tabs -->
+            <Grid ColumnDefinitions="*, *" 
+                  Margin="0,10,0,0">
+                <Frame Grid.Column="0"
+                       BackgroundColor="White" 
+                       CornerRadius="20" 
+                       Padding="20,10"
+                       HasShadow="False">
+                    <Label Text="Todas" 
+                           TextColor="#8E44AD" 
+                           FontAttributes="Bold"
+                           FontSize="14"
+                           HorizontalTextAlignment="Center"/>
+                </Frame>
+                <Frame Grid.Column="1"
+                       BackgroundColor="Transparent" 
+                       BorderColor="White"
+                       CornerRadius="20" 
+                       Padding="20,10"
+                       HasShadow="False">
+                    <Label Text="Não Lidas" 
+                           TextColor="White" 
+                           FontSize="14"
+                           HorizontalTextAlignment="Center"/>
+                </Frame>
+            </Grid>
+        </VerticalStackLayout>
+
+        <!-- Notifications Container -->
+        <Frame Grid.Row="1" 
+               BackgroundColor="White" 
+               CornerRadius="40" 
+               Margin="0,-20,0,0" 
+               HasShadow="False" 
+               Padding="0">
+            
+            <CollectionView ItemsSource="{Binding Notifications}" 
+                          Margin="0,20,0,0">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame CornerRadius="20" 
+                               Padding="18"
+                               Margin="20,5,20,5"
+                               HasShadow="True"
+                               BackgroundColor="{Binding IsRead, Converter={StaticResource ReadBackgroundConverter}}">
+                            <Grid ColumnDefinitions="50, *, Auto" ColumnSpacing="15">
+                                
+                                <!-- Icon -->
+                                <Frame Grid.Column="0" 
+                                       WidthRequest="50" 
+                                       HeightRequest="50" 
+                                       CornerRadius="25"
+                                       Padding="0"
+                                       HasShadow="False"
+                                       BackgroundColor="{Binding Type, Converter={StaticResource NotificationColorConverter}}">
+                                    <Label Text="{Binding Type, Converter={StaticResource NotificationIconConverter}}" 
+                                           TextColor="White" 
+                                           FontSize="24"
+                                           HorizontalOptions="Center"
+                                           VerticalOptions="Center"/>
+                                </Frame>
+
+                                <!-- Content -->
+                                <VerticalStackLayout Grid.Column="1" 
+                                                   VerticalOptions="Center"
+                                                   Spacing="5">
+                                    <Label Text="{Binding Title}" 
+                                           TextColor="#2C3E50" 
+                                           FontSize="15"
+                                           FontAttributes="Bold"
+                                           LineBreakMode="TailTruncation"
+                                           MaxLines="1"/>
+                                    <Label Text="{Binding Message}" 
+                                           TextColor="#7F8C8D" 
+                                           FontSize="13"
+                                           LineBreakMode="TailTruncation"
+                                           MaxLines="2"/>
+                                    <Label Text="{Binding Time}" 
+                                           TextColor="#BDC3C7" 
+                                           FontSize="11"
+                                           Margin="0,3,0,0"/>
+                                </VerticalStackLayout>
+
+                                <!-- Unread Indicator -->
+                                <BoxView Grid.Column="2"
+                                         WidthRequest="10"
+                                         HeightRequest="10"
+                                         CornerRadius="5"
+                                         Color="#8E44AD"
+                                         IsVisible="{Binding IsUnread}"
+                                         VerticalOptions="Center"/>
+                            </Grid>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.NotificationTappedCommand}"
+                                                    CommandParameter="{Binding .}"/>
+                            </Frame.GestureRecognizers>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+
+                <!-- Empty State -->
+                <CollectionView.EmptyView>
+                    <VerticalStackLayout VerticalOptions="Center" 
+                                       HorizontalOptions="Center"
+                                       Spacing="15"
+                                       Padding="40">
+                        <Frame WidthRequest="120" 
+                               HeightRequest="120" 
+                               CornerRadius="60"
+                               Padding="0"
+                               BackgroundColor="#F8F9FB"
+                               HasShadow="False">
+                            <Label Text="🔔" 
+                                   FontSize="60"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"/>
+                        </Frame>
+                        <Label Text="Nenhuma notificação" 
+                               TextColor="#7F8C8D"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               HorizontalTextAlignment="Center"/>
+                        <Label Text="Você está em dia com tudo!" 
+                               TextColor="#BDC3C7"
+                               FontSize="14"
+                               HorizontalTextAlignment="Center"/>
+                    </VerticalStackLayout>
+                </CollectionView.EmptyView>
+            </CollectionView>
+        </Frame>
+    </Grid>
+</ContentPage>

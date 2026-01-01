@@ -1559,6 +1559,21 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "Bank.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.0.0",
+          "Nethereum.Web3": "5.0.0",
+          "sqlite-net-pcl": "1.9.172"
+        },
+        "compile": {
+          "bin/placeholder/Bank.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bank.Application.dll": {}
+        }
+      },
       "Bank.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -3761,6 +3776,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Bank.Application/1.0.0": {
+      "type": "project",
+      "path": "../Bank.Application/Bank.Application.csproj",
+      "msbuildProject": "../Bank.Application/Bank.Application.csproj"
+    },
     "Bank.Domain/1.0.0": {
       "type": "project",
       "path": "../Bank.Domain/Bank.Domain.csproj",
@@ -3769,6 +3789,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "Bank.Application >= 1.0.0",
       "Bank.Domain >= 1.0.0",
       "CommunityToolkit.Mvvm >= 8.0.0",
       "Microsoft.AspNet.SignalR.Client >= 2.4.3",
@@ -3815,6 +3836,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "D:\\Neo-Bank-Web3\\Bank.Application\\Bank.Application.csproj": {
+              "projectPath": "D:\\Neo-Bank-Web3\\Bank.Application\\Bank.Application.csproj"
+            },
             "D:\\Neo-Bank-Web3\\Bank.Domain\\Bank.Domain.csproj": {
               "projectPath": "D:\\Neo-Bank-Web3\\Bank.Domain\\Bank.Domain.csproj"
             }

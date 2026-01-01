@@ -3,80 +3,12 @@
   "WorkspaceRootPath": "D:\\Neo-Bank-Web3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FE393DB3-E0E8-4F13-B496-C356544C1168}|Bank.Infrastructure\\Bank.Infrastructure.csproj|d:\\neo-bank-web3\\bank.infrastructure\\services\\realtimeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE393DB3-E0E8-4F13-B496-C356544C1168}|Bank.Infrastructure\\Bank.Infrastructure.csproj|solutionrelative:bank.infrastructure\\services\\realtimeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE393DB3-E0E8-4F13-B496-C356544C1168}|Bank.Infrastructure\\Bank.Infrastructure.csproj|d:\\neo-bank-web3\\bank.infrastructure\\bank.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{FE393DB3-E0E8-4F13-B496-C356544C1168}|Bank.Infrastructure\\Bank.Infrastructure.csproj|solutionrelative:bank.infrastructure\\bank.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|d:\\neo-bank-web3\\bank.mobileui\\bank.mobileui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|solutionrelative:bank.mobileui\\bank.mobileui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{367B575E-B89A-4254-8B8B-9BA3329B7064}|Bank.Backend\\Bank.Backend.csproj|d:\\neo-bank-web3\\bank.backend\\workers\\blockchainindexer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{367B575E-B89A-4254-8B8B-9BA3329B7064}|Bank.Backend\\Bank.Backend.csproj|solutionrelative:bank.backend\\workers\\blockchainindexer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{367B575E-B89A-4254-8B8B-9BA3329B7064}|Bank.Backend\\Bank.Backend.csproj|d:\\neo-bank-web3\\bank.backend\\hubs\\bankinghub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{367B575E-B89A-4254-8B8B-9BA3329B7064}|Bank.Backend\\Bank.Backend.csproj|solutionrelative:bank.backend\\hubs\\bankinghub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E0E523F-C009-4EE1-B857-8FA22E6DB5F3}|Bank.Data\\Bank.Data.csproj|d:\\neo-bank-web3\\bank.data\\bank.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{8E0E523F-C009-4EE1-B857-8FA22E6DB5F3}|Bank.Data\\Bank.Data.csproj|solutionrelative:bank.data\\bank.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|d:\\neo-bank-web3\\bank.mobileui\\services\\loggerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|solutionrelative:bank.mobileui\\services\\loggerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|d:\\neo-bank-web3\\bank.mobileui\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|solutionrelative:bank.mobileui\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|d:\\neo-bank-web3\\bank.mobileui\\viewmodels\\swapviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|solutionrelative:bank.mobileui\\viewmodels\\swapviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE393DB3-E0E8-4F13-B496-C356544C1168}|Bank.Infrastructure\\Bank.Infrastructure.csproj|d:\\neo-bank-web3\\bank.infrastructure\\services\\swapservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE393DB3-E0E8-4F13-B496-C356544C1168}|Bank.Infrastructure\\Bank.Infrastructure.csproj|solutionrelative:bank.infrastructure\\services\\swapservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EB3D0B1-F3D5-4703-930F-FCC3CA7EB409}|Bank.Domain\\Bank.Domain.csproj|d:\\neo-bank-web3\\bank.domain\\bank.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{9EB3D0B1-F3D5-4703-930F-FCC3CA7EB409}|Bank.Domain\\Bank.Domain.csproj|solutionrelative:bank.domain\\bank.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|d:\\neo-bank-web3\\bank.mobileui\\viewmodels\\stakingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|solutionrelative:bank.mobileui\\viewmodels\\stakingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|d:\\neo-bank-web3\\bank.mobileui\\views\\historypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|solutionrelative:bank.mobileui\\views\\historypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|d:\\neo-bank-web3\\bank.mobileui\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|solutionrelative:bank.mobileui\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|d:\\neo-bank-web3\\bank.mobileui\\views\\stakingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|solutionrelative:bank.mobileui\\views\\stakingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|d:\\neo-bank-web3\\bank.mobileui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|solutionrelative:bank.mobileui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|d:\\neo-bank-web3\\bank.mobileui\\views\\dashboardpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|solutionrelative:bank.mobileui\\views\\dashboardpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EB3D0B1-F3D5-4703-930F-FCC3CA7EB409}|Bank.Domain\\Bank.Domain.csproj|d:\\neo-bank-web3\\bank.domain\\interfaces\\iwalletservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EB3D0B1-F3D5-4703-930F-FCC3CA7EB409}|Bank.Domain\\Bank.Domain.csproj|solutionrelative:bank.domain\\interfaces\\iwalletservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EB3D0B1-F3D5-4703-930F-FCC3CA7EB409}|Bank.Domain\\Bank.Domain.csproj|d:\\neo-bank-web3\\bank.domain\\entities\\asset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EB3D0B1-F3D5-4703-930F-FCC3CA7EB409}|Bank.Domain\\Bank.Domain.csproj|solutionrelative:bank.domain\\entities\\asset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|d:\\neo-bank-web3\\bank.mobileui\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|solutionrelative:bank.mobileui\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -91,246 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RealTimeService.cs",
-              "DocumentMoniker": "D:\\Neo-Bank-Web3\\Bank.Infrastructure\\Services\\RealTimeService.cs",
-              "RelativeDocumentMoniker": "Bank.Infrastructure\\Services\\RealTimeService.cs",
-              "ToolTip": "D:\\Neo-Bank-Web3\\Bank.Infrastructure\\Services\\RealTimeService.cs",
-              "RelativeToolTip": "Bank.Infrastructure\\Services\\RealTimeService.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAmwBkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-31T20:54:19.322Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BlockchainIndexer.cs",
-              "DocumentMoniker": "D:\\Neo-Bank-Web3\\Bank.Backend\\Workers\\BlockchainIndexer.cs",
-              "RelativeDocumentMoniker": "Bank.Backend\\Workers\\BlockchainIndexer.cs",
-              "ToolTip": "D:\\Neo-Bank-Web3\\Bank.Backend\\Workers\\BlockchainIndexer.cs",
-              "RelativeToolTip": "Bank.Backend\\Workers\\BlockchainIndexer.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-31T20:52:56.02Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BankingHub.cs",
-              "DocumentMoniker": "D:\\Neo-Bank-Web3\\Bank.Backend\\Hubs\\BankingHub.cs",
-              "RelativeDocumentMoniker": "Bank.Backend\\Hubs\\BankingHub.cs",
-              "ToolTip": "D:\\Neo-Bank-Web3\\Bank.Backend\\Hubs\\BankingHub.cs",
-              "RelativeToolTip": "Bank.Backend\\Hubs\\BankingHub.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-31T20:52:03.531Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Bank.Data",
-              "DocumentMoniker": "D:\\Neo-Bank-Web3\\Bank.Data\\Bank.Data.csproj",
-              "RelativeDocumentMoniker": "Bank.Data\\Bank.Data.csproj",
-              "ToolTip": "D:\\Neo-Bank-Web3\\Bank.Data\\Bank.Data.csproj",
-              "RelativeToolTip": "Bank.Data\\Bank.Data.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-31T20:51:24.421Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LoggerService.cs",
-              "DocumentMoniker": "D:\\Neo-Bank-Web3\\Bank.MobileUI\\Services\\LoggerService.cs",
-              "RelativeDocumentMoniker": "Bank.MobileUI\\Services\\LoggerService.cs",
-              "ToolTip": "D:\\Neo-Bank-Web3\\Bank.MobileUI\\Services\\LoggerService.cs",
-              "RelativeToolTip": "Bank.MobileUI\\Services\\LoggerService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-31T20:50:08.383Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MauiProgram.cs",
-              "DocumentMoniker": "D:\\Neo-Bank-Web3\\Bank.MobileUI\\MauiProgram.cs",
-              "RelativeDocumentMoniker": "Bank.MobileUI\\MauiProgram.cs",
-              "ToolTip": "D:\\Neo-Bank-Web3\\Bank.MobileUI\\MauiProgram.cs",
-              "RelativeToolTip": "Bank.MobileUI\\MauiProgram.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAADwvywAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-31T20:48:36.319Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SwapViewModel.cs",
-              "DocumentMoniker": "D:\\Neo-Bank-Web3\\Bank.MobileUI\\ViewModels\\SwapViewModel.cs",
-              "RelativeDocumentMoniker": "Bank.MobileUI\\ViewModels\\SwapViewModel.cs",
-              "ToolTip": "D:\\Neo-Bank-Web3\\Bank.MobileUI\\ViewModels\\SwapViewModel.cs",
-              "RelativeToolTip": "Bank.MobileUI\\ViewModels\\SwapViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwgAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-31T20:48:14.169Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SwapService.cs",
-              "DocumentMoniker": "D:\\Neo-Bank-Web3\\Bank.Infrastructure\\Services\\SwapService.cs",
-              "RelativeDocumentMoniker": "Bank.Infrastructure\\Services\\SwapService.cs",
-              "ToolTip": "D:\\Neo-Bank-Web3\\Bank.Infrastructure\\Services\\SwapService.cs",
-              "RelativeToolTip": "Bank.Infrastructure\\Services\\SwapService.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAA3wCgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-31T20:47:16.768Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Bank.Domain",
-              "DocumentMoniker": "D:\\Neo-Bank-Web3\\Bank.Domain\\Bank.Domain.csproj",
-              "RelativeDocumentMoniker": "Bank.Domain\\Bank.Domain.csproj",
-              "ToolTip": "D:\\Neo-Bank-Web3\\Bank.Domain\\Bank.Domain.csproj",
-              "RelativeToolTip": "Bank.Domain\\Bank.Domain.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-31T20:47:08.576Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Bank.MobileUI.csproj",
-              "DocumentMoniker": "D:\\Neo-Bank-Web3\\Bank.MobileUI\\Bank.MobileUI.csproj",
-              "RelativeDocumentMoniker": "Bank.MobileUI\\Bank.MobileUI.csproj",
-              "ToolTip": "D:\\Neo-Bank-Web3\\Bank.MobileUI\\Bank.MobileUI.csproj",
-              "RelativeToolTip": "Bank.MobileUI\\Bank.MobileUI.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwv1EAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-30T17:26:00.31Z",
+              "Title": "HistoryPage.xaml",
+              "DocumentMoniker": "D:\\Neo-Bank-Web3\\Bank.MobileUI\\Views\\HistoryPage.xaml",
+              "RelativeDocumentMoniker": "Bank.MobileUI\\Views\\HistoryPage.xaml",
+              "ToolTip": "D:\\Neo-Bank-Web3\\Bank.MobileUI\\Views\\HistoryPage.xaml*",
+              "RelativeToolTip": "Bank.MobileUI\\Views\\HistoryPage.xaml*",
+              "ViewState": "AgIAABQAAAAAAAAAAAAowCAAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-01T02:53:35.552Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Bank.Infrastructure.csproj",
-              "DocumentMoniker": "D:\\Neo-Bank-Web3\\Bank.Infrastructure\\Bank.Infrastructure.csproj",
-              "RelativeDocumentMoniker": "Bank.Infrastructure\\Bank.Infrastructure.csproj",
-              "ToolTip": "D:\\Neo-Bank-Web3\\Bank.Infrastructure\\Bank.Infrastructure.csproj",
-              "RelativeToolTip": "Bank.Infrastructure\\Bank.Infrastructure.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-30T17:25:59.208Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "StakingViewModel.cs",
-              "DocumentMoniker": "D:\\Neo-Bank-Web3\\Bank.MobileUI\\ViewModels\\StakingViewModel.cs",
-              "RelativeDocumentMoniker": "Bank.MobileUI\\ViewModels\\StakingViewModel.cs",
-              "ToolTip": "D:\\Neo-Bank-Web3\\Bank.MobileUI\\ViewModels\\StakingViewModel.cs",
-              "RelativeToolTip": "Bank.MobileUI\\ViewModels\\StakingViewModel.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-31T20:46:03.696Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "StakingPage.xaml",
-              "DocumentMoniker": "D:\\Neo-Bank-Web3\\Bank.MobileUI\\Views\\StakingPage.xaml",
-              "RelativeDocumentMoniker": "Bank.MobileUI\\Views\\StakingPage.xaml",
-              "ToolTip": "D:\\Neo-Bank-Web3\\Bank.MobileUI\\Views\\StakingPage.xaml",
-              "RelativeToolTip": "Bank.MobileUI\\Views\\StakingPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwgAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-31T20:39:53.137Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "App.xaml",
-              "DocumentMoniker": "D:\\Neo-Bank-Web3\\Bank.MobileUI\\App.xaml",
-              "RelativeDocumentMoniker": "Bank.MobileUI\\App.xaml",
-              "ToolTip": "D:\\Neo-Bank-Web3\\Bank.MobileUI\\App.xaml",
-              "RelativeToolTip": "Bank.MobileUI\\App.xaml",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-31T20:38:48.046Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "DashboardPage.xaml",
-              "DocumentMoniker": "D:\\Neo-Bank-Web3\\Bank.MobileUI\\Views\\DashboardPage.xaml",
-              "RelativeDocumentMoniker": "Bank.MobileUI\\Views\\DashboardPage.xaml",
-              "ToolTip": "D:\\Neo-Bank-Web3\\Bank.MobileUI\\Views\\DashboardPage.xaml",
-              "RelativeToolTip": "Bank.MobileUI\\Views\\DashboardPage.xaml",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAAAGoAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-31T20:37:31.889Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "IWalletService.cs",
-              "DocumentMoniker": "D:\\Neo-Bank-Web3\\Bank.Domain\\Interfaces\\IWalletService.cs",
-              "RelativeDocumentMoniker": "Bank.Domain\\Interfaces\\IWalletService.cs",
-              "ToolTip": "D:\\Neo-Bank-Web3\\Bank.Domain\\Interfaces\\IWalletService.cs",
-              "RelativeToolTip": "Bank.Domain\\Interfaces\\IWalletService.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-30T17:28:14.815Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Asset.cs",
-              "DocumentMoniker": "D:\\Neo-Bank-Web3\\Bank.Domain\\Entities\\Asset.cs",
-              "RelativeDocumentMoniker": "Bank.Domain\\Entities\\Asset.cs",
-              "ToolTip": "D:\\Neo-Bank-Web3\\Bank.Domain\\Entities\\Asset.cs",
-              "RelativeToolTip": "Bank.Domain\\Entities\\Asset.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAswA8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-30T17:27:10.012Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "MainPage.xaml",
-              "DocumentMoniker": "D:\\Neo-Bank-Web3\\Bank.MobileUI\\MainPage.xaml",
-              "RelativeDocumentMoniker": "Bank.MobileUI\\MainPage.xaml",
-              "ToolTip": "D:\\Neo-Bank-Web3\\Bank.MobileUI\\MainPage.xaml",
-              "RelativeToolTip": "Bank.MobileUI\\MainPage.xaml",
-              "ViewState": "AgIAAAYAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-30T17:26:12.628Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "AppShell.xaml",
               "DocumentMoniker": "D:\\Neo-Bank-Web3\\Bank.MobileUI\\AppShell.xaml",
               "RelativeDocumentMoniker": "Bank.MobileUI\\AppShell.xaml",
               "ToolTip": "D:\\Neo-Bank-Web3\\Bank.MobileUI\\AppShell.xaml",
               "RelativeToolTip": "Bank.MobileUI\\AppShell.xaml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-30T17:26:06.811Z",
+              "WhenOpened": "2026-01-01T02:37:47.293Z",
               "EditorCaption": ""
             }
           ]

@@ -51,6 +51,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Bank.MobileUI.Resources.St
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[D:/Neo-Bank-Web3/Bank.MobileUI/Views/Auth/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Bank.MobileUI.Views.Auth.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Auth\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Auth\LoginPage.xaml
+
 [D:/Neo-Bank-Web3/Bank.MobileUI/Views/DashboardPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Bank.MobileUI.Views.DashboardPage.xaml
@@ -69,11 +75,29 @@ build_metadata.AdditionalFiles.ManifestResourceName = Bank.MobileUI.Views.Histor
 build_metadata.AdditionalFiles.TargetPath = Views\HistoryPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\HistoryPage.xaml
 
+[D:/Neo-Bank-Web3/Bank.MobileUI/Views/NotificationPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Bank.MobileUI.Views.NotificationPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\NotificationPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\NotificationPage.xaml
+
 [D:/Neo-Bank-Web3/Bank.MobileUI/Views/Onboarding/BackupPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Bank.MobileUI.Views.Onboarding.BackupPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Onboarding\BackupPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Onboarding\BackupPage.xaml
+
+[D:/Neo-Bank-Web3/Bank.MobileUI/Views/Onboarding/OnboardingPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Bank.MobileUI.Views.Onboarding.OnboardingPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Onboarding\OnboardingPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Onboarding\OnboardingPage.xaml
+
+[D:/Neo-Bank-Web3/Bank.MobileUI/Views/ReceivePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Bank.MobileUI.Views.ReceivePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ReceivePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ReceivePage.xaml
 
 [D:/Neo-Bank-Web3/Bank.MobileUI/Views/ScanPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
@@ -86,6 +110,12 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Bank.MobileUI.Views.StakingPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\StakingPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\StakingPage.xaml
+
+[D:/Neo-Bank-Web3/Bank.MobileUI/Views/SwapPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Bank.MobileUI.Views.SwapPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SwapPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SwapPage.xaml
 
 [D:/Neo-Bank-Web3/Bank.MobileUI/Views/TransferPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

@@ -3,17 +3,37 @@
              xmlns:zxing="clr-namespace:ZXing.Net.Maui.Controls"
              xmlns:controls="clr-namespace:ZXing.Net.Maui.Controls;assembly=ZXing.Net.MAUI.Controls"
              x:Class="Bank.MobileUI.Views.ScanPage"
-             Title="Escanear QR Code">
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="Black">
 
     <Grid>
-        <controls:CameraBarcodeReaderView 
-            x:Name="barcodeReader"
-            BarcodesDetected="CameraBarcodeReaderView_BarcodesDetected"
-            IsDetecting="True" />
-            
-        <Label Text="Aponte para o QR Code" 
-               TextColor="White" BackgroundColor="#80000000"
-               VerticalOptions="End" HorizontalOptions="Center" 
-               Padding="20" Margin="0,0,0,50"/>
+        <controls:CameraBarcodeReaderView x:Name="barcodeReader" />
+
+        <Grid RowDefinitions="*, 250, *" ColumnDefinitions="*, 250, *">
+            <BoxView Grid.Row="0" Grid.ColumnSpan="3" BackgroundColor="#80000000"/>
+            <BoxView Grid.Row="2" Grid.ColumnSpan="3" BackgroundColor="#80000000"/>
+            <BoxView Grid.Row="1" Grid.Column="0" BackgroundColor="#80000000"/>
+            <BoxView Grid.Row="1" Grid.Column="2" BackgroundColor="#80000000"/>
+
+            <Border Grid.Row="1" Grid.Column="1"
+                    Stroke="#8E44AD"
+                    StrokeThickness="3"
+                    BackgroundColor="Transparent"
+                    StrokeShape="RoundRectangle 20"/>
+        </Grid>
+
+        <VerticalStackLayout VerticalOptions="Start" Padding="25,60,25,0" Spacing="5" HorizontalOptions="Center">
+            <Label Text="Escanear QR Code" TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center"/>
+            <Label Text="Aponte para um endereço ou fatura" TextColor="#DCDDE1" FontSize="14" HorizontalOptions="Center"/>
+        </VerticalStackLayout>
+
+        <Button Text="Minha Carteira" 
+                VerticalOptions="End" 
+                Margin="30,50" 
+                BackgroundColor="White" 
+                TextColor="#8E44AD" 
+                CornerRadius="25" 
+                HeightRequest="50"
+                FontAttributes="Bold"/>
     </Grid>
 </ContentPage>

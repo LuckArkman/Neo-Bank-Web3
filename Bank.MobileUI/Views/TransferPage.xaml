@@ -2,42 +2,386 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:Bank.MobileUI.ViewModels"
              x:Class="Bank.MobileUI.Views.TransferPage"
-             BackgroundColor="#121212" Title="Transferir">
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="#F5F7FA">
 
-    <VerticalStackLayout Spacing="20" Padding="30" VerticalOptions="Center">
+    <Grid RowDefinitions="180, *">
         
-        <Label Text="Para quem você quer enviar?" TextColor="White" FontSize="18"/>
+        <!-- Header com Gradiente -->
+        <BoxView Grid.Row="0" VerticalOptions="Fill">
+            <BoxView.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#8E44AD" Offset="0.1" />
+                    <GradientStop Color="#3498DB" Offset="1.0" />
+                </LinearGradientBrush>
+            </BoxView.Background>
+        </BoxView>
 
-        <!-- Input de Endereço -->
-        <Border Stroke="#8A2BE2" StrokeThickness="1" BackgroundColor="#1E1E1E" Padding="10">
-            <Grid ColumnDefinitions="*, Auto">
-                <Entry Text="{Binding TargetAddress}" Placeholder="0x..." TextColor="White" PlaceholderColor="#555"/>
-                <!-- Botão de Scan -->
-                <ImageButton Grid.Column="1" Command="{Binding ScanQrCodeCommand}" Source="icon_qr.png" HeightRequest="30" WidthRequest="30"/>
+        <!-- Header Content -->
+        <VerticalStackLayout Grid.Row="0" Padding="25,50,25,20" Spacing="15">
+            <Grid ColumnDefinitions="Auto, *, Auto">
+                <ImageButton Grid.Column="0" 
+                           Source="arrow_back_white.png" 
+                           WidthRequest="24" 
+                           BackgroundColor="Transparent"/>
+                
+                <Label Grid.Column="1" 
+                       Text="Transferir" 
+                       TextColor="White" 
+                       FontSize="24" 
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+                
+                <Image Grid.Column="2" 
+                       Source="history_white.png" 
+                       WidthRequest="24"/>
             </Grid>
-        </Border>
 
-        <Label Text="Valor (ETH/MATIC)" TextColor="White" FontSize="18" Margin="0,20,0,0"/>
+            <Label Text="Envie criptomoedas de forma segura" 
+                   TextColor="#DCDDE1" 
+                   FontSize="14"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,5,0,0"/>
+        </VerticalStackLayout>
 
-        <!-- Input de Valor -->
-        <Border Stroke="#8A2BE2" StrokeThickness="1" BackgroundColor="#1E1E1E" Padding="10">
-            <Entry Text="{Binding Amount}" Keyboard="Numeric" TextColor="White" FontSize="24" HorizontalTextAlignment="Center"/>
-        </Border>
+        <!-- Container Principal -->
+        <Frame Grid.Row="1" 
+               BackgroundColor="White" 
+               CornerRadius="40" 
+               Margin="0,-20,0,0" 
+               HasShadow="False" 
+               Padding="0">
+            
+            <ScrollView>
+                <VerticalStackLayout Spacing="25" Padding="30,40,30,100" VerticalOptions="Center">
+                    
+                    <!-- Contatos Rápidos -->
+                    <VerticalStackLayout Spacing="15">
+                        <Label Text="Contatos Recentes" 
+                               TextColor="#2C3E50" 
+                               FontSize="16" 
+                               FontAttributes="Bold"/>
+                        
+                        <ScrollView Orientation="Horizontal" 
+                                  HorizontalScrollBarVisibility="Never">
+                            <HorizontalStackLayout Spacing="15">
+                                <!-- Contact 1 -->
+                                <VerticalStackLayout Spacing="8">
+                                    <Frame WidthRequest="60" 
+                                           HeightRequest="60" 
+                                           CornerRadius="30"
+                                           Padding="0"
+                                           HasShadow="True">
+                                        <Frame.Background>
+                                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                                <GradientStop Color="#8E44AD" Offset="0.0" />
+                                                <GradientStop Color="#3498DB" Offset="1.0" />
+                                            </LinearGradientBrush>
+                                        </Frame.Background>
+                                        <Label Text="JD" 
+                                               TextColor="White" 
+                                               FontSize="18"
+                                               FontAttributes="Bold"
+                                               HorizontalOptions="Center"
+                                               VerticalOptions="Center"/>
+                                    </Frame>
+                                    <Label Text="João" 
+                                           TextColor="#7F8C8D" 
+                                           FontSize="12"
+                                           HorizontalTextAlignment="Center"/>
+                                </VerticalStackLayout>
 
-        <!-- Botão Confirmar -->
-        <Button Text="Confirmar Transferência" 
-                Command="{Binding ConfirmTransactionCommand}"
-                BackgroundColor="#8A2BE2" 
-                TextColor="White"
-                CornerRadius="25"
-                HeightRequest="50"
-                Margin="0,30,0,0">
-            <Button.Triggers>
-                <DataTrigger TargetType="Button" Binding="{Binding IsBusy}" Value="True">
-                    <Setter Property="Text" Value="Enviando para Blockchain..."/>
-                    <Setter Property="IsEnabled" Value="False"/>
-                </DataTrigger>
-            </Button.Triggers>
-        </Button>
-    </VerticalStackLayout>
+                                <!-- Contact 2 -->
+                                <VerticalStackLayout Spacing="8">
+                                    <Frame WidthRequest="60" 
+                                           HeightRequest="60" 
+                                           CornerRadius="30"
+                                           Padding="0"
+                                           HasShadow="True"
+                                           BackgroundColor="#E8EAED">
+                                        <Label Text="MS" 
+                                               TextColor="#2C3E50" 
+                                               FontSize="18"
+                                               FontAttributes="Bold"
+                                               HorizontalOptions="Center"
+                                               VerticalOptions="Center"/>
+                                    </Frame>
+                                    <Label Text="Maria" 
+                                           TextColor="#7F8C8D" 
+                                           FontSize="12"
+                                           HorizontalTextAlignment="Center"/>
+                                </VerticalStackLayout>
+
+                                <!-- Add Contact -->
+                                <VerticalStackLayout Spacing="8">
+                                    <Frame WidthRequest="60" 
+                                           HeightRequest="60" 
+                                           CornerRadius="30"
+                                           Padding="0"
+                                           HasShadow="True"
+                                           BackgroundColor="#F8F9FB"
+                                           BorderColor="#E8EAED">
+                                        <Label Text="+" 
+                                               TextColor="#8E44AD" 
+                                               FontSize="28"
+                                               FontAttributes="Bold"
+                                               HorizontalOptions="Center"
+                                               VerticalOptions="Center"/>
+                                    </Frame>
+                                    <Label Text="Novo" 
+                                           TextColor="#7F8C8D" 
+                                           FontSize="12"
+                                           HorizontalTextAlignment="Center"/>
+                                </VerticalStackLayout>
+                            </HorizontalStackLayout>
+                        </ScrollView>
+                    </VerticalStackLayout>
+
+                    <BoxView HeightRequest="1" 
+                             Color="#E8EAED" 
+                             Margin="0,10"/>
+
+                    <!-- Destinatário -->
+                    <VerticalStackLayout Spacing="12">
+                        <Label Text="Para quem você quer enviar?" 
+                               TextColor="#2C3E50" 
+                               FontSize="16" 
+                               FontAttributes="Bold"/>
+
+                        <Frame CornerRadius="20" 
+                               Padding="15"
+                               HasShadow="True"
+                               BackgroundColor="White">
+                            <Grid ColumnDefinitions="*, Auto">
+                                <Entry Grid.Column="0"
+                                       Text="{Binding TargetAddress}" 
+                                       Placeholder="0x... ou nome.eth" 
+                                       TextColor="#2C3E50" 
+                                       PlaceholderColor="#BDC3C7"
+                                       BackgroundColor="Transparent"
+                                       FontSize="15"/>
+                                
+                                <!-- Botão de Scan -->
+                                <Frame Grid.Column="1" 
+                                       WidthRequest="44" 
+                                       HeightRequest="44"
+                                       CornerRadius="22"
+                                       Padding="0"
+                                       HasShadow="False">
+                                    <Frame.Background>
+                                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                            <GradientStop Color="#8E44AD" Offset="0.0" />
+                                            <GradientStop Color="#3498DB" Offset="1.0" />
+                                        </LinearGradientBrush>
+                                    </Frame.Background>
+                                    <ImageButton Command="{Binding ScanQrCodeCommand}" 
+                                               Source="qr_white.png" 
+                                               WidthRequest="22"
+                                               HeightRequest="22"
+                                               BackgroundColor="Transparent"
+                                               HorizontalOptions="Center"
+                                               VerticalOptions="Center"/>
+                                </Frame>
+                            </Grid>
+                        </Frame>
+                    </VerticalStackLayout>
+
+                    <!-- Seletor de Moeda -->
+                    <VerticalStackLayout Spacing="12">
+                        <Label Text="Moeda" 
+                               TextColor="#2C3E50" 
+                               FontSize="16" 
+                               FontAttributes="Bold"/>
+
+                        <Frame CornerRadius="20" 
+                               Padding="15"
+                               HasShadow="True"
+                               BackgroundColor="White">
+                            <Grid ColumnDefinitions="Auto, *, Auto">
+                                <Frame Grid.Column="0"
+                                       WidthRequest="40" 
+                                       HeightRequest="40" 
+                                       CornerRadius="20"
+                                       Padding="0"
+                                       HasShadow="False">
+                                    <Frame.Background>
+                                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                            <GradientStop Color="#627EEA" Offset="0.0" />
+                                            <GradientStop Color="#8A92B2" Offset="1.0" />
+                                        </LinearGradientBrush>
+                                    </Frame.Background>
+                                    <Label Text="Ξ" 
+                                           TextColor="White" 
+                                           FontSize="20"
+                                           FontAttributes="Bold"
+                                           HorizontalOptions="Center"
+                                           VerticalOptions="Center"/>
+                                </Frame>
+
+                                <VerticalStackLayout Grid.Column="1" 
+                                                   Margin="12,0"
+                                                   VerticalOptions="Center"
+                                                   Spacing="2">
+                                    <Label Text="Ethereum" 
+                                           TextColor="#2C3E50" 
+                                           FontSize="15"
+                                           FontAttributes="Bold"/>
+                                    <Label Text="Saldo: 2.5 ETH" 
+                                           TextColor="#7F8C8D" 
+                                           FontSize="12"/>
+                                </VerticalStackLayout>
+
+                                <Label Grid.Column="2"
+                                       Text="▼" 
+                                       TextColor="#7F8C8D" 
+                                       FontSize="16"
+                                       VerticalOptions="Center"/>
+                            </Grid>
+                        </Frame>
+                    </VerticalStackLayout>
+
+                    <!-- Valor -->
+                    <VerticalStackLayout Spacing="12">
+                        <Label Text="Quanto você quer enviar?" 
+                               TextColor="#2C3E50" 
+                               FontSize="16" 
+                               FontAttributes="Bold"/>
+
+                        <Frame CornerRadius="20" 
+                               Padding="20"
+                               HasShadow="True"
+                               BackgroundColor="White">
+                            <VerticalStackLayout Spacing="10">
+                                <Entry Text="{Binding Amount}" 
+                                       Keyboard="Numeric" 
+                                       TextColor="#2C3E50" 
+                                       Placeholder="0.00"
+                                       PlaceholderColor="#BDC3C7"
+                                       FontSize="36" 
+                                       FontAttributes="Bold"
+                                       HorizontalTextAlignment="Center"
+                                       BackgroundColor="Transparent"/>
+                                
+                                <Label Text="≈ $ 0.00 USD" 
+                                       TextColor="#7F8C8D" 
+                                       FontSize="16"
+                                       HorizontalTextAlignment="Center"/>
+
+                                <!-- Quick Amounts -->
+                                <FlexLayout JustifyContent="SpaceEvenly" 
+                                          Margin="0,10,0,0">
+                                    <Frame BackgroundColor="#F8F9FB" 
+                                           CornerRadius="15" 
+                                           Padding="15,8"
+                                           HasShadow="False">
+                                        <Label Text="25%" 
+                                               TextColor="#8E44AD" 
+                                               FontSize="13"
+                                               FontAttributes="Bold"/>
+                                    </Frame>
+                                    <Frame BackgroundColor="#F8F9FB" 
+                                           CornerRadius="15" 
+                                           Padding="15,8"
+                                           HasShadow="False">
+                                        <Label Text="50%" 
+                                               TextColor="#8E44AD" 
+                                               FontSize="13"
+                                               FontAttributes="Bold"/>
+                                    </Frame>
+                                    <Frame BackgroundColor="#F8F9FB" 
+                                           CornerRadius="15" 
+                                           Padding="15,8"
+                                           HasShadow="False">
+                                        <Label Text="75%" 
+                                               TextColor="#8E44AD" 
+                                               FontSize="13"
+                                               FontAttributes="Bold"/>
+                                    </Frame>
+                                    <Frame BackgroundColor="#F8F9FB" 
+                                           CornerRadius="15" 
+                                           Padding="15,8"
+                                           HasShadow="False">
+                                        <Label Text="MAX" 
+                                               TextColor="#8E44AD" 
+                                               FontSize="13"
+                                               FontAttributes="Bold"/>
+                                    </Frame>
+                                </FlexLayout>
+                            </VerticalStackLayout>
+                        </Frame>
+                    </VerticalStackLayout>
+
+                    <!-- Taxa de Rede -->
+                    <Frame CornerRadius="15" 
+                           BackgroundColor="#F8F9FB"
+                           Padding="15"
+                           HasShadow="False">
+                        <Grid ColumnDefinitions="*, Auto">
+                            <Label Grid.Column="0"
+                                   Text="Taxa de rede estimada" 
+                                   TextColor="#7F8C8D"
+                                   FontSize="14"
+                                   VerticalOptions="Center"/>
+                            <Label Grid.Column="1"
+                                   Text="~$0.50" 
+                                   TextColor="#2C3E50" 
+                                   FontAttributes="Bold"
+                                   FontSize="14"
+                                   VerticalOptions="Center"/>
+                        </Grid>
+                    </Frame>
+
+                    <!-- Botão Confirmar -->
+                    <Button Text="Confirmar Transferência" 
+                            Command="{Binding ConfirmTransactionCommand}"
+                            CornerRadius="25"
+                            HeightRequest="56"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            TextColor="White"
+                            Margin="0,10,0,0">
+                        <Button.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                                <GradientStop Color="#8E44AD" Offset="0.0" />
+                                <GradientStop Color="#3498DB" Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Button.Background>
+                        <Button.Triggers>
+                            <DataTrigger TargetType="Button" 
+                                       Binding="{Binding IsBusy}" 
+                                       Value="True">
+                                <Setter Property="Text" Value="Enviando para Blockchain..."/>
+                                <Setter Property="IsEnabled" Value="False"/>
+                                <Setter Property="Opacity" Value="0.6"/>
+                            </DataTrigger>
+                        </Button.Triggers>
+                    </Button>
+
+                    <!-- Security Note -->
+                    <Frame BackgroundColor="#E8F5E9" 
+                           BorderColor="#4CAF50"
+                           CornerRadius="15" 
+                           Padding="15"
+                           HasShadow="False">
+                        <HorizontalStackLayout Spacing="10">
+                            <Label Text="🔒" FontSize="18"/>
+                            <Label TextColor="#2E7D32" 
+                                   FontSize="12"
+                                   LineHeight="1.4"
+                                   VerticalOptions="Center">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Transação segura" FontAttributes="Bold"/>
+                                        <Span Text=" - Verifique o endereço antes de confirmar"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </HorizontalStackLayout>
+                    </Frame>
+
+                </VerticalStackLayout>
+            </ScrollView>
+        </Frame>
+    </Grid>
 </ContentPage>

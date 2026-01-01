@@ -1,42 +1,90 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Bank.MobileUI.Views.HistoryPage">
-    <ContentPage.Content>
-        <CollectionView ItemsSource="{Binding GroupedTransactions}" IsGrouped="True">
-    
-            <!-- Cabeçalho do Grupo (Ex: "Hoje") -->
-            <CollectionView.GroupHeaderTemplate>
-                <DataTemplate>
-                    <Label Text="{Binding Name}" 
-                           TextColor="#AAAAAA" 
-                           FontSize="14" 
-                           FontAttributes="Bold" 
-                           Padding="20,10,0,5"
-                           BackgroundColor="#121212"/>
-                </DataTemplate>
-            </CollectionView.GroupHeaderTemplate>
+             x:Class="Bank.MobileUI.Views.HistoryPage"
+             BackgroundColor="#F5F7FA" 
+             Shell.NavBarIsVisible="False">
 
-            <!-- Item da Transação -->
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <Grid Padding="20,10" ColumnDefinitions="Auto, *, Auto">
-                        <!-- Ícone baseada no Tipo (Enviado/Recebido) -->
-                        <Image Grid.Column="0" Source="{Binding Type, Converter={StaticResource TxIconConverter}}" WidthRequest="40"/>
-                
-                        <StackLayout Grid.Column="1" Margin="15,0">
-                            <Label Text="{Binding To, StringFormat='Para: {0}'}" LineBreakMode="TailTruncation" TextColor="White"/>
-                            <Label Text="{Binding Date, Converter={StaticResource DateHumanizer}}" TextColor="Gray" FontSize="12"/>
-                        </StackLayout>
+    <Grid RowDefinitions="Auto, Auto, *">
 
-                        <Label Grid.Column="2" 
-                               Text="{Binding Amount}" 
-                               TextColor="{Binding Type, Converter={StaticResource ColorConverter}}" 
-                               FontAttributes="Bold"/>
-                    </Grid>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-    </ContentPage.Content>
+        <BoxView Grid.Row="0" HeightRequest="180" VerticalOptions="Start">
+            <BoxView.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#8E44AD" Offset="0.1" />
+                    <GradientStop Color="#3498DB" Offset="1.0" />
+                </LinearGradientBrush>
+            </BoxView.Background>
+        </BoxView>
+
+        <VerticalStackLayout Grid.Row="0" Padding="25,60,25,0" Spacing="5">
+            <Label Text="Atividade" TextColor="White" FontSize="24" FontAttributes="Bold"/>
+            <Label Text="Histórico de transações blockchain" TextColor="#DCDDE1" FontSize="14"/>
+        </VerticalStackLayout>
+
+        <ScrollView Grid.Row="1" Orientation="Horizontal" HorizontalScrollBarVisibility="Never" Padding="20,15" Margin="0,-20,0,0">
+            <HorizontalStackLayout Spacing="10">
+                <Button Text="Tudo" BackgroundColor="#8E44AD" TextColor="White" CornerRadius="18" HeightRequest="38"/>
+
+                <Button Text="Enviados" BackgroundColor="White" TextColor="#7F8C8D" Margin="0,5,0,0" CornerRadius="18" HeightRequest="38">
+                    <Button.Shadow>
+                        <Shadow Brush="Gray" Offset="0,2" Radius="5" Opacity="0.1" />
+                    </Button.Shadow>
+                </Button>
+                <Button Text="Recebidos" BackgroundColor="White" TextColor="#7F8C8D" Margin="0,5,0,0" CornerRadius="18" HeightRequest="38">
+                    <Button.Shadow>
+                        <Shadow Brush="Gray" Offset="0,2" Radius="5" Opacity="0.1" />
+                    </Button.Shadow>
+                </Button>
+            </HorizontalStackLayout>
+        </ScrollView>
+
+        <Frame Grid.Row="2" BackgroundColor="White" CornerRadius="40" Margin="0,10,0,0" HasShadow="False" Padding="0">
+            <CollectionView ItemsSource="{Binding GroupedTransactions}" IsGrouped="True" Margin="0,10">
+
+                <CollectionView.GroupHeaderTemplate>
+                    <DataTemplate>
+                        <Label Text="{Binding Name}" 
+                               TextColor="#BDC3C7" 
+                               FontAttributes="Bold" 
+                               Padding="25,15,0,5" 
+                               FontSize="12" 
+                               CharacterSpacing="1"/>
+                    </DataTemplate>
+                </CollectionView.GroupHeaderTemplate>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid ColumnDefinitions="55, *, Auto" Padding="25,12" BackgroundColor="Transparent">
+
+                            <Border Grid.Column="0" 
+                                    WidthRequest="44" 
+                                    HeightRequest="44" 
+                                    StrokeShape="RoundRectangle 22" 
+                                    BackgroundColor="#F8F9FB"
+                                    StrokeThickness="0">
+                                <Image Source="{Binding TypeIcon}" HeightRequest="20" WidthRequest="20"/>
+                            </Border>
+
+                            <VerticalStackLayout Grid.Column="1" Margin="15,0" VerticalOptions="Center">
+                                <Label Text="{Binding Title}" FontAttributes="Bold" TextColor="#2C3E50" FontSize="15"/>
+                                <Label Text="{Binding Status}" TextColor="#7F8C8D" FontSize="12"/>
+                            </VerticalStackLayout>
+
+                            <VerticalStackLayout Grid.Column="2" VerticalOptions="Center" HorizontalOptions="End">
+                                <Label Text="{Binding Amount}" 
+                                       FontAttributes="Bold" 
+                                       TextColor="{Binding AmountColor}" 
+                                       HorizontalOptions="End"
+                                       FontSize="15"/>
+                                <Label Text="{Binding FiatAmount}" 
+                                       TextColor="#BDC3C7" 
+                                       FontSize="11" 
+                                       HorizontalOptions="End"/>
+                            </VerticalStackLayout>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Frame>
+    </Grid>
 </ContentPage>

@@ -1,25 +1,24 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Bank.MobileUI.Views.Onboarding.BackupPage">
-    <ContentPage.Content>
-            <Grid Padding="30" VerticalOptions="Center">
-                <Label Text="Anote sua Frase Secreta" FontSize="22" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                <Label Text="Se você perder estas palavras, perderá seu acesso para sempre." TextColor="#FF4500" HorizontalTextAlignment="Center"/>
+             x:Class="Bank.MobileUI.Views.Onboarding.BackupPage"
+             BackgroundColor="White">
 
-                <!-- Área protegida visualmente -->
-                <Border Stroke="#333" BackgroundColor="#111" Padding="20">
-                    <Label Text="{Binding SecretPhrase}" 
-                           FontSize="24" 
-                           HorizontalTextAlignment="Center" 
-                           TextColor="#00FF7F"/>
-                </Border>
+    <VerticalStackLayout Padding="30" Spacing="25" VerticalOptions="Center">
+        <Image Source="shield_security.png" HeightRequest="80" HorizontalOptions="Center"/>
+        
+        <Label Text="Sua Frase de Recuperação" FontSize="24" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="#2C3E50"/>
+        <Label Text="Esta é a única forma de recuperar sua conta se você perder seu dispositivo." TextColor="#7F8C8D" HorizontalTextAlignment="Center"/>
 
-                <Label Text="Não tire print desta tela!" FontSize="12" TextColor="Gray" HorizontalOptions="Center"/>
+        <Border BackgroundColor="#F8F9FB" StrokeShape="RoundRectangle 20" Padding="30" StrokeThickness="1" Stroke="#F0F0F0">
+            <Label Text="{Binding SecretPhrase}" FontSize="18" LineHeight="1.5" HorizontalTextAlignment="Center" TextColor="#8E44AD" FontAttributes="Bold"/>
+        </Border>
 
-                <Button Text="Já anotei, continuar" Command="{Binding VerifyBackupCommand}" 
-                        BackgroundColor="#8A2BE2" TextColor="White" Margin="0,30,0,0"/>
-            </Grid>
-    </ContentPage.Content>
+        <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+            <BoxView WidthRequest="8" HeightRequest="8" CornerRadius="4" BackgroundColor="#E74C3C"/>
+            <Label Text="Não tire print ou fotos desta tela!" TextColor="#E74C3C" FontSize="12" VerticalOptions="Center"/>
+        </HorizontalStackLayout>
+
+        <Button Text="Já anotei com segurança" Command="{Binding VerifyBackupCommand}" 
+                BackgroundColor="#8E44AD" CornerRadius="25" HeightRequest="55" Margin="0,40,0,0"/>
+    </VerticalStackLayout>
 </ContentPage>

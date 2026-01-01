@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bank.MobileUI.Views.Onboarding.OnboardingPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="White">
+
+    <Grid>
+        
+        <!-- Background Gradient -->
+        <BoxView VerticalOptions="Fill">
+            <BoxView.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#8E44AD" Offset="0.1" />
+                    <GradientStop Color="#3498DB" Offset="1.0" />
+                </LinearGradientBrush>
+            </BoxView.Background>
+        </BoxView>
+
+        <!-- Content -->
+        <Grid RowDefinitions="*, Auto">
+            
+            <!-- Carousel Area -->
+            <CarouselView Grid.Row="0"
+                         ItemsSource="{Binding OnboardingSteps}"
+                         CurrentItem="{Binding CurrentStep}"
+                         IndicatorView="indicatorView"
+                         Loop="False">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <VerticalStackLayout Padding="40,80,40,40" 
+                                           Spacing="30"
+                                           VerticalOptions="Center">
+                            
+                            <!-- Illustration -->
+                            <Frame WidthRequest="280" 
+                                   HeightRequest="280" 
+                                   CornerRadius="140"
+                                   Padding="40"
+                                   BackgroundColor="White"
+                                   HasShadow="True"
+                                   HorizontalOptions="Center">
+                                <Image Source="{Binding ImageUrl}" 
+                                       Aspect="AspectFit"/>
+                            </Frame>
+
+                            <!-- Title -->
+                            <Label Text="{Binding Title}" 
+                                   TextColor="White" 
+                                   FontSize="28" 
+                                   FontAttributes="Bold"
+                                   HorizontalTextAlignment="Center"
+                                   LineBreakMode="WordWrap"/>
+
+                            <!-- Description -->
+                            <Label Text="{Binding Description}" 
+                                   TextColor="#DCDDE1" 
+                                   FontSize="16"
+                                   HorizontalTextAlignment="Center"
+                                   LineBreakMode="WordWrap"
+                                   LineHeight="1.5"/>
+
+                        </VerticalStackLayout>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+
+            <!-- Bottom Section -->
+            <VerticalStackLayout Grid.Row="1" 
+                               Padding="40,20,40,40" 
+                               Spacing="25">
+                
+                <!-- Indicator -->
+                <IndicatorView x:Name="indicatorView"
+                             IndicatorColor="#80FFFFFF"
+                             SelectedIndicatorColor="White"
+                             HorizontalOptions="Center"
+                             IndicatorSize="10"/>
+
+                <!-- Buttons -->
+                <VerticalStackLayout Spacing="15">
+                    
+                    <!-- Get Started Button -->
+                    <Button Text="Começar Agora" 
+                            Command="{Binding GetStartedCommand}"
+                            IsVisible="{Binding IsLastStep}"
+                            CornerRadius="25"
+                            HeightRequest="56"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            TextColor="#8E44AD"
+                            BackgroundColor="White"/>
+
+                    <!-- Next Button -->
+                    <Button Text="Próximo" 
+                            Command="{Binding NextCommand}"
+                            IsVisible="{Binding IsNotLastStep}"
+                            CornerRadius="25"
+                            HeightRequest="56"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            TextColor="#8E44AD"
+                            BackgroundColor="White"/>
+
+                    <!-- Skip Button -->
+                    <Button Text="Pular" 
+                            Command="{Binding SkipCommand}"
+                            IsVisible="{Binding IsNotLastStep}"
+                            CornerRadius="25"
+                            HeightRequest="56"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            TextColor="White"
+                            BackgroundColor="Transparent"
+                            BorderColor="White"
+                            BorderWidth="2"/>
+                </VerticalStackLayout>
+            </VerticalStackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>

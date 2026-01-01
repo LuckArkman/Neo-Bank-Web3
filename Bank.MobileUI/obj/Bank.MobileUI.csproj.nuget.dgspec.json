@@ -193,6 +193,9 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
+              "D:\\Neo-Bank-Web3\\Bank.Application\\Bank.Application.csproj": {
+                "projectPath": "D:\\Neo-Bank-Web3\\Bank.Application\\Bank.Application.csproj"
+              },
               "D:\\Neo-Bank-Web3\\Bank.Domain\\Bank.Domain.csproj": {
                 "projectPath": "D:\\Neo-Bank-Web3\\Bank.Domain\\Bank.Domain.csproj"
               }
@@ -355,7 +358,7 @@
             },
             "Microsoft.AspNetCore.SignalR.Common": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[10.0.1, )"
             },
             "Microsoft.Extensions.Http.Polly": {
               "target": "Package",
@@ -440,7 +443,7 @@
             },
             "Microsoft.AspNetCore.SignalR.Common": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[10.0.1, )"
             },
             "Microsoft.Extensions.Http.Polly": {
               "target": "Package",

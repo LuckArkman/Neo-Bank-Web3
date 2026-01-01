@@ -2,15 +2,85 @@
 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Bank.MobileUI.Views.Fiat.BuyCryptoPage">
-    <ContentPage.Content>
+             x:Class="Bank.MobileUI.Views.Fiat.BuyCryptoPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="#F5F7FA">
+
+    <Grid RowDefinitions="120, *">
+        
+        <!-- Header com Gradiente -->
+        <BoxView Grid.Row="0" VerticalOptions="Fill">
+            <BoxView.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#8E44AD" Offset="0.1" />
+                    <GradientStop Color="#3498DB" Offset="1.0" />
+                </LinearGradientBrush>
+            </BoxView.Background>
+        </BoxView>
+
+        <!-- Título e Navegação -->
+        <Grid Grid.Row="0" Padding="25,50,25,0" ColumnDefinitions="Auto, *, Auto">
+            <ImageButton Grid.Column="0" 
+                         Source="arrow_back_white.png" 
+                         WidthRequest="24" 
+                         HeightRequest="24"
+                         BackgroundColor="Transparent"
+                         VerticalOptions="Center"/>
+            
+            <Label Grid.Column="1" 
+                   Text="Comprar Cripto" 
+                   TextColor="White" 
+                   FontSize="20" 
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+            
+            <Image Grid.Column="2" 
+                   Source="help_white.png" 
+                   WidthRequest="24" 
+                   VerticalOptions="Center"/>
+        </Grid>
+
+        <!-- Container Principal -->
+        <Frame Grid.Row="1" 
+               BackgroundColor="White" 
+               CornerRadius="40" 
+               Margin="0,-20,0,0" 
+               HasShadow="False" 
+               Padding="0">
+            
             <Grid>
+                <!-- WebView para Gateway -->
                 <WebView x:Name="GatewayWebView" 
-                         Navigating="OnWebViewNavigating"/>
+                         Navigating="OnWebViewNavigating"
+                         Margin="20,30,20,20"/>
                  
                 <!-- Loading Overlay -->
-                <ActivityIndicator IsRunning="{Binding IsLoading}" IsVisible="{Binding IsLoading}" 
-                                   HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Grid IsVisible="{Binding IsLoading}" 
+                      BackgroundColor="#80000000">
+                    <Frame BackgroundColor="White" 
+                           CornerRadius="20" 
+                           Padding="40"
+                           WidthRequest="200"
+                           HeightRequest="200"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           HasShadow="True">
+                        <VerticalStackLayout Spacing="20" 
+                                           VerticalOptions="Center" 
+                                           HorizontalOptions="Center">
+                            <ActivityIndicator IsRunning="{Binding IsLoading}" 
+                                             Color="#8E44AD"
+                                             WidthRequest="50"
+                                             HeightRequest="50"/>
+                            <Label Text="Carregando gateway..." 
+                                   TextColor="#2C3E50"
+                                   FontSize="14"
+                                   HorizontalTextAlignment="Center"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                </Grid>
             </Grid>
-    </ContentPage.Content>
+        </Frame>
+    </Grid>
 </ContentPage>

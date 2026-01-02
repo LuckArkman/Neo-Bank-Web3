@@ -57,6 +57,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Bank.MobileUI.Views.Auth.L
 build_metadata.AdditionalFiles.TargetPath = Views\Auth\LoginPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Auth\LoginPage.xaml
 
+[D:/Neo-Bank-Web3/Bank.MobileUI/Views/Components/CustomDockView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Bank.MobileUI.Views.Components.CustomDockView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Components\CustomDockView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Components\CustomDockView.xaml
+
 [D:/Neo-Bank-Web3/Bank.MobileUI/Views/DashboardPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Bank.MobileUI.Views.DashboardPage.xaml
@@ -87,11 +93,29 @@ build_metadata.AdditionalFiles.ManifestResourceName = Bank.MobileUI.Views.Onboar
 build_metadata.AdditionalFiles.TargetPath = Views\Onboarding\BackupPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Onboarding\BackupPage.xaml
 
+[D:/Neo-Bank-Web3/Bank.MobileUI/Views/Onboarding/ImportWalletPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Bank.MobileUI.Views.Onboarding.ImportWalletPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Onboarding\ImportWalletPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Onboarding\ImportWalletPage.xaml
+
+[D:/Neo-Bank-Web3/Bank.MobileUI/Views/Onboarding/LoadingPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Bank.MobileUI.Views.Onboarding.LoadingPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Onboarding\LoadingPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Onboarding\LoadingPage.xaml
+
 [D:/Neo-Bank-Web3/Bank.MobileUI/Views/Onboarding/OnboardingPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Bank.MobileUI.Views.Onboarding.OnboardingPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Onboarding\OnboardingPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Onboarding\OnboardingPage.xaml
+
+[D:/Neo-Bank-Web3/Bank.MobileUI/Views/Onboarding/WelcomePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Bank.MobileUI.Views.Onboarding.WelcomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Onboarding\WelcomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Onboarding\WelcomePage.xaml
 
 [D:/Neo-Bank-Web3/Bank.MobileUI/Views/ReceivePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

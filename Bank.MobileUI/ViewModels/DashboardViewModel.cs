@@ -4,6 +4,7 @@ using Bank.Domain.Entities;
 using Bank.Domain.Interfaces;
 using System.Collections.ObjectModel;
 using Bank.Application.Messages;
+using Bank.MobileUI.Views;
 using CommunityToolkit.Mvvm.Messaging;
 
 namespace Bank.MobileUI.ViewModels;
@@ -47,6 +48,21 @@ public partial class DashboardViewModel : ObservableObject
         */
         Task.Run(LoadDataAsync); 
     }
+    
+    [RelayCommand]
+    private async Task GoToReceiveAsync()
+    {
+        await Shell.Current.GoToAsync(nameof(ReceivePage));
+    }
+
+    [RelayCommand]
+    private async Task NavigateAsync(string route)
+    {
+        if (string.IsNullOrWhiteSpace(route)) return;
+
+        // Shell.Current permite navegar para as rotas registradas (TransferPage, ScanPage, etc.)
+        await Shell.Current.GoToAsync(route);
+    }
 
     [RelayCommand]
     public async Task LoadDataAsync()
@@ -57,7 +73,7 @@ public partial class DashboardViewModel : ObservableObject
         try
         {
             // Dados fiéis à imagem de referência da UXDA
-            TotalBalance = 90356.87m;
+            TotalBalance = 9035687m;
             WalletAddress = await _walletService.GetOrCreateWalletAsync();
 
             Assets.Clear();

@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "fT0ZtetFsEA=",
+  "dgSpecHash": "B1WpZ2gJM8c=",
   "success": true,
   "projectFilePath": "D:\\Neo-Bank-Web3\\Bank.MobileUI\\Bank.MobileUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MPLopes\\.nuget\\packages\\adraffy.ensnormalize\\0.1.5\\adraffy.ensnormalize.0.1.5.nupkg.sha512",
     "C:\\Users\\MPLopes\\.nuget\\packages\\bouncycastle.cryptography\\2.5.1\\bouncycastle.cryptography.2.5.1.nupkg.sha512",
+    "C:\\Users\\MPLopes\\.nuget\\packages\\communitytoolkit.maui\\10.0.0\\communitytoolkit.maui.10.0.0.nupkg.sha512",
+    "C:\\Users\\MPLopes\\.nuget\\packages\\communitytoolkit.maui.core\\10.0.0\\communitytoolkit.maui.core.10.0.0.nupkg.sha512",
     "C:\\Users\\MPLopes\\.nuget\\packages\\communitytoolkit.mvvm\\8.0.0\\communitytoolkit.mvvm.8.0.0.nupkg.sha512",
     "C:\\Users\\MPLopes\\.nuget\\packages\\googlegson\\2.13.0.1\\googlegson.2.13.0.1.nupkg.sha512",
     "C:\\Users\\MPLopes\\.nuget\\packages\\microsoft.aspnet.signalr.client\\2.4.3\\microsoft.aspnet.signalr.client.2.4.3.nupkg.sha512",
@@ -111,6 +113,7 @@
     "C:\\Users\\MPLopes\\.nuget\\packages\\system.net.websockets.websocketprotocol\\5.1.0\\system.net.websockets.websocketprotocol.5.1.0.nupkg.sha512",
     "C:\\Users\\MPLopes\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
     "C:\\Users\\MPLopes\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\MPLopes\\.nuget\\packages\\system.speech\\9.0.0\\system.speech.9.0.0.nupkg.sha512",
     "C:\\Users\\MPLopes\\.nuget\\packages\\system.text.encodings.web\\10.0.1\\system.text.encodings.web.10.0.1.nupkg.sha512",
     "C:\\Users\\MPLopes\\.nuget\\packages\\system.text.json\\10.0.1\\system.text.json.10.0.1.nupkg.sha512",
     "C:\\Users\\MPLopes\\.nuget\\packages\\system.threading.channels\\10.0.1\\system.threading.channels.10.0.1.nupkg.sha512",
@@ -215,19 +218,17 @@
     "C:\\Users\\MPLopes\\.nuget\\packages\\zxing.net\\0.16.10\\zxing.net.0.16.10.nupkg.sha512",
     "C:\\Users\\MPLopes\\.nuget\\packages\\zxing.net.maui\\0.5.0\\zxing.net.maui.0.5.0.nupkg.sha512",
     "C:\\Users\\MPLopes\\.nuget\\packages\\zxing.net.maui.controls\\0.5.0\\zxing.net.maui.controls.0.5.0.nupkg.sha512",
+    "C:\\Users\\MPLopes\\.nuget\\packages\\microsoft.android.ref.35\\35.0.105\\microsoft.android.ref.35.35.0.105.nupkg.sha512",
     "C:\\Users\\MPLopes\\.nuget\\packages\\microsoft.android.runtime.35.android-arm64\\35.0.105\\microsoft.android.runtime.35.android-arm64.35.0.105.nupkg.sha512",
     "C:\\Users\\MPLopes\\.nuget\\packages\\microsoft.android.runtime.35.android-x64\\35.0.105\\microsoft.android.runtime.35.android-x64.35.0.105.nupkg.sha512",
-    "C:\\Users\\MPLopes\\.nuget\\packages\\microsoft.android.ref.35\\35.0.105\\microsoft.android.ref.35.35.0.105.nupkg.sha512",
     "C:\\Users\\MPLopes\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.57\\microsoft.windows.sdk.net.ref.10.0.19041.57.nupkg.sha512"
   ],
   "logs": [
     {
       "code": "NU1608",
       "level": "Warning",
-      "message": "Detected package version outside of dependency constraint: Nethereum.JsonRpc.Client 5.0.0 requires Microsoft.Extensions.Logging.Abstractions (>= 6.0.0 && < 10.0.0) but version Microsoft.Extensions.Logging.Abstractions 10.0.1 was resolved.",
-      "projectPath": "D:\\Neo-Bank-Web3\\Bank.MobileUI\\Bank.MobileUI.csproj",
       "warningLevel": 1,
-      "filePath": "D:\\Neo-Bank-Web3\\Bank.MobileUI\\Bank.MobileUI.csproj",
+      "message": "Detected package version outside of dependency constraint: Nethereum.JsonRpc.Client 5.0.0 requires Microsoft.Extensions.Logging.Abstractions (>= 6.0.0 && < 10.0.0) but version Microsoft.Extensions.Logging.Abstractions 10.0.1 was resolved.",
       "libraryId": "Microsoft.Extensions.Logging.Abstractions",
       "targetGraphs": [
         "net9.0-android35.0",

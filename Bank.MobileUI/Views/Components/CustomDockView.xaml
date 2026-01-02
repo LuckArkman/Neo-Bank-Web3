@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bank.MobileUI.Views.Components.CustomDockView">
+
+    <ContentView.Resources>
+        <!-- Estilo para os Labels da Dock -->
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="10" />
+            <Setter Property="TextColor" Value="#7F8C8D" />
+            <Setter Property="HorizontalOptions" Value="Center" />
+            <Setter Property="Margin" Value="0,2,0,0" />
+        </Style>
+    </ContentView.Resources>
+
+    <!-- A Dock Flutuante -->
+    <Border BackgroundColor="White"
+            StrokeThickness="0"
+            Margin="20,0,20,30" 
+            HeightRequest="80"
+            VerticalOptions="End"
+            StrokeShape="RoundRectangle 25">
+        
+        <Border.Shadow>
+            <Shadow Brush="Black" Offset="0,5" Radius="20" Opacity="0.15" />
+        </Border.Shadow>
+
+        <Grid ColumnDefinitions="*, *, *, *, *" Padding="10,0">
+            
+            <!-- 1. Transferir -->
+            <VerticalStackLayout Grid.Column="0" VerticalOptions="Center">
+                <VerticalStackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding NavigateCommand}" CommandParameter="//TransferPage"/>
+                </VerticalStackLayout.GestureRecognizers>
+                <Image Source="transferir.png" HeightRequest="24" Aspect="AspectFit"/>
+                <Label Text="Transferir"/>
+            </VerticalStackLayout>
+
+            <!-- 2. Pagar (Scan) -->
+            <VerticalStackLayout Grid.Column="1" VerticalOptions="Center">
+                <VerticalStackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding NavigateCommand}" CommandParameter="//ScanPage"/>
+                </VerticalStackLayout.GestureRecognizers>
+                <Image Source="pagar.png" HeightRequest="24" Aspect="AspectFit" Opacity="0.6"/>
+                <Label Text="Pagar"/>
+            </VerticalStackLayout>
+
+            <!-- 3. Perfil (Botão Central Destacado) -->
+            <Grid Grid.Column="2" TranslationY="0"> <!-- Efeito de elevação -->
+                 <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding NavigateCommand}" CommandParameter="//DashboardPage"/>
+                </Grid.GestureRecognizers>
+                
+                <Border BackgroundColor="#8E44AD"
+                        HeightRequest="60" WidthRequest="60"
+                        StrokeShape="RoundRectangle 30"
+                        StrokeThickness="4" Stroke="White">
+                    <Image Source="casa.png" HeightRequest="24" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center"/>
+                </Border>
+            </Grid>
+
+            <!-- 4. Receber -->
+            <VerticalStackLayout Grid.Column="3" VerticalOptions="Center">
+                <VerticalStackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding NavigateCommand}" CommandParameter="//ReceivePage"/>
+                </VerticalStackLayout.GestureRecognizers>
+                <Image Source="receber.png" HeightRequest="24" Aspect="AspectFit" Opacity="0.6"/>
+                <Label Text="Receber"/>
+            </VerticalStackLayout>
+
+            <!-- 5. Investir (Stake) -->
+            <VerticalStackLayout Grid.Column="4" VerticalOptions="Center">
+                <VerticalStackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding NavigateCommand}" CommandParameter="//StakingPage"/>
+                </VerticalStackLayout.GestureRecognizers>
+                <Image Source="conexao.png" HeightRequest="24" Aspect="AspectFit" Opacity="0.6"/>
+                <Label Text="Stake"/>
+            </VerticalStackLayout>
+        </Grid>
+    </Border>
+</ContentView>

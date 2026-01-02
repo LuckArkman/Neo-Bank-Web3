@@ -352,6 +352,10 @@
         "net9.0-android35.0": {
           "targetAlias": "net9.0-android",
           "dependencies": {
+            "CommunityToolkit.Maui": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -369,6 +373,10 @@
               "version": "[9.0.9, )"
             },
             "Microsoft.Maui.Controls": {
+              "target": "Package",
+              "version": "[9.0.120, )"
+            },
+            "Microsoft.Maui.Controls.Core": {
               "target": "Package",
               "version": "[9.0.120, )"
             },
@@ -437,6 +445,10 @@
         "net9.0-windows10.0.19041": {
           "targetAlias": "net9.0-windows10.0.19041.0",
           "dependencies": {
+            "CommunityToolkit.Maui": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -454,6 +466,10 @@
               "version": "[9.0.9, )"
             },
             "Microsoft.Maui.Controls": {
+              "target": "Package",
+              "version": "[9.0.120, )"
+            },
+            "Microsoft.Maui.Controls.Core": {
               "target": "Package",
               "version": "[9.0.120, )"
             },

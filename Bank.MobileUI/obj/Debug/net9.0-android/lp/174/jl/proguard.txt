@@ -12,36 +12,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Never inline methods, but allow shrinking and obfuscation.
--keepclassmembernames,allowobfuscation,allowshrinking
-        class androidx.biometric.AuthenticationCallbackProvider$Api* {
-    <methods>;
-}
--keepclassmembernames,allowobfuscation,allowshrinking
-        class androidx.biometric.BiometricFragment$Api* {
-    <methods>;
-}
--keepclassmembernames,allowobfuscation,allowshrinking
-        class androidx.biometric.BiometricManager$Api* {
-    <methods>;
-}
--keepclassmembernames,allowobfuscation,allowshrinking
-        class androidx.biometric.CancellationSignalProvider$Api* {
-    <methods>;
-}
--keepclassmembernames,allowobfuscation,allowshrinking
-        class androidx.biometric.CryptoObjectUtils$Api* {
-    <methods>;
-}
--keepclassmembernames,allowobfuscation,allowshrinking
-        class androidx.biometric.FingerprintDialogFragment$Api* {
-    <methods>;
-}
--keepclassmembernames,allowobfuscation,allowshrinking
-        class androidx.biometric.KeyguardUtils$Api* {
-    <methods>;
-}
--keepclassmembernames,allowobfuscation,allowshrinking
-        class androidx.biometric.PackageUtils$Api* {
-    <methods>;
-}
+# This is necessary for default initialization using Camera2Config
+-keep public class androidx.camera.camera2.Camera2Config$DefaultProvider { *; }

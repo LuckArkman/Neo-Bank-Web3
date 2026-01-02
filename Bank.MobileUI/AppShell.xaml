@@ -3,12 +3,39 @@
     x:Class="Bank.MobileUI.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:Bank.MobileUI.Views"
-    Title="Bank.MobileUI">
+    xmlns:views="clr-namespace:Bank.MobileUI.Views"
+    xmlns:onboarding="clr-namespace:Bank.MobileUI.Views.Onboarding"
+    Title="NeoBank Web3"
+    
+    Shell.TabBarIsVisible="False" 
+    Shell.NavBarIsVisible="False"
+    BackgroundColor="#F5F5F5">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:HistoryPage}"
-        Route="MainPage" />
+    <!-- 
+       IMPORTANTE: Definimos rotas absolutas (//) para a navegação funcionar.
+       Como a TabBar está oculta (IsVisible=False), o usuário não vê a nativa,
+       mas vê a nossa Dock que injeta comandos para essas rotas.
+    -->
+
+    <ShellContent Route="DashboardPage" 
+                  ContentTemplate="{DataTemplate views:DashboardPage}" />
+
+    <ShellContent Route="TransferPage" 
+                  ContentTemplate="{DataTemplate views:TransferPage}" />
+
+    <ShellContent Route="ScanPage" 
+                  ContentTemplate="{DataTemplate views:ScanPage}" />
+    
+    <ShellContent Route="StakingPage" 
+                  ContentTemplate="{DataTemplate views:StakingPage}" />
+    
+    <ShellContent Route="ReceivePage" 
+                  ContentTemplate="{DataTemplate views:ReceivePage}" />
+                  
+    <ShellContent Route="HistoryPage" 
+                  ContentTemplate="{DataTemplate views:HistoryPage}" />
+    
+    <ShellContent Route="LoadingPage" 
+                  ContentTemplate="{DataTemplate onboarding:LoadingPage}" />
 
 </Shell>

@@ -2,13 +2,40 @@
 <Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Bank.MobileUI"
+             xmlns:converters="clr-namespace:Bank.MobileUI.Converters"
+             xmlns:components="clr-namespace:Bank.MobileUI.Views.Components"
              x:Class="Bank.MobileUI.App">
+
     <Application.Resources>
         <ResourceDictionary>
+            <!-- 1. Dicionários Externos (Cores e Estilos Básicos) -->
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
+
+            <!-- 2. Conversores -->
+            <converters:CurrencyConverter x:Key="CurrencyConverter" />
+            <converters:DateHumanizerConverter x:Key="DateHumanizerConverter" />
+            <converters:PriceColorConverter x:Key="PriceColorConverter" />
+
+            <!-- 3. Template da Dock (DEFINIR ANTES DE USAR) -->
+            <ControlTemplate x:Key="DockShellTemplate">
+                <Grid>
+                    <!-- Conteúdo da Página (Ocupa tudo) -->
+                    <ContentPresenter />
+
+                    <!-- Nossa Dock Customizada (Sobreposta na parte inferior) -->
+                    <components:CustomDockView VerticalOptions="End" />
+                </Grid>
+            </ControlTemplate>
+
+            <!-- 4. Estilo Global (Aplica o Template definido acima) -->
+            <Style TargetType="ContentPage" ApplyToDerivedTypes="True">
+                <Setter Property="ControlTemplate" Value="{StaticResource DockShellTemplate}" />
+                <Setter Property="BackgroundColor" Value="#F5F5F5" />
+            </Style>
+            
         </ResourceDictionary>
     </Application.Resources>
 </Application>

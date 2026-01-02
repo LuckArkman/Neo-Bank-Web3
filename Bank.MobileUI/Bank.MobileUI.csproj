@@ -60,11 +60,13 @@
     </ItemGroup>
 
     <ItemGroup>
+        <PackageReference Include="CommunityToolkit.Maui" Version="10.0.0" />
         <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
         <PackageReference Include="Microsoft.AspNetCore.SignalR.Common" Version="10.0.1" />
         <PackageReference Include="Microsoft.Extensions.Http.Polly" Version="9.0.0" />
         <PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)"/>
         <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.9"/>
+        <PackageReference Include="Microsoft.Maui.Controls.Core" Version="9.0.120" />
         <PackageReference Include="Nethereum.Web3" Version="5.0.0" />
         <PackageReference Include="Plugin.Fingerprint" Version="3.0.0-beta.1" />
         <PackageReference Include="Polly.Extensions.Http" Version="3.0.0" />

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bank.MobileUI.Views.Onboarding.ImportWalletPage"
+             BackgroundColor="#F5F7FA"
+             Shell.NavBarIsVisible="False"
+             ControlTemplate="{x:Null}">
+
+    <Grid RowDefinitions="Auto, *">
+        <!-- Header -->
+        <VerticalStackLayout Padding="30,60,30,20" Spacing="10" BackgroundColor="#8E44AD">
+            <Label Text="Importar Carteira" TextColor="White" FontSize="24" FontAttributes="Bold"/>
+            <Label Text="Cole sua chave privada abaixo para restaurar o acesso." TextColor="#E0E0E0" FontSize="14"/>
+        </VerticalStackLayout>
+
+        <!-- Form -->
+        <VerticalStackLayout Grid.Row="1" Padding="30" Spacing="20" VerticalOptions="Center">
+            
+            <Label Text="Chave Privada (Private Key)" TextColor="#2C3E50" FontAttributes="Bold"/>
+            
+            <Frame Padding="15,5" BackgroundColor="White" CornerRadius="10" HasShadow="False" BorderColor="#BDC3C7">
+                <Editor Text="{Binding PrivateKeyInput}" 
+                        Placeholder="ex: 0abc123..." 
+                        HeightRequest="100" 
+                        BackgroundColor="Transparent"
+                        TextColor="#2C3E50"
+                        AutoSize="TextChanges"/>
+            </Frame>
+
+            <Button Text="Importar Carteira" 
+                    Command="{Binding ImportCommand}"
+                    BackgroundColor="#8E44AD"
+                    TextColor="White"
+                    CornerRadius="25"
+                    HeightRequest="55"
+                    FontAttributes="Bold"/>
+
+            <Button Text="Cancelar" 
+                    Command="{Binding BackCommand}"
+                    BackgroundColor="Transparent"
+                    TextColor="#7F8C8D"
+                    HeightRequest="40"/>
+            
+            <ActivityIndicator IsRunning="{Binding IsBusy}" Color="#8E44AD"/>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

@@ -8,16 +8,19 @@ public class CurrencyConverter : IValueConverter
     {
         if (value is decimal decimalValue)
         {
-            // Formata baseado na cultura do dispositivo (R$ ou $)
-            // Se for cripto (parametro 'ETH'), usa mais casas decimais
-            if (parameter is string tokenSymbol && tokenSymbol != "USD" && tokenSymbol != "BRL")
+            if (parameter is string tokenSymbol && tokenSymbol == "ETH")
             {
-                return $"{decimalValue:0.####} {tokenSymbol}";
+                // Divide para transformar os últimos 4 dígitos em decimais
+                decimal valorFinal = decimalValue / 10000m; 
+
+                // "0.####" exibe até 4 casas decimais apenas se elas existirem
+                // e evita o arredondamento automático para cima em alguns casos
+                return $"{valorFinal:0.####} {tokenSymbol}";
             }
-            
+        
             return decimalValue.ToString("C", culture);
         }
-        return "0.00";
+        return "0";
     }
 
     public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture) => throw new NotImplementedException();

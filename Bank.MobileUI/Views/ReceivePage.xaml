@@ -1,17 +1,16 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:zxing="clr-namespace:ZXing.Net.Maui.Controls;assembly=ZXing.Net.MAUI"
-             xmlns:controls="clr-namespace:ZXing.Net.Maui.Controls;assembly=ZXing.Net.MAUI.Controls"
+             xmlns:zxing="clr-namespace:ZXing.Net.Maui.Controls;assembly=ZXing.Net.MAUI.Controls"
+             xmlns:vm="clr-namespace:Bank.MobileUI.ViewModels"
              x:Class="Bank.MobileUI.Views.ReceivePage"
              Shell.NavBarIsVisible="False"
              BackgroundColor="#F5F7FA">
 
-    <Grid RowDefinitions="180, *">
-        
-        <!-- Header com Gradiente -->
-        <BoxView Grid.Row="0" VerticalOptions="Fill">
+    <Grid RowDefinitions="Auto, *">
+
+        <!-- 1. Fundo Gradiente -->
+        <BoxView Grid.Row="0" Grid.RowSpan="2" VerticalOptions="Start" HeightRequest="350">
             <BoxView.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
                     <GradientStop Color="#8E44AD" Offset="0.1" />
@@ -20,252 +19,112 @@
             </BoxView.Background>
         </BoxView>
 
-        <!-- Header Content -->
-        <VerticalStackLayout Grid.Row="0" Padding="25,50,25,20" Spacing="15">
-            <Grid ColumnDefinitions="Auto, *, Auto">
-                <ImageButton Grid.Column="0" 
-                           Source="arrow_back_white.png" 
-                           WidthRequest="24" 
-                           BackgroundColor="Transparent"/>
-                
-                <Label Grid.Column="1" 
-                       Text="Receber" 
-                       TextColor="White" 
-                       FontSize="24" 
-                       FontAttributes="Bold"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"/>
-                
-                <Image Grid.Column="2" 
-                       Source="share_white.png" 
-                       WidthRequest="24"/>
-            </Grid>
+        <!-- 2. Cabeçalho Personalizado -->
+        <Grid Grid.Row="0" ColumnDefinitions="Auto, *" Padding="20,50,20,20">
+            
+            <!-- CORREÇÃO AQUI: Removido Source="...", mantendo apenas o FontImageSource interno -->
+            <ImageButton Command="{Binding GoBackCommand}"
+                         WidthRequest="40" 
+                         HeightRequest="40"
+                         HorizontalOptions="Start"
+                         BackgroundColor="Transparent">
+                <ImageButton.Source>
+                    <FontImageSource Glyph="&#x2190;" FontFamily="OpenSansRegular" Color="White" Size="24"/>
+                </ImageButton.Source>
+            </ImageButton>
+            
+            <Label Grid.Column="1" 
+                   Text="Receber Pagamento" 
+                   TextColor="White" 
+                   FontSize="18" 
+                   FontAttributes="Bold" 
+                   HorizontalOptions="Center"
+                   Margin="-40,0,0,0"/> <!-- Ajuste de margem compensatória -->
+        </Grid>
 
-            <Label Text="Compartilhe seu endereço para receber criptomoedas" 
-                   TextColor="#DCDDE1" 
-                   FontSize="14"
-                   HorizontalTextAlignment="Center"
-                   Margin="0,5,0,0"/>
-        </VerticalStackLayout>
-
-        <!-- Container Principal -->
+        <!-- 3. Cartão Branco Flutuante -->
         <Frame Grid.Row="1" 
                BackgroundColor="White" 
                CornerRadius="40" 
-               Margin="0,-20,0,0" 
+               Margin="0,20,0,0" 
                HasShadow="False" 
-               Padding="0">
+               Padding="30"
+               VerticalOptions="Fill">
             
-            <ScrollView>
-                <VerticalStackLayout Spacing="30" Padding="30,40,30,100" VerticalOptions="Center">
+            <VerticalStackLayout Spacing="25" VerticalOptions="Center">
+
+                <Label Text="Escaneie para pagar" 
+                       TextColor="#7F8C8D" 
+                       FontSize="16" 
+                       HorizontalOptions="Center"/>
+
+                <!-- GERADOR DE QR CODE -->
+                <Border Stroke="#F0F0F0" 
+                        StrokeThickness="1" 
+                        StrokeShape="RoundRectangle 20"
+                        WidthRequest="220" 
+                        HeightRequest="220"
+                        HorizontalOptions="Center"
+                        Padding="10">
                     
-                    <!-- Network Selector -->
-                    <VerticalStackLayout Spacing="12">
-                        <Label Text="Selecione a Rede" 
-                               TextColor="#2C3E50" 
-                               FontSize="16" 
-                               FontAttributes="Bold"/>
+                    <!-- Certifique-se que o pacote ZXing.Net.Maui.Controls está instalado -->
+                    <zxing:BarcodeGeneratorView 
+                        Value="{Binding QrCodeContent}"
+                        Format="QrCode"
+                        ForegroundColor="#2C3E50"
+                        BackgroundColor="Transparent"
+                        Margin="5"/>
+                </Border>
 
-                        <Frame CornerRadius="20" 
-                               Padding="15"
-                               HasShadow="True"
-                               BackgroundColor="White">
-                            <Grid ColumnDefinitions="Auto, *, Auto">
-                                <Frame Grid.Column="0"
-                                       WidthRequest="40" 
-                                       HeightRequest="40" 
-                                       CornerRadius="20"
-                                       Padding="0"
-                                       HasShadow="False">
-                                    <Frame.Background>
-                                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                                            <GradientStop Color="#627EEA" Offset="0.0" />
-                                            <GradientStop Color="#8A92B2" Offset="1.0" />
-                                        </LinearGradientBrush>
-                                    </Frame.Background>
-                                    <Label Text="Ξ" 
-                                           TextColor="White" 
-                                           FontSize="20"
-                                           FontAttributes="Bold"
-                                           HorizontalOptions="Center"
-                                           VerticalOptions="Center"/>
-                                </Frame>
-
-                                <VerticalStackLayout Grid.Column="1" 
-                                                   Margin="12,0"
-                                                   VerticalOptions="Center"
-                                                   Spacing="2">
-                                    <Label Text="Ethereum" 
-                                           TextColor="#2C3E50" 
-                                           FontSize="15"
-                                           FontAttributes="Bold"/>
-                                    <Label Text="ERC-20" 
-                                           TextColor="#7F8C8D" 
-                                           FontSize="12"/>
-                                </VerticalStackLayout>
-
-                                <Label Grid.Column="2"
-                                       Text="▼" 
-                                       TextColor="#7F8C8D" 
-                                       FontSize="16"
-                                       VerticalOptions="Center"/>
-                            </Grid>
-                            <Frame.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding SelectNetworkCommand}"/>
-                            </Frame.GestureRecognizers>
-                        </Frame>
-                    </VerticalStackLayout>
-
-                    <!-- QR Code -->
-                    <Frame CornerRadius="30" 
-                           Padding="30"
-                           HasShadow="True"
-                           BackgroundColor="White"
-                           HorizontalOptions="Center">
-                        <VerticalStackLayout Spacing="20">
-                            
-                            <!-- QR Code Frame -->
-                            <Frame WidthRequest="260" 
-                                   HeightRequest="260" 
-                                   CornerRadius="20"
-                                   Padding="20"
-                                   HasShadow="False"
-                                   BackgroundColor="#F8F9FB">
-                                <controls:BarcodeGeneratorView 
-                                    Value="{Binding WalletAddress}"
-                                    Format="QrCode"
-                                    ForegroundColor="#2C3E50"
-                                    BackgroundColor="Transparent"
-                                    WidthRequest="220"
-                                    HeightRequest="220"
-                                    HorizontalOptions="Center"
-                                    VerticalOptions="Center"/>
-                            </Frame>
-
-                            <!-- Logo Overlay -->
-                            <Frame WidthRequest="60" 
-                                   HeightRequest="60" 
-                                   CornerRadius="30"
-                                   Padding="0"
-                                   HasShadow="True"
-                                   HorizontalOptions="Center"
-                                   Margin="0,-150,0,0">
-                                <Frame.Background>
-                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                                        <GradientStop Color="#8E44AD" Offset="0.0" />
-                                        <GradientStop Color="#3498DB" Offset="1.0" />
-                                    </LinearGradientBrush>
-                                </Frame.Background>
-                                <Image Source="app_logo_white.png" 
-                                       Aspect="AspectFit"
-                                       Margin="12"/>
-                            </Frame>
-                        </VerticalStackLayout>
-                    </Frame>
-
-                    <!-- Address Display -->
-                    <VerticalStackLayout Spacing="12">
-                        <Label Text="Seu Endereço" 
-                               TextColor="#2C3E50" 
-                               FontSize="16" 
-                               FontAttributes="Bold"
-                               HorizontalTextAlignment="Center"/>
-
-                        <Frame CornerRadius="20" 
-                               Padding="20"
-                               HasShadow="True"
-                               BackgroundColor="White">
-                            <Grid ColumnDefinitions="*, Auto">
-                                <Label Grid.Column="0"
-                                       Text="{Binding WalletAddress}" 
-                                       TextColor="#2C3E50"
-                                       FontSize="14"
-                                       FontFamily="Courier"
-                                       LineBreakMode="MiddleTruncation"
-                                       VerticalOptions="Center"
-                                       MaxLines="1"/>
-                                
-                                <Frame Grid.Column="1"
-                                       WidthRequest="40" 
-                                       HeightRequest="40" 
-                                       CornerRadius="20"
-                                       Padding="0"
-                                       HasShadow="False"
-                                       VerticalOptions="Center">
-                                    <Frame.Background>
-                                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                                            <GradientStop Color="#8E44AD" Offset="0.0" />
-                                            <GradientStop Color="#3498DB" Offset="1.0" />
-                                        </LinearGradientBrush>
-                                    </Frame.Background>
-                                    <Image Source="copy_white.png" 
-                                           WidthRequest="20"
-                                           HeightRequest="20"
-                                           HorizontalOptions="Center"
-                                           VerticalOptions="Center"/>
-                                    <Frame.GestureRecognizers>
-                                        <TapGestureRecognizer Command="{Binding CopyAddressCommand}"/>
-                                    </Frame.GestureRecognizers>
-                                </Frame>
-                            </Grid>
-                        </Frame>
-                    </VerticalStackLayout>
-
-                    <!-- Warning -->
-                    <Frame BackgroundColor="#FFF3CD" 
-                           BorderColor="#FFC107"
-                           CornerRadius="15" 
-                           Padding="15"
+                <!-- Endereço da Carteira -->
+                <VerticalStackLayout Spacing="5">
+                    <Label Text="Seu endereço de carteira" 
+                           TextColor="#BDC3C7" 
+                           FontSize="12" 
+                           HorizontalOptions="Center"/>
+                    
+                    <Frame BackgroundColor="#F8F9FB" 
+                           Padding="15,10" 
+                           CornerRadius="10" 
                            HasShadow="False">
-                        <HorizontalStackLayout Spacing="10">
-                            <Label Text="⚠️" FontSize="18"/>
-                            <Label TextColor="#856404" 
-                                   FontSize="13"
-                                   LineHeight="1.4"
-                                   VerticalOptions="Center">
-                                <Label.FormattedText>
-                                    <FormattedString>
-                                        <Span Text="Envie apenas "/>
-                                        <Span Text="tokens ERC-20 " FontAttributes="Bold"/>
-                                        <Span Text="para este endereço. Outros tokens podem ser perdidos permanentemente."/>
-                                    </FormattedString>
-                                </Label.FormattedText>
-                            </Label>
-                        </HorizontalStackLayout>
+                        <Label Text="{Binding WalletAddress}" 
+                               TextColor="#2C3E50" 
+                               FontAttributes="Bold" 
+                               FontSize="13" 
+                               HorizontalTextAlignment="Center"
+                               LineBreakMode="MiddleTruncation"/>
                     </Frame>
-
-                    <!-- Action Buttons -->
-                    <Grid ColumnDefinitions="*, *" ColumnSpacing="15">
-                        
-                        <Button Grid.Column="0"
-                                Text="Compartilhar" 
-                                Command="{Binding ShareQRCommand}"
-                                CornerRadius="20"
-                                HeightRequest="50"
-                                FontSize="15"
-                                FontAttributes="Bold"
-                                TextColor="White">
-                            <Button.Background>
-                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                                    <GradientStop Color="#8E44AD" Offset="0.0" />
-                                    <GradientStop Color="#3498DB" Offset="1.0" />
-                                </LinearGradientBrush>
-                            </Button.Background>
-                        </Button>
-
-                        <Button Grid.Column="1"
-                                Text="Salvar QR" 
-                                Command="{Binding SaveQRCommand}"
-                                CornerRadius="20"
-                                HeightRequest="50"
-                                FontSize="15"
-                                FontAttributes="Bold"
-                                TextColor="#8E44AD"
-                                BackgroundColor="#F8F9FB"/>
-                    </Grid>
-
                 </VerticalStackLayout>
-            </ScrollView>
+
+                <!-- Botões de Ação -->
+                <Grid ColumnDefinitions="*, *" ColumnSpacing="15" Margin="0,20,0,0">
+                    
+                    <!-- Botão Copiar -->
+                    <Button Grid.Column="0"
+                            Text="Copiar"
+                            Command="{Binding CopyAddressCommand}"
+                            BackgroundColor="#EDF2F7"
+                            TextColor="#3498DB"
+                            FontAttributes="Bold"
+                            CornerRadius="25"
+                            HeightRequest="50"/>
+
+                    <!-- Botão Compartilhar -->
+                    <Button Grid.Column="1"
+                            Text="Compartilhar"
+                            Command="{Binding ShareAddressCommand}"
+                            BackgroundColor="#3498DB"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            CornerRadius="25"
+                            HeightRequest="50">
+                        <Button.Shadow>
+                            <Shadow Brush="#3498DB" Offset="0,5" Radius="10" Opacity="0.4"/>
+                        </Button.Shadow>
+                    </Button>
+                </Grid>
+
+            </VerticalStackLayout>
         </Frame>
     </Grid>
 </ContentPage>

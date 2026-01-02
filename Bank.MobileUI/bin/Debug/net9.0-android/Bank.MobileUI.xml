@@ -13,11 +13,77 @@
         <member name="P:Bank.MobileUI.ViewModels.DashboardViewModel.IsLoading">
             <inheritdoc cref="F:Bank.MobileUI.ViewModels.DashboardViewModel._isLoading"/>
         </member>
+        <member name="F:Bank.MobileUI.ViewModels.DashboardViewModel.goToReceiveCommand">
+            <summary>The backing field for <see cref="P:Bank.MobileUI.ViewModels.DashboardViewModel.GoToReceiveCommand"/>.</summary>
+        </member>
+        <member name="P:Bank.MobileUI.ViewModels.DashboardViewModel.GoToReceiveCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Bank.MobileUI.ViewModels.DashboardViewModel.GoToReceiveAsync"/>.</summary>
+        </member>
+        <member name="F:Bank.MobileUI.ViewModels.DashboardViewModel.navigateCommand">
+            <summary>The backing field for <see cref="P:Bank.MobileUI.ViewModels.DashboardViewModel.NavigateCommand"/>.</summary>
+        </member>
+        <member name="P:Bank.MobileUI.ViewModels.DashboardViewModel.NavigateCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:Bank.MobileUI.ViewModels.DashboardViewModel.NavigateAsync(System.String)"/>.</summary>
+        </member>
         <member name="F:Bank.MobileUI.ViewModels.DashboardViewModel.loadDataCommand">
             <summary>The backing field for <see cref="P:Bank.MobileUI.ViewModels.DashboardViewModel.LoadDataCommand"/>.</summary>
         </member>
         <member name="P:Bank.MobileUI.ViewModels.DashboardViewModel.LoadDataCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Bank.MobileUI.ViewModels.DashboardViewModel.LoadDataAsync"/>.</summary>
+        </member>
+        <member name="F:Bank.MobileUI.ViewModels.ImportWalletViewModel.backCommand">
+            <summary>The backing field for <see cref="P:Bank.MobileUI.ViewModels.ImportWalletViewModel.BackCommand"/>.</summary>
+        </member>
+        <member name="P:Bank.MobileUI.ViewModels.ImportWalletViewModel.BackCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Bank.MobileUI.ViewModels.ImportWalletViewModel.Back"/>.</summary>
+        </member>
+        <member name="F:Bank.MobileUI.ViewModels.NotificationViewModel.notificationTappedCommand">
+            <summary>The backing field for <see cref="P:Bank.MobileUI.ViewModels.NotificationViewModel.NotificationTappedCommand"/>.</summary>
+        </member>
+        <member name="P:Bank.MobileUI.ViewModels.NotificationViewModel.NotificationTappedCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:Bank.MobileUI.ViewModels.NotificationViewModel.NotificationTappedAsync(Bank.MobileUI.Models.NotificationModel)"/>.</summary>
+        </member>
+        <member name="P:Bank.MobileUI.ViewModels.Onboarding.ImportWalletViewModel.PrivateKeyInput">
+            <inheritdoc cref="F:Bank.MobileUI.ViewModels.Onboarding.ImportWalletViewModel._privateKeyInput"/>
+        </member>
+        <member name="P:Bank.MobileUI.ViewModels.Onboarding.ImportWalletViewModel.IsBusy">
+            <inheritdoc cref="F:Bank.MobileUI.ViewModels.Onboarding.ImportWalletViewModel._isBusy"/>
+        </member>
+        <member name="F:Bank.MobileUI.ViewModels.Onboarding.ImportWalletViewModel.importCommand">
+            <summary>The backing field for <see cref="P:Bank.MobileUI.ViewModels.Onboarding.ImportWalletViewModel.ImportCommand"/>.</summary>
+        </member>
+        <member name="P:Bank.MobileUI.ViewModels.Onboarding.ImportWalletViewModel.ImportCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Bank.MobileUI.ViewModels.Onboarding.ImportWalletViewModel.ImportAsync"/>.</summary>
+        </member>
+        <member name="F:Bank.MobileUI.ViewModels.Onboarding.ImportWalletViewModel.backCommand">
+            <summary>The backing field for <see cref="P:Bank.MobileUI.ViewModels.Onboarding.ImportWalletViewModel.BackCommand"/>.</summary>
+        </member>
+        <member name="P:Bank.MobileUI.ViewModels.Onboarding.ImportWalletViewModel.BackCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Bank.MobileUI.ViewModels.Onboarding.ImportWalletViewModel.BackAsync"/>.</summary>
+        </member>
+        <member name="P:Bank.MobileUI.ViewModels.Onboarding.TransferViewModel.TargetAddress">
+            <inheritdoc cref="F:Bank.MobileUI.ViewModels.Onboarding.TransferViewModel.targetAddress"/>
+        </member>
+        <member name="P:Bank.MobileUI.ViewModels.Onboarding.TransferViewModel.Amount">
+            <inheritdoc cref="F:Bank.MobileUI.ViewModels.Onboarding.TransferViewModel.amount"/>
+        </member>
+        <member name="P:Bank.MobileUI.ViewModels.Onboarding.TransferViewModel.IsBusy">
+            <inheritdoc cref="F:Bank.MobileUI.ViewModels.Onboarding.TransferViewModel.isBusy"/>
+        </member>
+        <member name="P:Bank.MobileUI.ViewModels.Onboarding.TransferViewModel.Balance">
+            <inheritdoc cref="F:Bank.MobileUI.ViewModels.Onboarding.TransferViewModel.balance"/>
+        </member>
+        <member name="F:Bank.MobileUI.ViewModels.Onboarding.TransferViewModel.scanQrCodeCommand">
+            <summary>The backing field for <see cref="P:Bank.MobileUI.ViewModels.Onboarding.TransferViewModel.ScanQrCodeCommand"/>.</summary>
+        </member>
+        <member name="P:Bank.MobileUI.ViewModels.Onboarding.TransferViewModel.ScanQrCodeCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Bank.MobileUI.ViewModels.Onboarding.TransferViewModel.ScanQrCodeAsync"/>.</summary>
+        </member>
+        <member name="F:Bank.MobileUI.ViewModels.Onboarding.TransferViewModel.confirmTransactionCommand">
+            <summary>The backing field for <see cref="P:Bank.MobileUI.ViewModels.Onboarding.TransferViewModel.ConfirmTransactionCommand"/>.</summary>
+        </member>
+        <member name="P:Bank.MobileUI.ViewModels.Onboarding.TransferViewModel.ConfirmTransactionCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Bank.MobileUI.ViewModels.Onboarding.TransferViewModel.ConfirmTransactionAsync"/>.</summary>
         </member>
         <member name="P:Bank.MobileUI.ViewModels.StakingViewModel.CurrentApy">
             <inheritdoc cref="F:Bank.MobileUI.ViewModels.StakingViewModel.currentApy"/>
@@ -67,32 +133,170 @@
         <member name="P:Bank.MobileUI.ViewModels.TransactionsViewModel.LoadHistoryCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Bank.MobileUI.ViewModels.TransactionsViewModel.LoadHistoryAsync"/>.</summary>
         </member>
+        <member name="P:Bank.MobileUI.ViewModels.TransferViewModel.TargetAddress">
+            <inheritdoc cref="F:Bank.MobileUI.ViewModels.TransferViewModel.targetAddress"/>
+        </member>
+        <member name="P:Bank.MobileUI.ViewModels.TransferViewModel.Amount">
+            <inheritdoc cref="F:Bank.MobileUI.ViewModels.TransferViewModel.amount"/>
+        </member>
+        <member name="P:Bank.MobileUI.ViewModels.TransferViewModel.IsBusy">
+            <inheritdoc cref="F:Bank.MobileUI.ViewModels.TransferViewModel.isBusy"/>
+        </member>
+        <member name="P:Bank.MobileUI.ViewModels.TransferViewModel.Balance">
+            <inheritdoc cref="F:Bank.MobileUI.ViewModels.TransferViewModel.balance"/>
+        </member>
+        <member name="F:Bank.MobileUI.ViewModels.TransferViewModel.scanQrCodeCommand">
+            <summary>The backing field for <see cref="P:Bank.MobileUI.ViewModels.TransferViewModel.ScanQrCodeCommand"/>.</summary>
+        </member>
+        <member name="P:Bank.MobileUI.ViewModels.TransferViewModel.ScanQrCodeCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Bank.MobileUI.ViewModels.TransferViewModel.ScanQrCodeAsync"/>.</summary>
+        </member>
+        <member name="F:Bank.MobileUI.ViewModels.TransferViewModel.confirmTransactionCommand">
+            <summary>The backing field for <see cref="P:Bank.MobileUI.ViewModels.TransferViewModel.ConfirmTransactionCommand"/>.</summary>
+        </member>
+        <member name="P:Bank.MobileUI.ViewModels.TransferViewModel.ConfirmTransactionCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Bank.MobileUI.ViewModels.TransferViewModel.ConfirmTransactionAsync"/>.</summary>
+        </member>
+        <member name="P:Bank.MobileUI.ViewModels.WelcomeViewModel.IsBusy">
+            <inheritdoc cref="F:Bank.MobileUI.ViewModels.WelcomeViewModel._isBusy"/>
+        </member>
+        <member name="F:Bank.MobileUI.ViewModels.WelcomeViewModel.createWalletCommand">
+            <summary>The backing field for <see cref="P:Bank.MobileUI.ViewModels.WelcomeViewModel.CreateWalletCommand"/>.</summary>
+        </member>
+        <member name="P:Bank.MobileUI.ViewModels.WelcomeViewModel.CreateWalletCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Bank.MobileUI.ViewModels.WelcomeViewModel.CreateWalletAsync"/>.</summary>
+        </member>
+        <member name="F:Bank.MobileUI.ViewModels.WelcomeViewModel.goToImportCommand">
+            <summary>The backing field for <see cref="P:Bank.MobileUI.ViewModels.WelcomeViewModel.GoToImportCommand"/>.</summary>
+        </member>
+        <member name="P:Bank.MobileUI.ViewModels.WelcomeViewModel.GoToImportCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Bank.MobileUI.ViewModels.WelcomeViewModel.GoToImport"/>.</summary>
+        </member>
         <member name="T:Bank.MobileUI.Resource">
             <summary>
             Android Resource Designer class.
             Exposes the Android Resource designer assembly into the project Namespace.
             </summary>
         </member>
-        <member name="P:NeoBank.MobileUI.ViewModels.TransferViewModel.TargetAddress">
-            <inheritdoc cref="F:NeoBank.MobileUI.ViewModels.TransferViewModel.targetAddress"/>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
         </member>
-        <member name="P:NeoBank.MobileUI.ViewModels.TransferViewModel.Amount">
-            <inheritdoc cref="F:NeoBank.MobileUI.ViewModels.TransferViewModel.amount"/>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_DatePicker.TextColorTo(Microsoft.Maui.Controls.DatePicker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
         </member>
-        <member name="P:NeoBank.MobileUI.ViewModels.TransferViewModel.IsBusy">
-            <inheritdoc cref="F:NeoBank.MobileUI.ViewModels.TransferViewModel.isBusy"/>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Editor.TextColorTo(Microsoft.Maui.Controls.Editor,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
         </member>
-        <member name="F:NeoBank.MobileUI.ViewModels.TransferViewModel.scanQrCodeCommand">
-            <summary>The backing field for <see cref="P:NeoBank.MobileUI.ViewModels.TransferViewModel.ScanQrCodeCommand"/>.</summary>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Entry.TextColorTo(Microsoft.Maui.Controls.Entry,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
         </member>
-        <member name="P:NeoBank.MobileUI.ViewModels.TransferViewModel.ScanQrCodeCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:NeoBank.MobileUI.ViewModels.TransferViewModel.ScanQrCodeAsync"/>.</summary>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_InputView.TextColorTo(Microsoft.Maui.Controls.InputView,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
         </member>
-        <member name="F:NeoBank.MobileUI.ViewModels.TransferViewModel.confirmTransactionCommand">
-            <summary>The backing field for <see cref="P:NeoBank.MobileUI.ViewModels.TransferViewModel.ConfirmTransactionCommand"/>.</summary>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Label.TextColorTo(Microsoft.Maui.Controls.Label,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
         </member>
-        <member name="P:NeoBank.MobileUI.ViewModels.TransferViewModel.ConfirmTransactionCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:NeoBank.MobileUI.ViewModels.TransferViewModel.ConfirmTransactionAsync"/>.</summary>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Picker.TextColorTo(Microsoft.Maui.Controls.Picker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_RadioButton.TextColorTo(Microsoft.Maui.Controls.RadioButton,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_SearchBar.TextColorTo(Microsoft.Maui.Controls.SearchBar,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_TimePicker.TextColorTo(Microsoft.Maui.Controls.TimePicker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
         </member>
     </members>
 </doc>

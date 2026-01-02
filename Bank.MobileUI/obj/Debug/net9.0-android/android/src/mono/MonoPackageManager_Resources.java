@@ -5,6 +5,8 @@ public class MonoPackageManager_Resources {
 		"Bank.MobileUI.dll",
 		"ADRaffy.ENSNormalize.dll",
 		"BouncyCastle.Cryptography.dll",
+		"CommunityToolkit.Maui.dll",
+		"CommunityToolkit.Maui.Core.dll",
 		"CommunityToolkit.Mvvm.dll",
 		"GoogleGson.dll",
 		"Microsoft.AspNet.SignalR.Client.dll",
@@ -234,10 +236,6 @@ public class MonoPackageManager_Resources {
 		"Bank.Application.dll",
 		"Bank.Domain.dll",
 		"Bank.Infrastructure.dll",
-		"Microsoft.Maui.Controls.HotReload.Forms.dll",
-		"Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll",
-		"Microsoft.VisualStudio.DesignTools.TapContract.dll",
-		"Microsoft.VisualStudio.DesignTools.XamlTapContract.dll",
 		"_Microsoft.Android.Resource.Designer.dll",
 	};
 	public static String[] Dependencies = new String[]{

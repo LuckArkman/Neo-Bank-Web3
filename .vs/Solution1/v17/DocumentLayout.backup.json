@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\Neo-Bank-Web3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|d:\\neo-bank-web3\\bank.mobileui\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|solutionrelative:bank.mobileui\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|d:\\neo-bank-web3\\bank.mobileui\\viewmodels\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|solutionrelative:bank.mobileui\\viewmodels\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|d:\\neo-bank-web3\\bank.mobileui\\viewmodels\\welcomeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|solutionrelative:bank.mobileui\\viewmodels\\welcomeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|d:\\neo-bank-web3\\bank.mobileui\\views\\onboarding\\welcomepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|solutionrelative:bank.mobileui\\views\\onboarding\\welcomepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|d:\\neo-bank-web3\\bank.mobileui\\viewmodels\\welcomeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|solutionrelative:bank.mobileui\\viewmodels\\welcomeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|d:\\neo-bank-web3\\bank.mobileui\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|solutionrelative:bank.mobileui\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|d:\\neo-bank-web3\\bank.mobileui\\viewmodels\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|solutionrelative:bank.mobileui\\viewmodels\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{270C7D5E-02C4-4041-86BA-51753A31CE50}|Bank.MobileUI\\Bank.MobileUI.csproj|d:\\neo-bank-web3\\bank.mobileui\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -42,24 +42,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "WelcomeViewModel.cs",
               "DocumentMoniker": "D:\\Neo-Bank-Web3\\Bank.MobileUI\\ViewModels\\WelcomeViewModel.cs",
               "RelativeDocumentMoniker": "Bank.MobileUI\\ViewModels\\WelcomeViewModel.cs",
               "ToolTip": "D:\\Neo-Bank-Web3\\Bank.MobileUI\\ViewModels\\WelcomeViewModel.cs",
               "RelativeToolTip": "Bank.MobileUI\\ViewModels\\WelcomeViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwUAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAswAcAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-01T15:34:40.285Z",
+              "WhenOpened": "2026-01-01T15:37:11.917Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "WelcomePage.xaml",
+              "DocumentMoniker": "D:\\Neo-Bank-Web3\\Bank.MobileUI\\Views\\Onboarding\\WelcomePage.xaml",
+              "RelativeDocumentMoniker": "Bank.MobileUI\\Views\\Onboarding\\WelcomePage.xaml",
+              "ToolTip": "D:\\Neo-Bank-Web3\\Bank.MobileUI\\Views\\Onboarding\\WelcomePage.xaml",
+              "RelativeToolTip": "Bank.MobileUI\\Views\\Onboarding\\WelcomePage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-01T15:37:10.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "MauiProgram.cs",
               "DocumentMoniker": "D:\\Neo-Bank-Web3\\Bank.MobileUI\\MauiProgram.cs",
               "RelativeDocumentMoniker": "Bank.MobileUI\\MauiProgram.cs",
@@ -85,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "DashboardViewModel.cs",
               "DocumentMoniker": "D:\\Neo-Bank-Web3\\Bank.MobileUI\\ViewModels\\DashboardViewModel.cs",
               "RelativeDocumentMoniker": "Bank.MobileUI\\ViewModels\\DashboardViewModel.cs",
@@ -94,19 +107,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-01T15:32:49.106Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WelcomePage.xaml",
-              "DocumentMoniker": "D:\\Neo-Bank-Web3\\Bank.MobileUI\\Views\\Onboarding\\WelcomePage.xaml",
-              "RelativeDocumentMoniker": "Bank.MobileUI\\Views\\Onboarding\\WelcomePage.xaml",
-              "ToolTip": "D:\\Neo-Bank-Web3\\Bank.MobileUI\\Views\\Onboarding\\WelcomePage.xaml",
-              "RelativeToolTip": "Bank.MobileUI\\Views\\Onboarding\\WelcomePage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-01T14:03:03.573Z",
               "EditorCaption": ""
             },
             {
@@ -143,7 +143,7 @@
               "RelativeDocumentMoniker": "Bank.MobileUI\\AppShell.xaml",
               "ToolTip": "D:\\Neo-Bank-Web3\\Bank.MobileUI\\AppShell.xaml",
               "RelativeToolTip": "Bank.MobileUI\\AppShell.xaml",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAmwAoAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAmwAoAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-01-01T02:37:47.293Z",
               "EditorCaption": ""

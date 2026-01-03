@@ -52,7 +52,7 @@
               "RelativeDocumentMoniker": "Bank.MobileUI\\ViewModels\\WelcomeViewModel.cs",
               "ToolTip": "D:\\Neo-Bank-Web3\\Bank.MobileUI\\ViewModels\\WelcomeViewModel.cs",
               "RelativeToolTip": "Bank.MobileUI\\ViewModels\\WelcomeViewModel.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAswAcAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA7wBAAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-01T15:37:11.917Z",
               "EditorCaption": ""
@@ -67,8 +67,7 @@
               "RelativeToolTip": "Bank.MobileUI\\Views\\Onboarding\\WelcomePage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-01T15:37:10.395Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-01T15:37:10.395Z"
             },
             {
               "$type": "Document",
@@ -80,8 +79,7 @@
               "RelativeToolTip": "Bank.MobileUI\\MauiProgram.cs",
               "ViewState": "AgIAAEUAAAAAAAAAAAAAAEUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-01T15:34:03.152Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-01T15:34:03.152Z"
             },
             {
               "$type": "Document",
@@ -93,8 +91,7 @@
               "RelativeToolTip": "Bank.MobileUI\\App.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-01T15:33:26.892Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-01T15:33:26.892Z"
             },
             {
               "$type": "Document",
@@ -106,8 +103,7 @@
               "RelativeToolTip": "Bank.MobileUI\\ViewModels\\DashboardViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-01T15:32:49.106Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-01T15:32:49.106Z"
             },
             {
               "$type": "Document",
@@ -119,8 +115,7 @@
               "RelativeToolTip": "Bank.MobileUI\\Views\\DashboardPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-01T14:03:00.815Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-01T14:03:00.815Z"
             },
             {
               "$type": "Document",
@@ -132,8 +127,7 @@
               "RelativeToolTip": "Bank.MobileUI\\Views\\HistoryPage.xaml",
               "ViewState": "AgIAABMAAAAAAAAAAAAowCAAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-01T02:53:35.552Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-01T02:53:35.552Z"
             },
             {
               "$type": "Document",
@@ -145,8 +139,7 @@
               "RelativeToolTip": "Bank.MobileUI\\AppShell.xaml",
               "ViewState": "AgIAAAEAAAAAAAAAAAAmwAoAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-01T02:37:47.293Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-01T02:37:47.293Z"
             }
           ]
         }

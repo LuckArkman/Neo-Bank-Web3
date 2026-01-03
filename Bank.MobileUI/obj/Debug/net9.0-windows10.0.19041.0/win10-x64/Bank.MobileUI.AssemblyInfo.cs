@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bank.MobileUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+f43c68b3582cbf423f14a9a1a98eea62c5111ce6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+fa3bce4d5f3b5d79c5fc4765f1cf3bb2745ecd0f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bank.MobileUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bank.MobileUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
